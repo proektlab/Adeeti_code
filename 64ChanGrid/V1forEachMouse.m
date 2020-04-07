@@ -15,7 +15,7 @@ function [allV1, onsetMat] = V1forEachMouse(useStimIndex, useNumStim, stimIndex,
 
 
 if nargin <7
-    saveV1 = 1;
+    saveV1 = 1; %faaefwefa
 end
 if nargin <6
     thresh = 3;
