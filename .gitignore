@@ -1,0 +1,14 @@
+!*/*
+*.mat
+*.fig
+# autosave
+*.~
+*.asv
+*.mp4
+
+*.144x96x1
+*PsychoPhysics/stimuli/Natural Noise Movies/i00
+
+*.avi
+*.pdf
+"*conflicted copy*"

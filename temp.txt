@@ -1,0 +1,9 @@
+./drtoolbox/techniques/csdp.exe
+./drtoolbox/techniques/csdplinux
+./GaborTests/Exp1HighIsoTestFull.mat
+./neuralunx_Import/ImportWindows/NlxFileIO3_x64.dll
+./PsychoPhysics/stimuli/MadinahCode/M007_01_stim_params.mat
+./PsychoPhysics/stimuli/MadinahCode/M007_02_stim_params.mat
+./PsychoPhysics/stimuli/MadinahCode/whitenoise.mat
+./PsychoPhysics/stimuli/MadinahCode/M007_01b_stim_params.mat
+./PsychoPhysics/stimuli/MadinahCode/M007_01c_stim_params.mat

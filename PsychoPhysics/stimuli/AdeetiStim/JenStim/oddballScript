@@ -1,0 +1,2 @@
+sequence = oddballSequencer([140, 10, 10], 2, 2];
+oddballPlayer(seqeuence, [4000, 3500, 4500],.050, .375);

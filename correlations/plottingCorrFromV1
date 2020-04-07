@@ -1,0 +1,58 @@
+%% Plotting Corralation drop off from V1
+
+V1 = 25; % channel number at which latency of onset of the average is the shortest
+
+addChan = 3; % number of channels want to show drop of for
+
+gridIndicies = [[5 17 0 0 33 53]; ...  %% x is rows and y is columns 
+    [6 18 28 44 34 54]; ...
+    [7 19 29 45 35 55]; ...
+    [8 20 30 46 36 56]; ...
+    [9 21 31 47 37 57]; ...
+    [10 22 32 48 38 58]; ...
+    [11 16 27 43 64 59]; ...
+    [4 15 26 42 63 52]; ...
+    [3 14 25 41 62 51]; ...
+    [2 13 24 40 61 50]; ...
+    [1 12 23 39 60 49]];
+
+
+[xGrid, yGrid] = ind2sub(size(gridIndicies), find(gridIndicies == V1));
+adjVectorX = nan(1, (addChan*2) +1);
+adjVectorY = nan(1, (addChan*2) +1);
+
+%%Finding Channels to the top or bottom (top farthest first-> V1 -> bottom
+%%farthest last)
+xCounter = 0;
+for x = xGrid-addChan:xGrid+addChan
+    y = yGrid;
+    xCounter = xCounter + 1;
+    if y < 1 || x< 1 || x > size(gridIndicies,1) || y > size(gridIndicies,2)
+        adjVectorX(xCounter) = NaN;
+        continue
+    end
+    adChan = gridIndicies(x,y);
+    if adChan == 0
+        adjVectorX(xCounter) = NaN;
+    else
+        adjVectorX(xCounter) = adChan;
+    end
+end
+
+%%Finding Channels to the left and right (left most channel first -> V1 ->
+%%right most channel last)
+yCounter = 0;
+for y = yGrid-addChan:yGrid+addChan
+    x = xGrid;
+    yCounter = yCounter + 1;
+    if y < 1 || x< 1 || x > size(gridIndicies,1) || y > size(gridIndicies,2)
+        adjVectorY(yCounter) = NaN;
+        continue
+    end
+    adChan = gridIndicies(x,y);
+    if adChan == 0
+        adjVectorY(yCounter) = NaN;
+    else
+        adjVectorY(yCounter) = adChan;
+    end
+end

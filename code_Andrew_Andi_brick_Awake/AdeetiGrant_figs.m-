@@ -1,0 +1,18 @@
+%% Make a figure for Adeeti's grant resubmission with Andi's data
+% She needs a section of clean EEG from wake and anesthetized
+% Spectrograms to match.
+
+% Looking at M13 EMERGENCE which has fs = 250 hz
+%   30 minutes baseline
+%   60 minutes at 0.6% iso
+%   30 minutes at 1.2% iso
+%   6 hours at 0.6% iso
+
+%% First run AndiData_batchscript.m 
+% the variable cleanData is what you want
+
+% Wake EEG
+wake = cleanData(1,160*fs:180*fs); % 20 seconds of data
+
+% Anes EEG (1.2% iso)
+anes = cleanData(1,7440*fs:7460*fs);

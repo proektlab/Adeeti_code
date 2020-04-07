@@ -1,0 +1,43 @@
+%dispGratings.m
+%Jennifer Luo
+%6/21/19
+%This program creates a contrast reversing grating in 9 different locations
+
+sca;
+clearvars;
+
+Screen('Preference', 'VisualDebuglevel', 3);
+params.distanceToMonitor = 25; %set equal to monitor distance in cm
+params = COPYconfigureScreens_pipelineAA(params); %gets params from configureScreens
+lj = labJack('verbose', false); %sets up labjack
+
+KbStrokeWait;
+
+%creates 9 different centers
+centers = zeros(9,2); 
+for i = 1:9
+    %fills in x value of centers, which move from left to right for each y
+    %value change
+    centers(i, 1) = (mod(i - 1, 3) + 1)*.25*params.dims(1); 
+    %fills in y value of centers which increase every 3 gratings
+    centers(i, 2) = (floor((i - 1)/3)+1)*.25*params.dims(2);
+end
+
+%open a window
+PsychDefaultSetup(2);
+w = max(Screen('Screens'));
+[w, screenRect]=PsychImaging('OpenWindow',w, [.5 .5 .5]);
+
+%displays 9 different gratings
+for j = 1:9
+    %lj.toggleFIO(1); %send signal to labjack
+    lj.timedTTL(1,1);
+    %run grating centered at a point
+    COPYcontrastRevGratFun(w, params, 90, .036, 2, 1, 100, centers(j,:), 5, 1);
+    %lj.toggleFIO(1); %send signal to labjack
+    lj.timedTTL(1,5);
+    KbStrokeWait;
+end
+
+sca;
+ 

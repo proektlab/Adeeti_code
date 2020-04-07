@@ -1,0 +1,56 @@
+Legend: 
+  * - An event occurred.
+  > - A write operation occurred.
+  < - A read operation occurred.
+ 
+1      Recording on 10-Dec-2018 at 14:19:58.400. Binary data in little endian format.
+2      > 10 ascii values.
+       CITIME
+
+
+3      > 12 ascii values.
+       TTIME 10
+
+
+4      > 25 ascii values.
+       IRATE 370.1003 ul/min
+
+
+5      > 8 ascii values.
+       IRUN
+
+
+6      > 10 ascii values.
+       CITIME
+
+
+7      > 12 ascii values.
+       TTIME 10
+
+
+8      > 23 ascii values.
+       IRATE 1.2304 ul/min
+
+
+9      > 8 ascii values.
+       IRUN
+
+
+10     > 10 ascii values.
+       CITIME
+
+
+11     > 12 ascii values.
+       TTIME 10
+
+
+12     > 18 ascii values.
+       IRATE 0 ul/min
+
+
+13     > 8 ascii values.
+       IRUN
+
+
+14       Recording off.
+

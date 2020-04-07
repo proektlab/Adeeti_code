@@ -1,0 +1,13306 @@
+Legend: 
+  * - An event occurred.
+  > - A write operation occurred.
+  < - A read operation occurred.
+ 
+1      Recording on 20-Dec-2018 at 19:50:39.374. Binary data in little endian format.
+2      > 10 ascii values.
+       CITIME
+
+
+3      > 12 ascii values.
+       TTIME 10
+
+
+4      > 25 ascii values.
+       IRATE 383.8077 ul/min
+
+
+5      > 8 ascii values.
+       IRUN
+
+
+6      > 10 ascii values.
+       CITIME
+
+
+7      > 12 ascii values.
+       TTIME 10
+
+
+8      > 22 ascii values.
+       IRATE 1.276 ul/min
+
+
+9      > 8 ascii values.
+       IRUN
+
+
+10     > 10 ascii values.
+       CITIME
+
+
+11     > 12 ascii values.
+       TTIME 10
+
+
+12     > 18 ascii values.
+       IRATE 0 ul/min
+
+
+13     > 8 ascii values.
+       IRUN
+
+
+14     > 10 ascii values.
+       CITIME
+
+
+15     > 12 ascii values.
+       TTIME 10
+
+
+16     > 18 ascii values.
+       IRATE 0 ul/min
+
+
+17     > 8 ascii values.
+       IRUN
+
+
+18     > 10 ascii values.
+       CITIME
+
+
+19     > 12 ascii values.
+       TTIME 10
+
+
+20     > 23 ascii values.
+       IRATE 2.9497 ul/min
+
+
+21     > 8 ascii values.
+       IRUN
+
+
+22     > 10 ascii values.
+       CITIME
+
+
+23     > 12 ascii values.
+       TTIME 10
+
+
+24     > 23 ascii values.
+       IRATE 6.8696 ul/min
+
+
+25     > 8 ascii values.
+       IRUN
+
+
+26     > 10 ascii values.
+       CITIME
+
+
+27     > 12 ascii values.
+       TTIME 10
+
+
+28     > 23 ascii values.
+       IRATE 9.2961 ul/min
+
+
+29     > 8 ascii values.
+       IRUN
+
+
+30     > 10 ascii values.
+       CITIME
+
+
+31     > 12 ascii values.
+       TTIME 10
+
+
+32     > 23 ascii values.
+       IRATE 9.8334 ul/min
+
+
+33     > 8 ascii values.
+       IRUN
+
+
+34     > 10 ascii values.
+       CITIME
+
+
+35     > 12 ascii values.
+       TTIME 10
+
+
+36     > 23 ascii values.
+       IRATE 9.8211 ul/min
+
+
+37     > 8 ascii values.
+       IRUN
+
+
+38     > 10 ascii values.
+       CITIME
+
+
+39     > 12 ascii values.
+       TTIME 10
+
+
+40     > 23 ascii values.
+       IRATE 9.7194 ul/min
+
+
+41     > 8 ascii values.
+       IRUN
+
+
+42     > 10 ascii values.
+       CITIME
+
+
+43     > 12 ascii values.
+       TTIME 10
+
+
+44     > 23 ascii values.
+       IRATE 9.6447 ul/min
+
+
+45     > 8 ascii values.
+       IRUN
+
+
+46     > 10 ascii values.
+       CITIME
+
+
+47     > 12 ascii values.
+       TTIME 10
+
+
+48     > 23 ascii values.
+       IRATE 9.5809 ul/min
+
+
+49     > 8 ascii values.
+       IRUN
+
+
+50     > 10 ascii values.
+       CITIME
+
+
+51     > 12 ascii values.
+       TTIME 10
+
+
+52     > 22 ascii values.
+       IRATE 9.531 ul/min
+
+
+53     > 8 ascii values.
+       IRUN
+
+
+54     > 10 ascii values.
+       CITIME
+
+
+55     > 12 ascii values.
+       TTIME 10
+
+
+56     > 23 ascii values.
+       IRATE 9.4849 ul/min
+
+
+57     > 8 ascii values.
+       IRUN
+
+
+58     > 10 ascii values.
+       CITIME
+
+
+59     > 12 ascii values.
+       TTIME 10
+
+
+60     > 23 ascii values.
+       IRATE 9.4357 ul/min
+
+
+61     > 8 ascii values.
+       IRUN
+
+
+62     > 10 ascii values.
+       CITIME
+
+
+63     > 12 ascii values.
+       TTIME 10
+
+
+64     > 23 ascii values.
+       IRATE 9.3806 ul/min
+
+
+65     > 8 ascii values.
+       IRUN
+
+
+66     > 10 ascii values.
+       CITIME
+
+
+67     > 12 ascii values.
+       TTIME 10
+
+
+68     > 23 ascii values.
+       IRATE 9.3377 ul/min
+
+
+69     > 8 ascii values.
+       IRUN
+
+
+70     > 10 ascii values.
+       CITIME
+
+
+71     > 12 ascii values.
+       TTIME 10
+
+
+72     > 23 ascii values.
+       IRATE 9.2935 ul/min
+
+
+73     > 8 ascii values.
+       IRUN
+
+
+74     > 10 ascii values.
+       CITIME
+
+
+75     > 12 ascii values.
+       TTIME 10
+
+
+76     > 23 ascii values.
+       IRATE 9.2392 ul/min
+
+
+77     > 8 ascii values.
+       IRUN
+
+
+78     > 10 ascii values.
+       CITIME
+
+
+79     > 12 ascii values.
+       TTIME 10
+
+
+80     > 23 ascii values.
+       IRATE 9.1896 ul/min
+
+
+81     > 8 ascii values.
+       IRUN
+
+
+82     > 10 ascii values.
+       CITIME
+
+
+83     > 12 ascii values.
+       TTIME 10
+
+
+84     > 23 ascii values.
+       IRATE 9.1507 ul/min
+
+
+85     > 8 ascii values.
+       IRUN
+
+
+86     > 10 ascii values.
+       CITIME
+
+
+87     > 12 ascii values.
+       TTIME 10
+
+
+88     > 23 ascii values.
+       IRATE 9.1052 ul/min
+
+
+89     > 8 ascii values.
+       IRUN
+
+
+90     > 10 ascii values.
+       CITIME
+
+
+91     > 12 ascii values.
+       TTIME 10
+
+
+92     > 23 ascii values.
+       IRATE 9.0502 ul/min
+
+
+93     > 8 ascii values.
+       IRUN
+
+
+94     > 10 ascii values.
+       CITIME
+
+
+95     > 12 ascii values.
+       TTIME 10
+
+
+96     > 23 ascii values.
+       IRATE 9.0052 ul/min
+
+
+97     > 8 ascii values.
+       IRUN
+
+
+98     > 10 ascii values.
+       CITIME
+
+
+99     > 12 ascii values.
+       TTIME 10
+
+
+100    > 23 ascii values.
+       IRATE 8.9674 ul/min
+
+
+101    > 8 ascii values.
+       IRUN
+
+
+102    > 10 ascii values.
+       CITIME
+
+
+103    > 12 ascii values.
+       TTIME 10
+
+
+104    > 23 ascii values.
+       IRATE 8.9229 ul/min
+
+
+105    > 8 ascii values.
+       IRUN
+
+
+106    > 10 ascii values.
+       CITIME
+
+
+107    > 12 ascii values.
+       TTIME 10
+
+
+108    > 23 ascii values.
+       IRATE 8.8697 ul/min
+
+
+109    > 8 ascii values.
+       IRUN
+
+
+110    > 10 ascii values.
+       CITIME
+
+
+111    > 12 ascii values.
+       TTIME 10
+
+
+112    > 23 ascii values.
+       IRATE 8.8233 ul/min
+
+
+113    > 8 ascii values.
+       IRUN
+
+
+114    > 10 ascii values.
+       CITIME
+
+
+115    > 12 ascii values.
+       TTIME 10
+
+
+116    > 23 ascii values.
+       IRATE 8.7872 ul/min
+
+
+117    > 8 ascii values.
+       IRUN
+
+
+118    > 10 ascii values.
+       CITIME
+
+
+119    > 12 ascii values.
+       TTIME 10
+
+
+120    > 23 ascii values.
+       IRATE 8.7461 ul/min
+
+
+121    > 8 ascii values.
+       IRUN
+
+
+122    > 10 ascii values.
+       CITIME
+
+
+123    > 12 ascii values.
+       TTIME 10
+
+
+124    > 23 ascii values.
+       IRATE 8.6978 ul/min
+
+
+125    > 8 ascii values.
+       IRUN
+
+
+126    > 10 ascii values.
+       CITIME
+
+
+127    > 12 ascii values.
+       TTIME 10
+
+
+128    > 23 ascii values.
+       IRATE 8.6464 ul/min
+
+
+129    > 8 ascii values.
+       IRUN
+
+
+130    > 10 ascii values.
+       CITIME
+
+
+131    > 12 ascii values.
+       TTIME 10
+
+
+132    > 23 ascii values.
+       IRATE 8.6092 ul/min
+
+
+133    > 8 ascii values.
+       IRUN
+
+
+134    > 10 ascii values.
+       CITIME
+
+
+135    > 12 ascii values.
+       TTIME 10
+
+
+136    > 23 ascii values.
+       IRATE 8.5718 ul/min
+
+
+137    > 8 ascii values.
+       IRUN
+
+
+138    > 10 ascii values.
+       CITIME
+
+
+139    > 12 ascii values.
+       TTIME 10
+
+
+140    > 23 ascii values.
+       IRATE 8.5287 ul/min
+
+
+141    > 8 ascii values.
+       IRUN
+
+
+142    > 10 ascii values.
+       CITIME
+
+
+143    > 12 ascii values.
+       TTIME 10
+
+
+144    > 23 ascii values.
+       IRATE 8.4793 ul/min
+
+
+145    > 8 ascii values.
+       IRUN
+
+
+146    > 10 ascii values.
+       CITIME
+
+
+147    > 12 ascii values.
+       TTIME 10
+
+
+148    > 22 ascii values.
+       IRATE 8.436 ul/min
+
+
+149    > 8 ascii values.
+       IRUN
+
+
+150    > 10 ascii values.
+       CITIME
+
+
+151    > 12 ascii values.
+       TTIME 10
+
+
+152    > 23 ascii values.
+       IRATE 8.4008 ul/min
+
+
+153    > 8 ascii values.
+       IRUN
+
+
+154    > 10 ascii values.
+       CITIME
+
+
+155    > 12 ascii values.
+       TTIME 10
+
+
+156    > 23 ascii values.
+       IRATE 8.3621 ul/min
+
+
+157    > 8 ascii values.
+       IRUN
+
+
+158    > 10 ascii values.
+       CITIME
+
+
+159    > 12 ascii values.
+       TTIME 10
+
+
+160    > 23 ascii values.
+       IRATE 8.3182 ul/min
+
+
+161    > 8 ascii values.
+       IRUN
+
+
+162    > 10 ascii values.
+       CITIME
+
+
+163    > 12 ascii values.
+       TTIME 10
+
+
+164    > 23 ascii values.
+       IRATE 8.2705 ul/min
+
+
+165    > 8 ascii values.
+       IRUN
+
+
+166    > 10 ascii values.
+       CITIME
+
+
+167    > 12 ascii values.
+       TTIME 10
+
+
+168    > 23 ascii values.
+       IRATE 8.2335 ul/min
+
+
+169    > 8 ascii values.
+       IRUN
+
+
+170    > 10 ascii values.
+       CITIME
+
+
+171    > 12 ascii values.
+       TTIME 10
+
+
+172    > 23 ascii values.
+       IRATE 8.1981 ul/min
+
+
+173    > 8 ascii values.
+       IRUN
+
+
+174    > 10 ascii values.
+       CITIME
+
+
+175    > 12 ascii values.
+       TTIME 10
+
+
+176    > 23 ascii values.
+       IRATE 8.1588 ul/min
+
+
+177    > 8 ascii values.
+       IRUN
+
+
+178    > 10 ascii values.
+       CITIME
+
+
+179    > 12 ascii values.
+       TTIME 10
+
+
+180    > 22 ascii values.
+       IRATE 8.115 ul/min
+
+
+181    > 8 ascii values.
+       IRUN
+
+
+182    > 10 ascii values.
+       CITIME
+
+
+183    > 12 ascii values.
+       TTIME 10
+
+
+184    > 23 ascii values.
+       IRATE 8.0713 ul/min
+
+
+185    > 8 ascii values.
+       IRUN
+
+
+186    > 10 ascii values.
+       CITIME
+
+
+187    > 12 ascii values.
+       TTIME 10
+
+
+188    > 23 ascii values.
+       IRATE 8.0368 ul/min
+
+
+189    > 8 ascii values.
+       IRUN
+
+
+190    > 10 ascii values.
+       CITIME
+
+
+191    > 12 ascii values.
+       TTIME 10
+
+
+192    > 23 ascii values.
+       IRATE 8.0015 ul/min
+
+
+193    > 8 ascii values.
+       IRUN
+
+
+194    > 10 ascii values.
+       CITIME
+
+
+195    > 12 ascii values.
+       TTIME 10
+
+
+196    > 23 ascii values.
+       IRATE 7.9625 ul/min
+
+
+197    > 8 ascii values.
+       IRUN
+
+
+198    > 10 ascii values.
+       CITIME
+
+
+199    > 12 ascii values.
+       TTIME 10
+
+
+200    > 23 ascii values.
+       IRATE 7.9198 ul/min
+
+
+201    > 8 ascii values.
+       IRUN
+
+
+202    > 10 ascii values.
+       CITIME
+
+
+203    > 12 ascii values.
+       TTIME 10
+
+
+204    > 23 ascii values.
+       IRATE 7.8795 ul/min
+
+
+205    > 8 ascii values.
+       IRUN
+
+
+206    > 10 ascii values.
+       CITIME
+
+
+207    > 12 ascii values.
+       TTIME 10
+
+
+208    > 23 ascii values.
+       IRATE 7.8461 ul/min
+
+
+209    > 8 ascii values.
+       IRUN
+
+
+210    > 10 ascii values.
+       CITIME
+
+
+211    > 12 ascii values.
+       TTIME 10
+
+
+212    > 23 ascii values.
+       IRATE 7.8112 ul/min
+
+
+213    > 8 ascii values.
+       IRUN
+
+
+214    > 10 ascii values.
+       CITIME
+
+
+215    > 12 ascii values.
+       TTIME 10
+
+
+216    > 23 ascii values.
+       IRATE 7.7733 ul/min
+
+
+217    > 8 ascii values.
+       IRUN
+
+
+218    > 10 ascii values.
+       CITIME
+
+
+219    > 12 ascii values.
+       TTIME 10
+
+
+220    > 23 ascii values.
+       IRATE 7.7322 ul/min
+
+
+221    > 8 ascii values.
+       IRUN
+
+
+222    > 10 ascii values.
+       CITIME
+
+
+223    > 12 ascii values.
+       TTIME 10
+
+
+224    > 23 ascii values.
+       IRATE 7.6939 ul/min
+
+
+225    > 8 ascii values.
+       IRUN
+
+
+226    > 10 ascii values.
+       CITIME
+
+
+227    > 12 ascii values.
+       TTIME 10
+
+
+228    > 23 ascii values.
+       IRATE 7.6614 ul/min
+
+
+229    > 8 ascii values.
+       IRUN
+
+
+230    > 10 ascii values.
+       CITIME
+
+
+231    > 12 ascii values.
+       TTIME 10
+
+
+232    > 23 ascii values.
+       IRATE 7.6274 ul/min
+
+
+233    > 8 ascii values.
+       IRUN
+
+
+234    > 10 ascii values.
+       CITIME
+
+
+235    > 12 ascii values.
+       TTIME 10
+
+
+236    > 23 ascii values.
+       IRATE 7.5909 ul/min
+
+
+237    > 8 ascii values.
+       IRUN
+
+
+238    > 10 ascii values.
+       CITIME
+
+
+239    > 12 ascii values.
+       TTIME 10
+
+
+240    > 23 ascii values.
+       IRATE 7.5517 ul/min
+
+
+241    > 8 ascii values.
+       IRUN
+
+
+242    > 10 ascii values.
+       CITIME
+
+
+243    > 12 ascii values.
+       TTIME 10
+
+
+244    > 23 ascii values.
+       IRATE 7.5143 ul/min
+
+
+245    > 8 ascii values.
+       IRUN
+
+
+246    > 10 ascii values.
+       CITIME
+
+
+247    > 12 ascii values.
+       TTIME 10
+
+
+248    > 23 ascii values.
+       IRATE 7.4825 ul/min
+
+
+249    > 8 ascii values.
+       IRUN
+
+
+250    > 10 ascii values.
+       CITIME
+
+
+251    > 12 ascii values.
+       TTIME 10
+
+
+252    > 23 ascii values.
+       IRATE 7.4498 ul/min
+
+
+253    > 8 ascii values.
+       IRUN
+
+
+254    > 10 ascii values.
+       CITIME
+
+
+255    > 12 ascii values.
+       TTIME 10
+
+
+256    > 22 ascii values.
+       IRATE 7.415 ul/min
+
+
+257    > 8 ascii values.
+       IRUN
+
+
+258    > 10 ascii values.
+       CITIME
+
+
+259    > 12 ascii values.
+       TTIME 10
+
+
+260    > 23 ascii values.
+       IRATE 7.3781 ul/min
+
+
+261    > 8 ascii values.
+       IRUN
+
+
+262    > 10 ascii values.
+       CITIME
+
+
+263    > 12 ascii values.
+       TTIME 10
+
+
+264    > 23 ascii values.
+       IRATE 7.3409 ul/min
+
+
+265    > 8 ascii values.
+       IRUN
+
+
+266    > 10 ascii values.
+       CITIME
+
+
+267    > 12 ascii values.
+       TTIME 10
+
+
+268    > 23 ascii values.
+       IRATE 7.3094 ul/min
+
+
+269    > 8 ascii values.
+       IRUN
+
+
+270    > 10 ascii values.
+       CITIME
+
+
+271    > 12 ascii values.
+       TTIME 10
+
+
+272    > 23 ascii values.
+       IRATE 7.2781 ul/min
+
+
+273    > 8 ascii values.
+       IRUN
+
+
+274    > 10 ascii values.
+       CITIME
+
+
+275    > 12 ascii values.
+       TTIME 10
+
+
+276    > 23 ascii values.
+       IRATE 7.2451 ul/min
+
+
+277    > 8 ascii values.
+       IRUN
+
+
+278    > 10 ascii values.
+       CITIME
+
+
+279    > 12 ascii values.
+       TTIME 10
+
+
+280    > 23 ascii values.
+       IRATE 7.2106 ul/min
+
+
+281    > 8 ascii values.
+       IRUN
+
+
+282    > 10 ascii values.
+       CITIME
+
+
+283    > 12 ascii values.
+       TTIME 10
+
+
+284    > 23 ascii values.
+       IRATE 7.1743 ul/min
+
+
+285    > 8 ascii values.
+       IRUN
+
+
+286    > 10 ascii values.
+       CITIME
+
+
+287    > 12 ascii values.
+       TTIME 10
+
+
+288    > 23 ascii values.
+       IRATE 7.1419 ul/min
+
+
+289    > 8 ascii values.
+       IRUN
+
+
+290    > 10 ascii values.
+       CITIME
+
+
+291    > 12 ascii values.
+       TTIME 10
+
+
+292    > 23 ascii values.
+       IRATE 7.1119 ul/min
+
+
+293    > 8 ascii values.
+       IRUN
+
+
+294    > 10 ascii values.
+       CITIME
+
+
+295    > 12 ascii values.
+       TTIME 10
+
+
+296    > 23 ascii values.
+       IRATE 7.0809 ul/min
+
+
+297    > 8 ascii values.
+       IRUN
+
+
+298    > 10 ascii values.
+       CITIME
+
+
+299    > 12 ascii values.
+       TTIME 10
+
+
+300    > 23 ascii values.
+       IRATE 7.0485 ul/min
+
+
+301    > 8 ascii values.
+       IRUN
+
+
+302    > 10 ascii values.
+       CITIME
+
+
+303    > 12 ascii values.
+       TTIME 10
+
+
+304    > 23 ascii values.
+       IRATE 7.0148 ul/min
+
+
+305    > 8 ascii values.
+       IRUN
+
+
+306    > 10 ascii values.
+       CITIME
+
+
+307    > 12 ascii values.
+       TTIME 10
+
+
+308    > 23 ascii values.
+       IRATE 6.9806 ul/min
+
+
+309    > 8 ascii values.
+       IRUN
+
+
+310    > 10 ascii values.
+       CITIME
+
+
+311    > 12 ascii values.
+       TTIME 10
+
+
+312    > 23 ascii values.
+       IRATE 6.9508 ul/min
+
+
+313    > 8 ascii values.
+       IRUN
+
+
+314    > 10 ascii values.
+       CITIME
+
+
+315    > 12 ascii values.
+       TTIME 10
+
+
+316    > 23 ascii values.
+       IRATE 6.9216 ul/min
+
+
+317    > 8 ascii values.
+       IRUN
+
+
+318    > 10 ascii values.
+       CITIME
+
+
+319    > 12 ascii values.
+       TTIME 10
+
+
+320    > 23 ascii values.
+       IRATE 6.8914 ul/min
+
+
+321    > 8 ascii values.
+       IRUN
+
+
+322    > 10 ascii values.
+       CITIME
+
+
+323    > 12 ascii values.
+       TTIME 10
+
+
+324    > 23 ascii values.
+       IRATE 6.8601 ul/min
+
+
+325    > 8 ascii values.
+       IRUN
+
+
+326    > 10 ascii values.
+       CITIME
+
+
+327    > 12 ascii values.
+       TTIME 10
+
+
+328    > 23 ascii values.
+       IRATE 6.8278 ul/min
+
+
+329    > 8 ascii values.
+       IRUN
+
+
+330    > 10 ascii values.
+       CITIME
+
+
+331    > 12 ascii values.
+       TTIME 10
+
+
+332    > 23 ascii values.
+       IRATE 6.7955 ul/min
+
+
+333    > 8 ascii values.
+       IRUN
+
+
+334    > 10 ascii values.
+       CITIME
+
+
+335    > 12 ascii values.
+       TTIME 10
+
+
+336    > 22 ascii values.
+       IRATE 6.767 ul/min
+
+
+337    > 8 ascii values.
+       IRUN
+
+
+338    > 10 ascii values.
+       CITIME
+
+
+339    > 12 ascii values.
+       TTIME 10
+
+
+340    > 23 ascii values.
+       IRATE 6.7388 ul/min
+
+
+341    > 8 ascii values.
+       IRUN
+
+
+342    > 10 ascii values.
+       CITIME
+
+
+343    > 12 ascii values.
+       TTIME 10
+
+
+344    > 23 ascii values.
+       IRATE 6.7097 ul/min
+
+
+345    > 8 ascii values.
+       IRUN
+
+
+346    > 10 ascii values.
+       CITIME
+
+
+347    > 12 ascii values.
+       TTIME 10
+
+
+348    > 23 ascii values.
+       IRATE 6.6798 ul/min
+
+
+349    > 8 ascii values.
+       IRUN
+
+
+350    > 10 ascii values.
+       CITIME
+
+
+351    > 12 ascii values.
+       TTIME 10
+
+
+352    > 23 ascii values.
+       IRATE 6.6492 ul/min
+
+
+353    > 8 ascii values.
+       IRUN
+
+
+354    > 10 ascii values.
+       CITIME
+
+
+355    > 12 ascii values.
+       TTIME 10
+
+
+356    > 22 ascii values.
+       IRATE 6.618 ul/min
+
+
+357    > 8 ascii values.
+       IRUN
+
+
+358    > 10 ascii values.
+       CITIME
+
+
+359    > 12 ascii values.
+       TTIME 10
+
+
+360    > 23 ascii values.
+       IRATE 6.5901 ul/min
+
+
+361    > 8 ascii values.
+       IRUN
+
+
+362    > 10 ascii values.
+       CITIME
+
+
+363    > 12 ascii values.
+       TTIME 10
+
+
+364    > 23 ascii values.
+       IRATE 6.5631 ul/min
+
+
+365    > 8 ascii values.
+       IRUN
+
+
+366    > 10 ascii values.
+       CITIME
+
+
+367    > 12 ascii values.
+       TTIME 10
+
+
+368    > 23 ascii values.
+       IRATE 6.5354 ul/min
+
+
+369    > 8 ascii values.
+       IRUN
+
+
+370    > 10 ascii values.
+       CITIME
+
+
+371    > 12 ascii values.
+       TTIME 10
+
+
+372    > 22 ascii values.
+       IRATE 6.507 ul/min
+
+
+373    > 8 ascii values.
+       IRUN
+
+
+374    > 10 ascii values.
+       CITIME
+
+
+375    > 12 ascii values.
+       TTIME 10
+
+
+376    > 23 ascii values.
+       IRATE 6.4782 ul/min
+
+
+377    > 8 ascii values.
+       IRUN
+
+
+378    > 10 ascii values.
+       CITIME
+
+
+379    > 12 ascii values.
+       TTIME 10
+
+
+380    > 23 ascii values.
+       IRATE 6.4486 ul/min
+
+
+381    > 8 ascii values.
+       IRUN
+
+
+382    > 10 ascii values.
+       CITIME
+
+
+383    > 12 ascii values.
+       TTIME 10
+
+
+384    > 23 ascii values.
+       IRATE 6.4202 ul/min
+
+
+385    > 8 ascii values.
+       IRUN
+
+
+386    > 10 ascii values.
+       CITIME
+
+
+387    > 12 ascii values.
+       TTIME 10
+
+
+388    > 23 ascii values.
+       IRATE 6.3942 ul/min
+
+
+389    > 8 ascii values.
+       IRUN
+
+
+390    > 10 ascii values.
+       CITIME
+
+
+391    > 12 ascii values.
+       TTIME 10
+
+
+392    > 22 ascii values.
+       IRATE 6.368 ul/min
+
+
+393    > 8 ascii values.
+       IRUN
+
+
+394    > 10 ascii values.
+       CITIME
+
+
+395    > 12 ascii values.
+       TTIME 10
+
+
+396    > 23 ascii values.
+       IRATE 6.3413 ul/min
+
+
+397    > 8 ascii values.
+       IRUN
+
+
+398    > 10 ascii values.
+       CITIME
+
+
+399    > 12 ascii values.
+       TTIME 10
+
+
+400    > 23 ascii values.
+       IRATE 6.3141 ul/min
+
+
+401    > 8 ascii values.
+       IRUN
+
+
+402    > 10 ascii values.
+       CITIME
+
+
+403    > 12 ascii values.
+       TTIME 10
+
+
+404    > 23 ascii values.
+       IRATE 6.2866 ul/min
+
+
+405    > 8 ascii values.
+       IRUN
+
+
+406    > 10 ascii values.
+       CITIME
+
+
+407    > 12 ascii values.
+       TTIME 10
+
+
+408    > 23 ascii values.
+       IRATE 6.2586 ul/min
+
+
+409    > 8 ascii values.
+       IRUN
+
+
+410    > 10 ascii values.
+       CITIME
+
+
+411    > 12 ascii values.
+       TTIME 10
+
+
+412    > 23 ascii values.
+       IRATE 6.2318 ul/min
+
+
+413    > 8 ascii values.
+       IRUN
+
+
+414    > 10 ascii values.
+       CITIME
+
+
+415    > 12 ascii values.
+       TTIME 10
+
+
+416    > 23 ascii values.
+       IRATE 6.2069 ul/min
+
+
+417    > 8 ascii values.
+       IRUN
+
+
+418    > 10 ascii values.
+       CITIME
+
+
+419    > 12 ascii values.
+       TTIME 10
+
+
+420    > 23 ascii values.
+       IRATE 6.1819 ul/min
+
+
+421    > 8 ascii values.
+       IRUN
+
+
+422    > 10 ascii values.
+       CITIME
+
+
+423    > 12 ascii values.
+       TTIME 10
+
+
+424    > 23 ascii values.
+       IRATE 6.1564 ul/min
+
+
+425    > 8 ascii values.
+       IRUN
+
+
+426    > 10 ascii values.
+       CITIME
+
+
+427    > 12 ascii values.
+       TTIME 10
+
+
+428    > 23 ascii values.
+       IRATE 6.1307 ul/min
+
+
+429    > 8 ascii values.
+       IRUN
+
+
+430    > 10 ascii values.
+       CITIME
+
+
+431    > 12 ascii values.
+       TTIME 10
+
+
+432    > 23 ascii values.
+       IRATE 6.1047 ul/min
+
+
+433    > 8 ascii values.
+       IRUN
+
+
+434    > 10 ascii values.
+       CITIME
+
+
+435    > 12 ascii values.
+       TTIME 10
+
+
+436    > 23 ascii values.
+       IRATE 6.0784 ul/min
+
+
+437    > 8 ascii values.
+       IRUN
+
+
+438    > 10 ascii values.
+       CITIME
+
+
+439    > 12 ascii values.
+       TTIME 10
+
+
+440    > 23 ascii values.
+       IRATE 6.0522 ul/min
+
+
+441    > 8 ascii values.
+       IRUN
+
+
+442    > 10 ascii values.
+       CITIME
+
+
+443    > 12 ascii values.
+       TTIME 10
+
+
+444    > 23 ascii values.
+       IRATE 6.0281 ul/min
+
+
+445    > 8 ascii values.
+       IRUN
+
+
+446    > 10 ascii values.
+       CITIME
+
+
+447    > 12 ascii values.
+       TTIME 10
+
+
+448    > 23 ascii values.
+       IRATE 6.0044 ul/min
+
+
+449    > 8 ascii values.
+       IRUN
+
+
+450    > 10 ascii values.
+       CITIME
+
+
+451    > 12 ascii values.
+       TTIME 10
+
+
+452    > 23 ascii values.
+       IRATE 5.9803 ul/min
+
+
+453    > 8 ascii values.
+       IRUN
+
+
+454    > 10 ascii values.
+       CITIME
+
+
+455    > 12 ascii values.
+       TTIME 10
+
+
+456    > 23 ascii values.
+       IRATE 5.9561 ul/min
+
+
+457    > 8 ascii values.
+       IRUN
+
+
+458    > 10 ascii values.
+       CITIME
+
+
+459    > 12 ascii values.
+       TTIME 10
+
+
+460    > 23 ascii values.
+       IRATE 5.9316 ul/min
+
+
+461    > 8 ascii values.
+       IRUN
+
+
+462    > 10 ascii values.
+       CITIME
+
+
+463    > 12 ascii values.
+       TTIME 10
+
+
+464    > 23 ascii values.
+       IRATE 5.9071 ul/min
+
+
+465    > 8 ascii values.
+       IRUN
+
+
+466    > 10 ascii values.
+       CITIME
+
+
+467    > 12 ascii values.
+       TTIME 10
+
+
+468    > 23 ascii values.
+       IRATE 5.8823 ul/min
+
+
+469    > 8 ascii values.
+       IRUN
+
+
+470    > 10 ascii values.
+       CITIME
+
+
+471    > 12 ascii values.
+       TTIME 10
+
+
+472    > 23 ascii values.
+       IRATE 5.8577 ul/min
+
+
+473    > 8 ascii values.
+       IRUN
+
+
+474    > 10 ascii values.
+       CITIME
+
+
+475    > 12 ascii values.
+       TTIME 10
+
+
+476    > 23 ascii values.
+       IRATE 5.8349 ul/min
+
+
+477    > 8 ascii values.
+       IRUN
+
+
+478    > 10 ascii values.
+       CITIME
+
+
+479    > 12 ascii values.
+       TTIME 10
+
+
+480    > 23 ascii values.
+       IRATE 5.8123 ul/min
+
+
+481    > 8 ascii values.
+       IRUN
+
+
+482    > 10 ascii values.
+       CITIME
+
+
+483    > 12 ascii values.
+       TTIME 10
+
+
+484    > 23 ascii values.
+       IRATE 5.7896 ul/min
+
+
+485    > 8 ascii values.
+       IRUN
+
+
+486    > 10 ascii values.
+       CITIME
+
+
+487    > 12 ascii values.
+       TTIME 10
+
+
+488    > 23 ascii values.
+       IRATE 5.7666 ul/min
+
+
+489    > 8 ascii values.
+       IRUN
+
+
+490    > 10 ascii values.
+       CITIME
+
+
+491    > 12 ascii values.
+       TTIME 10
+
+
+492    > 23 ascii values.
+       IRATE 5.7436 ul/min
+
+
+493    > 8 ascii values.
+       IRUN
+
+
+494    > 10 ascii values.
+       CITIME
+
+
+495    > 12 ascii values.
+       TTIME 10
+
+
+496    > 23 ascii values.
+       IRATE 5.7205 ul/min
+
+
+497    > 8 ascii values.
+       IRUN
+
+
+498    > 10 ascii values.
+       CITIME
+
+
+499    > 12 ascii values.
+       TTIME 10
+
+
+500    > 23 ascii values.
+       IRATE 5.6975 ul/min
+
+
+501    > 8 ascii values.
+       IRUN
+
+
+502    > 10 ascii values.
+       CITIME
+
+
+503    > 12 ascii values.
+       TTIME 10
+
+
+504    > 23 ascii values.
+       IRATE 5.6741 ul/min
+
+
+505    > 8 ascii values.
+       IRUN
+
+
+506    > 10 ascii values.
+       CITIME
+
+
+507    > 12 ascii values.
+       TTIME 10
+
+
+508    > 23 ascii values.
+       IRATE 5.6517 ul/min
+
+
+509    > 8 ascii values.
+       IRUN
+
+
+510    > 10 ascii values.
+       CITIME
+
+
+511    > 12 ascii values.
+       TTIME 10
+
+
+512    > 23 ascii values.
+       IRATE 5.6304 ul/min
+
+
+513    > 8 ascii values.
+       IRUN
+
+
+514    > 10 ascii values.
+       CITIME
+
+
+515    > 12 ascii values.
+       TTIME 10
+
+
+516    > 22 ascii values.
+       IRATE 5.609 ul/min
+
+
+517    > 8 ascii values.
+       IRUN
+
+
+518    > 10 ascii values.
+       CITIME
+
+
+519    > 12 ascii values.
+       TTIME 10
+
+
+520    > 23 ascii values.
+       IRATE 5.5874 ul/min
+
+
+521    > 8 ascii values.
+       IRUN
+
+
+522    > 10 ascii values.
+       CITIME
+
+
+523    > 12 ascii values.
+       TTIME 10
+
+
+524    > 23 ascii values.
+       IRATE 5.5659 ul/min
+
+
+525    > 8 ascii values.
+       IRUN
+
+
+526    > 10 ascii values.
+       CITIME
+
+
+527    > 12 ascii values.
+       TTIME 10
+
+
+528    > 23 ascii values.
+       IRATE 5.5443 ul/min
+
+
+529    > 8 ascii values.
+       IRUN
+
+
+530    > 10 ascii values.
+       CITIME
+
+
+531    > 12 ascii values.
+       TTIME 10
+
+
+532    > 23 ascii values.
+       IRATE 5.5227 ul/min
+
+
+533    > 8 ascii values.
+       IRUN
+
+
+534    > 10 ascii values.
+       CITIME
+
+
+535    > 12 ascii values.
+       TTIME 10
+
+
+536    > 23 ascii values.
+       IRATE 5.5011 ul/min
+
+
+537    > 8 ascii values.
+       IRUN
+
+
+538    > 10 ascii values.
+       CITIME
+
+
+539    > 12 ascii values.
+       TTIME 10
+
+
+540    > 23 ascii values.
+       IRATE 5.4795 ul/min
+
+
+541    > 8 ascii values.
+       IRUN
+
+
+542    > 10 ascii values.
+       CITIME
+
+
+543    > 12 ascii values.
+       TTIME 10
+
+
+544    > 22 ascii values.
+       IRATE 5.458 ul/min
+
+
+545    > 8 ascii values.
+       IRUN
+
+
+546    > 10 ascii values.
+       CITIME
+
+
+547    > 12 ascii values.
+       TTIME 10
+
+
+548    > 23 ascii values.
+       IRATE 5.4377 ul/min
+
+
+549    > 8 ascii values.
+       IRUN
+
+
+550    > 10 ascii values.
+       CITIME
+
+
+551    > 12 ascii values.
+       TTIME 10
+
+
+552    > 23 ascii values.
+       IRATE 5.4177 ul/min
+
+
+553    > 8 ascii values.
+       IRUN
+
+
+554    > 10 ascii values.
+       CITIME
+
+
+555    > 12 ascii values.
+       TTIME 10
+
+
+556    > 23 ascii values.
+       IRATE 5.3975 ul/min
+
+
+557    > 8 ascii values.
+       IRUN
+
+
+558    > 10 ascii values.
+       CITIME
+
+
+559    > 12 ascii values.
+       TTIME 10
+
+
+560    > 23 ascii values.
+       IRATE 5.3774 ul/min
+
+
+561    > 8 ascii values.
+       IRUN
+
+
+562    > 10 ascii values.
+       CITIME
+
+
+563    > 12 ascii values.
+       TTIME 10
+
+
+564    > 23 ascii values.
+       IRATE 5.3572 ul/min
+
+
+565    > 8 ascii values.
+       IRUN
+
+
+566    > 10 ascii values.
+       CITIME
+
+
+567    > 12 ascii values.
+       TTIME 10
+
+
+568    > 23 ascii values.
+       IRATE 5.3371 ul/min
+
+
+569    > 8 ascii values.
+       IRUN
+
+
+570    > 10 ascii values.
+       CITIME
+
+
+571    > 12 ascii values.
+       TTIME 10
+
+
+572    > 22 ascii values.
+       IRATE 5.317 ul/min
+
+
+573    > 8 ascii values.
+       IRUN
+
+
+574    > 10 ascii values.
+       CITIME
+
+
+575    > 12 ascii values.
+       TTIME 10
+
+
+576    > 22 ascii values.
+       IRATE 5.297 ul/min
+
+
+577    > 8 ascii values.
+       IRUN
+
+
+578    > 10 ascii values.
+       CITIME
+
+
+579    > 12 ascii values.
+       TTIME 10
+
+
+580    > 22 ascii values.
+       IRATE 5.277 ul/min
+
+
+581    > 8 ascii values.
+       IRUN
+
+
+582    > 10 ascii values.
+       CITIME
+
+
+583    > 12 ascii values.
+       TTIME 10
+
+
+584    > 23 ascii values.
+       IRATE 5.2568 ul/min
+
+
+585    > 8 ascii values.
+       IRUN
+
+
+586    > 10 ascii values.
+       CITIME
+
+
+587    > 12 ascii values.
+       TTIME 10
+
+
+588    > 23 ascii values.
+       IRATE 5.2377 ul/min
+
+
+589    > 8 ascii values.
+       IRUN
+
+
+590    > 10 ascii values.
+       CITIME
+
+
+591    > 12 ascii values.
+       TTIME 10
+
+
+592    > 23 ascii values.
+       IRATE 5.2189 ul/min
+
+
+593    > 8 ascii values.
+       IRUN
+
+
+594    > 10 ascii values.
+       CITIME
+
+
+595    > 12 ascii values.
+       TTIME 10
+
+
+596    > 23 ascii values.
+       IRATE 5.2002 ul/min
+
+
+597    > 8 ascii values.
+       IRUN
+
+
+598    > 10 ascii values.
+       CITIME
+
+
+599    > 12 ascii values.
+       TTIME 10
+
+
+600    > 23 ascii values.
+       IRATE 5.1814 ul/min
+
+
+601    > 8 ascii values.
+       IRUN
+
+
+602    > 10 ascii values.
+       CITIME
+
+
+603    > 12 ascii values.
+       TTIME 10
+
+
+604    > 23 ascii values.
+       IRATE 5.1627 ul/min
+
+
+605    > 8 ascii values.
+       IRUN
+
+
+606    > 10 ascii values.
+       CITIME
+
+
+607    > 12 ascii values.
+       TTIME 10
+
+
+608    > 22 ascii values.
+       IRATE 5.144 ul/min
+
+
+609    > 8 ascii values.
+       IRUN
+
+
+610    > 10 ascii values.
+       CITIME
+
+
+611    > 12 ascii values.
+       TTIME 10
+
+
+612    > 23 ascii values.
+       IRATE 5.1254 ul/min
+
+
+613    > 8 ascii values.
+       IRUN
+
+
+614    > 10 ascii values.
+       CITIME
+
+
+615    > 12 ascii values.
+       TTIME 10
+
+
+616    > 23 ascii values.
+       IRATE 5.1069 ul/min
+
+
+617    > 8 ascii values.
+       IRUN
+
+
+618    > 10 ascii values.
+       CITIME
+
+
+619    > 12 ascii values.
+       TTIME 10
+
+
+620    > 23 ascii values.
+       IRATE 5.0884 ul/min
+
+
+621    > 8 ascii values.
+       IRUN
+
+
+622    > 10 ascii values.
+       CITIME
+
+
+623    > 12 ascii values.
+       TTIME 10
+
+
+624    > 21 ascii values.
+       IRATE 5.07 ul/min
+
+
+625    > 8 ascii values.
+       IRUN
+
+
+626    > 10 ascii values.
+       CITIME
+
+
+627    > 12 ascii values.
+       TTIME 10
+
+
+628    > 23 ascii values.
+       IRATE 5.0515 ul/min
+
+
+629    > 8 ascii values.
+       IRUN
+
+
+630    > 10 ascii values.
+       CITIME
+
+
+631    > 12 ascii values.
+       TTIME 10
+
+
+632    > 23 ascii values.
+       IRATE 5.0333 ul/min
+
+
+633    > 8 ascii values.
+       IRUN
+
+
+634    > 10 ascii values.
+       CITIME
+
+
+635    > 12 ascii values.
+       TTIME 10
+
+
+636    > 23 ascii values.
+       IRATE 5.0158 ul/min
+
+
+637    > 8 ascii values.
+       IRUN
+
+
+638    > 10 ascii values.
+       CITIME
+
+
+639    > 12 ascii values.
+       TTIME 10
+
+
+640    > 23 ascii values.
+       IRATE 4.9985 ul/min
+
+
+641    > 8 ascii values.
+       IRUN
+
+
+642    > 10 ascii values.
+       CITIME
+
+
+643    > 12 ascii values.
+       TTIME 10
+
+
+644    > 23 ascii values.
+       IRATE 4.9812 ul/min
+
+
+645    > 8 ascii values.
+       IRUN
+
+
+646    > 10 ascii values.
+       CITIME
+
+
+647    > 12 ascii values.
+       TTIME 10
+
+
+648    > 23 ascii values.
+       IRATE 4.9639 ul/min
+
+
+649    > 8 ascii values.
+       IRUN
+
+
+650    > 10 ascii values.
+       CITIME
+
+
+651    > 12 ascii values.
+       TTIME 10
+
+
+652    > 23 ascii values.
+       IRATE 4.9467 ul/min
+
+
+653    > 8 ascii values.
+       IRUN
+
+
+654    > 10 ascii values.
+       CITIME
+
+
+655    > 12 ascii values.
+       TTIME 10
+
+
+656    > 23 ascii values.
+       IRATE 4.9295 ul/min
+
+
+657    > 8 ascii values.
+       IRUN
+
+
+658    > 10 ascii values.
+       CITIME
+
+
+659    > 12 ascii values.
+       TTIME 10
+
+
+660    > 23 ascii values.
+       IRATE 4.9124 ul/min
+
+
+661    > 8 ascii values.
+       IRUN
+
+
+662    > 10 ascii values.
+       CITIME
+
+
+663    > 12 ascii values.
+       TTIME 10
+
+
+664    > 23 ascii values.
+       IRATE 4.8954 ul/min
+
+
+665    > 8 ascii values.
+       IRUN
+
+
+666    > 10 ascii values.
+       CITIME
+
+
+667    > 12 ascii values.
+       TTIME 10
+
+
+668    > 23 ascii values.
+       IRATE 4.8785 ul/min
+
+
+669    > 8 ascii values.
+       IRUN
+
+
+670    > 10 ascii values.
+       CITIME
+
+
+671    > 12 ascii values.
+       TTIME 10
+
+
+672    > 23 ascii values.
+       IRATE 4.8617 ul/min
+
+
+673    > 8 ascii values.
+       IRUN
+
+
+674    > 10 ascii values.
+       CITIME
+
+
+675    > 12 ascii values.
+       TTIME 10
+
+
+676    > 22 ascii values.
+       IRATE 4.845 ul/min
+
+
+677    > 8 ascii values.
+       IRUN
+
+
+678    > 10 ascii values.
+       CITIME
+
+
+679    > 12 ascii values.
+       TTIME 10
+
+
+680    > 23 ascii values.
+       IRATE 4.8282 ul/min
+
+
+681    > 8 ascii values.
+       IRUN
+
+
+682    > 10 ascii values.
+       CITIME
+
+
+683    > 12 ascii values.
+       TTIME 10
+
+
+684    > 23 ascii values.
+       IRATE 4.8115 ul/min
+
+
+685    > 8 ascii values.
+       IRUN
+
+
+686    > 10 ascii values.
+       CITIME
+
+
+687    > 12 ascii values.
+       TTIME 10
+
+
+688    > 23 ascii values.
+       IRATE 4.7955 ul/min
+
+
+689    > 8 ascii values.
+       IRUN
+
+
+690    > 10 ascii values.
+       CITIME
+
+
+691    > 12 ascii values.
+       TTIME 10
+
+
+692    > 23 ascii values.
+       IRATE 4.7796 ul/min
+
+
+693    > 8 ascii values.
+       IRUN
+
+
+694    > 10 ascii values.
+       CITIME
+
+
+695    > 12 ascii values.
+       TTIME 10
+
+
+696    > 23 ascii values.
+       IRATE 4.7638 ul/min
+
+
+697    > 8 ascii values.
+       IRUN
+
+
+698    > 10 ascii values.
+       CITIME
+
+
+699    > 12 ascii values.
+       TTIME 10
+
+
+700    > 22 ascii values.
+       IRATE 4.748 ul/min
+
+
+701    > 8 ascii values.
+       IRUN
+
+
+702    > 10 ascii values.
+       CITIME
+
+
+703    > 12 ascii values.
+       TTIME 10
+
+
+704    > 23 ascii values.
+       IRATE 4.7323 ul/min
+
+
+705    > 8 ascii values.
+       IRUN
+
+
+706    > 10 ascii values.
+       CITIME
+
+
+707    > 12 ascii values.
+       TTIME 10
+
+
+708    > 23 ascii values.
+       IRATE 4.7166 ul/min
+
+
+709    > 8 ascii values.
+       IRUN
+
+
+710    > 10 ascii values.
+       CITIME
+
+
+711    > 12 ascii values.
+       TTIME 10
+
+
+712    > 23 ascii values.
+       IRATE 4.7011 ul/min
+
+
+713    > 8 ascii values.
+       IRUN
+
+
+714    > 10 ascii values.
+       CITIME
+
+
+715    > 12 ascii values.
+       TTIME 10
+
+
+716    > 23 ascii values.
+       IRATE 4.6856 ul/min
+
+
+717    > 8 ascii values.
+       IRUN
+
+
+718    > 10 ascii values.
+       CITIME
+
+
+719    > 12 ascii values.
+       TTIME 10
+
+
+720    > 23 ascii values.
+       IRATE 4.6702 ul/min
+
+
+721    > 8 ascii values.
+       IRUN
+
+
+722    > 10 ascii values.
+       CITIME
+
+
+723    > 12 ascii values.
+       TTIME 10
+
+
+724    > 22 ascii values.
+       IRATE 4.655 ul/min
+
+
+725    > 8 ascii values.
+       IRUN
+
+
+726    > 10 ascii values.
+       CITIME
+
+
+727    > 12 ascii values.
+       TTIME 10
+
+
+728    > 23 ascii values.
+       IRATE 4.6397 ul/min
+
+
+729    > 8 ascii values.
+       IRUN
+
+
+730    > 10 ascii values.
+       CITIME
+
+
+731    > 12 ascii values.
+       TTIME 10
+
+
+732    > 23 ascii values.
+       IRATE 4.6246 ul/min
+
+
+733    > 8 ascii values.
+       IRUN
+
+
+734    > 10 ascii values.
+       CITIME
+
+
+735    > 12 ascii values.
+       TTIME 10
+
+
+736    > 23 ascii values.
+       IRATE 4.6096 ul/min
+
+
+737    > 8 ascii values.
+       IRUN
+
+
+738    > 10 ascii values.
+       CITIME
+
+
+739    > 12 ascii values.
+       TTIME 10
+
+
+740    > 23 ascii values.
+       IRATE 4.5945 ul/min
+
+
+741    > 8 ascii values.
+       IRUN
+
+
+742    > 10 ascii values.
+       CITIME
+
+
+743    > 12 ascii values.
+       TTIME 10
+
+
+744    > 23 ascii values.
+       IRATE 4.5795 ul/min
+
+
+745    > 8 ascii values.
+       IRUN
+
+
+746    > 10 ascii values.
+       CITIME
+
+
+747    > 12 ascii values.
+       TTIME 10
+
+
+748    > 23 ascii values.
+       IRATE 4.5651 ul/min
+
+
+749    > 8 ascii values.
+       IRUN
+
+
+750    > 10 ascii values.
+       CITIME
+
+
+751    > 12 ascii values.
+       TTIME 10
+
+
+752    > 23 ascii values.
+       IRATE 4.5507 ul/min
+
+
+753    > 8 ascii values.
+       IRUN
+
+
+754    > 10 ascii values.
+       CITIME
+
+
+755    > 12 ascii values.
+       TTIME 10
+
+
+756    > 23 ascii values.
+       IRATE 4.5364 ul/min
+
+
+757    > 8 ascii values.
+       IRUN
+
+
+758    > 10 ascii values.
+       CITIME
+
+
+759    > 12 ascii values.
+       TTIME 10
+
+
+760    > 23 ascii values.
+       IRATE 4.5222 ul/min
+
+
+761    > 8 ascii values.
+       IRUN
+
+
+762    > 10 ascii values.
+       CITIME
+
+
+763    > 12 ascii values.
+       TTIME 10
+
+
+764    > 23 ascii values.
+       IRATE 4.5081 ul/min
+
+
+765    > 8 ascii values.
+       IRUN
+
+
+766    > 10 ascii values.
+       CITIME
+
+
+767    > 12 ascii values.
+       TTIME 10
+
+
+768    > 22 ascii values.
+       IRATE 4.494 ul/min
+
+
+769    > 8 ascii values.
+       IRUN
+
+
+770    > 10 ascii values.
+       CITIME
+
+
+771    > 12 ascii values.
+       TTIME 10
+
+
+772    > 21 ascii values.
+       IRATE 4.48 ul/min
+
+
+773    > 8 ascii values.
+       IRUN
+
+
+774    > 10 ascii values.
+       CITIME
+
+
+775    > 12 ascii values.
+       TTIME 10
+
+
+776    > 23 ascii values.
+       IRATE 4.4661 ul/min
+
+
+777    > 8 ascii values.
+       IRUN
+
+
+778    > 10 ascii values.
+       CITIME
+
+
+779    > 12 ascii values.
+       TTIME 10
+
+
+780    > 23 ascii values.
+       IRATE 4.4523 ul/min
+
+
+781    > 8 ascii values.
+       IRUN
+
+
+782    > 10 ascii values.
+       CITIME
+
+
+783    > 12 ascii values.
+       TTIME 10
+
+
+784    > 23 ascii values.
+       IRATE 4.4386 ul/min
+
+
+785    > 8 ascii values.
+       IRUN
+
+
+786    > 10 ascii values.
+       CITIME
+
+
+787    > 12 ascii values.
+       TTIME 10
+
+
+788    > 23 ascii values.
+       IRATE 4.4249 ul/min
+
+
+789    > 8 ascii values.
+       IRUN
+
+
+790    > 10 ascii values.
+       CITIME
+
+
+791    > 12 ascii values.
+       TTIME 10
+
+
+792    > 23 ascii values.
+       IRATE 4.4114 ul/min
+
+
+793    > 8 ascii values.
+       IRUN
+
+
+794    > 10 ascii values.
+       CITIME
+
+
+795    > 12 ascii values.
+       TTIME 10
+
+
+796    > 23 ascii values.
+       IRATE 4.3979 ul/min
+
+
+797    > 8 ascii values.
+       IRUN
+
+
+798    > 10 ascii values.
+       CITIME
+
+
+799    > 12 ascii values.
+       TTIME 10
+
+
+800    > 23 ascii values.
+       IRATE 4.3845 ul/min
+
+
+801    > 8 ascii values.
+       IRUN
+
+
+802    > 10 ascii values.
+       CITIME
+
+
+803    > 12 ascii values.
+       TTIME 10
+
+
+804    > 23 ascii values.
+       IRATE 4.3712 ul/min
+
+
+805    > 8 ascii values.
+       IRUN
+
+
+806    > 10 ascii values.
+       CITIME
+
+
+807    > 12 ascii values.
+       TTIME 10
+
+
+808    > 22 ascii values.
+       IRATE 4.358 ul/min
+
+
+809    > 8 ascii values.
+       IRUN
+
+
+810    > 10 ascii values.
+       CITIME
+
+
+811    > 12 ascii values.
+       TTIME 10
+
+
+812    > 23 ascii values.
+       IRATE 4.3447 ul/min
+
+
+813    > 8 ascii values.
+       IRUN
+
+
+814    > 10 ascii values.
+       CITIME
+
+
+815    > 12 ascii values.
+       TTIME 10
+
+
+816    > 23 ascii values.
+       IRATE 4.3316 ul/min
+
+
+817    > 8 ascii values.
+       IRUN
+
+
+818    > 10 ascii values.
+       CITIME
+
+
+819    > 12 ascii values.
+       TTIME 10
+
+
+820    > 23 ascii values.
+       IRATE 4.3188 ul/min
+
+
+821    > 8 ascii values.
+       IRUN
+
+
+822    > 10 ascii values.
+       CITIME
+
+
+823    > 12 ascii values.
+       TTIME 10
+
+
+824    > 23 ascii values.
+       IRATE 4.3061 ul/min
+
+
+825    > 8 ascii values.
+       IRUN
+
+
+826    > 10 ascii values.
+       CITIME
+
+
+827    > 12 ascii values.
+       TTIME 10
+
+
+828    > 23 ascii values.
+       IRATE 4.2935 ul/min
+
+
+829    > 8 ascii values.
+       IRUN
+
+
+830    > 10 ascii values.
+       CITIME
+
+
+831    > 12 ascii values.
+       TTIME 10
+
+
+832    > 22 ascii values.
+       IRATE 4.281 ul/min
+
+
+833    > 8 ascii values.
+       IRUN
+
+
+834    > 10 ascii values.
+       CITIME
+
+
+835    > 12 ascii values.
+       TTIME 10
+
+
+836    > 23 ascii values.
+       IRATE 4.2685 ul/min
+
+
+837    > 8 ascii values.
+       IRUN
+
+
+838    > 10 ascii values.
+       CITIME
+
+
+839    > 12 ascii values.
+       TTIME 10
+
+
+840    > 23 ascii values.
+       IRATE 4.2561 ul/min
+
+
+841    > 8 ascii values.
+       IRUN
+
+
+842    > 10 ascii values.
+       CITIME
+
+
+843    > 12 ascii values.
+       TTIME 10
+
+
+844    > 23 ascii values.
+       IRATE 4.2438 ul/min
+
+
+845    > 8 ascii values.
+       IRUN
+
+
+846    > 10 ascii values.
+       CITIME
+
+
+847    > 12 ascii values.
+       TTIME 10
+
+
+848    > 23 ascii values.
+       IRATE 4.2315 ul/min
+
+
+849    > 8 ascii values.
+       IRUN
+
+
+850    > 10 ascii values.
+       CITIME
+
+
+851    > 12 ascii values.
+       TTIME 10
+
+
+852    > 23 ascii values.
+       IRATE 4.2194 ul/min
+
+
+853    > 8 ascii values.
+       IRUN
+
+
+854    > 10 ascii values.
+       CITIME
+
+
+855    > 12 ascii values.
+       TTIME 10
+
+
+856    > 23 ascii values.
+       IRATE 4.2073 ul/min
+
+
+857    > 8 ascii values.
+       IRUN
+
+
+858    > 10 ascii values.
+       CITIME
+
+
+859    > 12 ascii values.
+       TTIME 10
+
+
+860    > 23 ascii values.
+       IRATE 4.1953 ul/min
+
+
+861    > 8 ascii values.
+       IRUN
+
+
+862    > 10 ascii values.
+       CITIME
+
+
+863    > 12 ascii values.
+       TTIME 10
+
+
+864    > 23 ascii values.
+       IRATE 4.1834 ul/min
+
+
+865    > 8 ascii values.
+       IRUN
+
+
+866    > 10 ascii values.
+       CITIME
+
+
+867    > 12 ascii values.
+       TTIME 10
+
+
+868    > 23 ascii values.
+       IRATE 4.1715 ul/min
+
+
+869    > 8 ascii values.
+       IRUN
+
+
+870    > 10 ascii values.
+       CITIME
+
+
+871    > 12 ascii values.
+       TTIME 10
+
+
+872    > 23 ascii values.
+       IRATE 4.1597 ul/min
+
+
+873    > 8 ascii values.
+       IRUN
+
+
+874    > 10 ascii values.
+       CITIME
+
+
+875    > 12 ascii values.
+       TTIME 10
+
+
+876    > 22 ascii values.
+       IRATE 4.148 ul/min
+
+
+877    > 8 ascii values.
+       IRUN
+
+
+878    > 10 ascii values.
+       CITIME
+
+
+879    > 12 ascii values.
+       TTIME 10
+
+
+880    > 23 ascii values.
+       IRATE 4.1364 ul/min
+
+
+881    > 8 ascii values.
+       IRUN
+
+
+882    > 10 ascii values.
+       CITIME
+
+
+883    > 12 ascii values.
+       TTIME 10
+
+
+884    > 23 ascii values.
+       IRATE 4.1249 ul/min
+
+
+885    > 8 ascii values.
+       IRUN
+
+
+886    > 10 ascii values.
+       CITIME
+
+
+887    > 12 ascii values.
+       TTIME 10
+
+
+888    > 23 ascii values.
+       IRATE 4.1134 ul/min
+
+
+889    > 8 ascii values.
+       IRUN
+
+
+890    > 10 ascii values.
+       CITIME
+
+
+891    > 12 ascii values.
+       TTIME 10
+
+
+892    > 22 ascii values.
+       IRATE 4.102 ul/min
+
+
+893    > 8 ascii values.
+       IRUN
+
+
+894    > 10 ascii values.
+       CITIME
+
+
+895    > 12 ascii values.
+       TTIME 10
+
+
+896    > 23 ascii values.
+       IRATE 4.0907 ul/min
+
+
+897    > 8 ascii values.
+       IRUN
+
+
+898    > 10 ascii values.
+       CITIME
+
+
+899    > 12 ascii values.
+       TTIME 10
+
+
+900    > 23 ascii values.
+       IRATE 4.0793 ul/min
+
+
+901    > 8 ascii values.
+       IRUN
+
+
+902    > 10 ascii values.
+       CITIME
+
+
+903    > 12 ascii values.
+       TTIME 10
+
+
+904    > 23 ascii values.
+       IRATE 4.0682 ul/min
+
+
+905    > 8 ascii values.
+       IRUN
+
+
+906    > 10 ascii values.
+       CITIME
+
+
+907    > 12 ascii values.
+       TTIME 10
+
+
+908    > 23 ascii values.
+       IRATE 4.0572 ul/min
+
+
+909    > 8 ascii values.
+       IRUN
+
+
+910    > 10 ascii values.
+       CITIME
+
+
+911    > 12 ascii values.
+       TTIME 10
+
+
+912    > 23 ascii values.
+       IRATE 4.0463 ul/min
+
+
+913    > 8 ascii values.
+       IRUN
+
+
+914    > 10 ascii values.
+       CITIME
+
+
+915    > 12 ascii values.
+       TTIME 10
+
+
+916    > 23 ascii values.
+       IRATE 4.0355 ul/min
+
+
+917    > 8 ascii values.
+       IRUN
+
+
+918    > 10 ascii values.
+       CITIME
+
+
+919    > 12 ascii values.
+       TTIME 10
+
+
+920    > 23 ascii values.
+       IRATE 4.0247 ul/min
+
+
+921    > 8 ascii values.
+       IRUN
+
+
+922    > 10 ascii values.
+       CITIME
+
+
+923    > 12 ascii values.
+       TTIME 10
+
+
+924    > 22 ascii values.
+       IRATE 4.014 ul/min
+
+
+925    > 8 ascii values.
+       IRUN
+
+
+926    > 10 ascii values.
+       CITIME
+
+
+927    > 12 ascii values.
+       TTIME 10
+
+
+928    > 23 ascii values.
+       IRATE 4.0034 ul/min
+
+
+929    > 8 ascii values.
+       IRUN
+
+
+930    > 10 ascii values.
+       CITIME
+
+
+931    > 12 ascii values.
+       TTIME 10
+
+
+932    > 23 ascii values.
+       IRATE 3.9928 ul/min
+
+
+933    > 8 ascii values.
+       IRUN
+
+
+934    > 10 ascii values.
+       CITIME
+
+
+935    > 12 ascii values.
+       TTIME 10
+
+
+936    > 23 ascii values.
+       IRATE 3.9823 ul/min
+
+
+937    > 8 ascii values.
+       IRUN
+
+
+938    > 10 ascii values.
+       CITIME
+
+
+939    > 12 ascii values.
+       TTIME 10
+
+
+940    > 23 ascii values.
+       IRATE 3.9719 ul/min
+
+
+941    > 8 ascii values.
+       IRUN
+
+
+942    > 10 ascii values.
+       CITIME
+
+
+943    > 12 ascii values.
+       TTIME 10
+
+
+944    > 23 ascii values.
+       IRATE 3.9616 ul/min
+
+
+945    > 8 ascii values.
+       IRUN
+
+
+946    > 10 ascii values.
+       CITIME
+
+
+947    > 12 ascii values.
+       TTIME 10
+
+
+948    > 23 ascii values.
+       IRATE 3.9513 ul/min
+
+
+949    > 8 ascii values.
+       IRUN
+
+
+950    > 10 ascii values.
+       CITIME
+
+
+951    > 12 ascii values.
+       TTIME 10
+
+
+952    > 23 ascii values.
+       IRATE 3.9411 ul/min
+
+
+953    > 8 ascii values.
+       IRUN
+
+
+954    > 10 ascii values.
+       CITIME
+
+
+955    > 12 ascii values.
+       TTIME 10
+
+
+956    > 23 ascii values.
+       IRATE 3.9309 ul/min
+
+
+957    > 8 ascii values.
+       IRUN
+
+
+958    > 10 ascii values.
+       CITIME
+
+
+959    > 12 ascii values.
+       TTIME 10
+
+
+960    > 23 ascii values.
+       IRATE 3.9209 ul/min
+
+
+961    > 8 ascii values.
+       IRUN
+
+
+962    > 10 ascii values.
+       CITIME
+
+
+963    > 12 ascii values.
+       TTIME 10
+
+
+964    > 23 ascii values.
+       IRATE 3.9109 ul/min
+
+
+965    > 8 ascii values.
+       IRUN
+
+
+966    > 10 ascii values.
+       CITIME
+
+
+967    > 12 ascii values.
+       TTIME 10
+
+
+968    > 23 ascii values.
+       IRATE 3.9009 ul/min
+
+
+969    > 8 ascii values.
+       IRUN
+
+
+970    > 10 ascii values.
+       CITIME
+
+
+971    > 12 ascii values.
+       TTIME 10
+
+
+972    > 23 ascii values.
+       IRATE 3.8911 ul/min
+
+
+973    > 8 ascii values.
+       IRUN
+
+
+974    > 10 ascii values.
+       CITIME
+
+
+975    > 12 ascii values.
+       TTIME 10
+
+
+976    > 23 ascii values.
+       IRATE 3.8813 ul/min
+
+
+977    > 8 ascii values.
+       IRUN
+
+
+978    > 10 ascii values.
+       CITIME
+
+
+979    > 12 ascii values.
+       TTIME 10
+
+
+980    > 23 ascii values.
+       IRATE 3.8715 ul/min
+
+
+981    > 8 ascii values.
+       IRUN
+
+
+982    > 10 ascii values.
+       CITIME
+
+
+983    > 12 ascii values.
+       TTIME 10
+
+
+984    > 23 ascii values.
+       IRATE 3.8619 ul/min
+
+
+985    > 8 ascii values.
+       IRUN
+
+
+986    > 10 ascii values.
+       CITIME
+
+
+987    > 12 ascii values.
+       TTIME 10
+
+
+988    > 23 ascii values.
+       IRATE 3.8523 ul/min
+
+
+989    > 8 ascii values.
+       IRUN
+
+
+990    > 10 ascii values.
+       CITIME
+
+
+991    > 12 ascii values.
+       TTIME 10
+
+
+992    > 23 ascii values.
+       IRATE 3.8427 ul/min
+
+
+993    > 8 ascii values.
+       IRUN
+
+
+994    > 10 ascii values.
+       CITIME
+
+
+995    > 12 ascii values.
+       TTIME 10
+
+
+996    > 23 ascii values.
+       IRATE 3.8333 ul/min
+
+
+997    > 8 ascii values.
+       IRUN
+
+
+998    > 10 ascii values.
+       CITIME
+
+
+999    > 12 ascii values.
+       TTIME 10
+
+
+1000   > 23 ascii values.
+       IRATE 3.8238 ul/min
+
+
+1001   > 8 ascii values.
+       IRUN
+
+
+1002   > 10 ascii values.
+       CITIME
+
+
+1003   > 12 ascii values.
+       TTIME 10
+
+
+1004   > 23 ascii values.
+       IRATE 3.8145 ul/min
+
+
+1005   > 8 ascii values.
+       IRUN
+
+
+1006   > 10 ascii values.
+       CITIME
+
+
+1007   > 12 ascii values.
+       TTIME 10
+
+
+1008   > 23 ascii values.
+       IRATE 3.8052 ul/min
+
+
+1009   > 8 ascii values.
+       IRUN
+
+
+1010   > 10 ascii values.
+       CITIME
+
+
+1011   > 12 ascii values.
+       TTIME 10
+
+
+1012   > 23 ascii values.
+       IRATE 3.7959 ul/min
+
+
+1013   > 8 ascii values.
+       IRUN
+
+
+1014   > 10 ascii values.
+       CITIME
+
+
+1015   > 12 ascii values.
+       TTIME 10
+
+
+1016   > 23 ascii values.
+       IRATE 3.7868 ul/min
+
+
+1017   > 8 ascii values.
+       IRUN
+
+
+1018   > 10 ascii values.
+       CITIME
+
+
+1019   > 12 ascii values.
+       TTIME 10
+
+
+1020   > 23 ascii values.
+       IRATE 3.7778 ul/min
+
+
+1021   > 8 ascii values.
+       IRUN
+
+
+1022   > 10 ascii values.
+       CITIME
+
+
+1023   > 12 ascii values.
+       TTIME 10
+
+
+1024   > 23 ascii values.
+       IRATE 3.7688 ul/min
+
+
+1025   > 8 ascii values.
+       IRUN
+
+
+1026   > 10 ascii values.
+       CITIME
+
+
+1027   > 12 ascii values.
+       TTIME 10
+
+
+1028   > 23 ascii values.
+       IRATE 3.7599 ul/min
+
+
+1029   > 8 ascii values.
+       IRUN
+
+
+1030   > 10 ascii values.
+       CITIME
+
+
+1031   > 12 ascii values.
+       TTIME 10
+
+
+1032   > 22 ascii values.
+       IRATE 3.751 ul/min
+
+
+1033   > 8 ascii values.
+       IRUN
+
+
+1034   > 10 ascii values.
+       CITIME
+
+
+1035   > 12 ascii values.
+       TTIME 10
+
+
+1036   > 23 ascii values.
+       IRATE 3.7422 ul/min
+
+
+1037   > 8 ascii values.
+       IRUN
+
+
+1038   > 10 ascii values.
+       CITIME
+
+
+1039   > 12 ascii values.
+       TTIME 10
+
+
+1040   > 23 ascii values.
+       IRATE 3.7335 ul/min
+
+
+1041   > 8 ascii values.
+       IRUN
+
+
+1042   > 10 ascii values.
+       CITIME
+
+
+1043   > 12 ascii values.
+       TTIME 10
+
+
+1044   > 23 ascii values.
+       IRATE 3.7248 ul/min
+
+
+1045   > 8 ascii values.
+       IRUN
+
+
+1046   > 10 ascii values.
+       CITIME
+
+
+1047   > 12 ascii values.
+       TTIME 10
+
+
+1048   > 23 ascii values.
+       IRATE 3.7162 ul/min
+
+
+1049   > 8 ascii values.
+       IRUN
+
+
+1050   > 10 ascii values.
+       CITIME
+
+
+1051   > 12 ascii values.
+       TTIME 10
+
+
+1052   > 23 ascii values.
+       IRATE 3.7076 ul/min
+
+
+1053   > 8 ascii values.
+       IRUN
+
+
+1054   > 10 ascii values.
+       CITIME
+
+
+1055   > 12 ascii values.
+       TTIME 10
+
+
+1056   > 23 ascii values.
+       IRATE 3.6991 ul/min
+
+
+1057   > 8 ascii values.
+       IRUN
+
+
+1058   > 10 ascii values.
+       CITIME
+
+
+1059   > 12 ascii values.
+       TTIME 10
+
+
+1060   > 23 ascii values.
+       IRATE 3.6907 ul/min
+
+
+1061   > 8 ascii values.
+       IRUN
+
+
+1062   > 10 ascii values.
+       CITIME
+
+
+1063   > 12 ascii values.
+       TTIME 10
+
+
+1064   > 23 ascii values.
+       IRATE 3.6823 ul/min
+
+
+1065   > 8 ascii values.
+       IRUN
+
+
+1066   > 10 ascii values.
+       CITIME
+
+
+1067   > 12 ascii values.
+       TTIME 10
+
+
+1068   > 22 ascii values.
+       IRATE 3.674 ul/min
+
+
+1069   > 8 ascii values.
+       IRUN
+
+
+1070   > 10 ascii values.
+       CITIME
+
+
+1071   > 12 ascii values.
+       TTIME 10
+
+
+1072   > 23 ascii values.
+       IRATE 3.6657 ul/min
+
+
+1073   > 8 ascii values.
+       IRUN
+
+
+1074   > 10 ascii values.
+       CITIME
+
+
+1075   > 12 ascii values.
+       TTIME 10
+
+
+1076   > 23 ascii values.
+       IRATE 3.6575 ul/min
+
+
+1077   > 8 ascii values.
+       IRUN
+
+
+1078   > 10 ascii values.
+       CITIME
+
+
+1079   > 12 ascii values.
+       TTIME 10
+
+
+1080   > 23 ascii values.
+       IRATE 3.6493 ul/min
+
+
+1081   > 8 ascii values.
+       IRUN
+
+
+1082   > 10 ascii values.
+       CITIME
+
+
+1083   > 12 ascii values.
+       TTIME 10
+
+
+1084   > 23 ascii values.
+       IRATE 3.6412 ul/min
+
+
+1085   > 8 ascii values.
+       IRUN
+
+
+1086   > 10 ascii values.
+       CITIME
+
+
+1087   > 12 ascii values.
+       TTIME 10
+
+
+1088   > 23 ascii values.
+       IRATE 3.6332 ul/min
+
+
+1089   > 8 ascii values.
+       IRUN
+
+
+1090   > 10 ascii values.
+       CITIME
+
+
+1091   > 12 ascii values.
+       TTIME 10
+
+
+1092   > 23 ascii values.
+       IRATE 3.6252 ul/min
+
+
+1093   > 8 ascii values.
+       IRUN
+
+
+1094   > 10 ascii values.
+       CITIME
+
+
+1095   > 12 ascii values.
+       TTIME 10
+
+
+1096   > 23 ascii values.
+       IRATE 3.6173 ul/min
+
+
+1097   > 8 ascii values.
+       IRUN
+
+
+1098   > 10 ascii values.
+       CITIME
+
+
+1099   > 12 ascii values.
+       TTIME 10
+
+
+1100   > 23 ascii values.
+       IRATE 3.6094 ul/min
+
+
+1101   > 8 ascii values.
+       IRUN
+
+
+1102   > 10 ascii values.
+       CITIME
+
+
+1103   > 12 ascii values.
+       TTIME 10
+
+
+1104   > 23 ascii values.
+       IRATE 3.6016 ul/min
+
+
+1105   > 8 ascii values.
+       IRUN
+
+
+1106   > 10 ascii values.
+       CITIME
+
+
+1107   > 12 ascii values.
+       TTIME 10
+
+
+1108   > 23 ascii values.
+       IRATE 3.5938 ul/min
+
+
+1109   > 8 ascii values.
+       IRUN
+
+
+1110   > 10 ascii values.
+       CITIME
+
+
+1111   > 12 ascii values.
+       TTIME 10
+
+
+1112   > 23 ascii values.
+       IRATE 3.5861 ul/min
+
+
+1113   > 8 ascii values.
+       IRUN
+
+
+1114   > 10 ascii values.
+       CITIME
+
+
+1115   > 12 ascii values.
+       TTIME 10
+
+
+1116   > 23 ascii values.
+       IRATE 3.5784 ul/min
+
+
+1117   > 8 ascii values.
+       IRUN
+
+
+1118   > 10 ascii values.
+       CITIME
+
+
+1119   > 12 ascii values.
+       TTIME 10
+
+
+1120   > 23 ascii values.
+       IRATE 3.5708 ul/min
+
+
+1121   > 8 ascii values.
+       IRUN
+
+
+1122   > 10 ascii values.
+       CITIME
+
+
+1123   > 12 ascii values.
+       TTIME 10
+
+
+1124   > 23 ascii values.
+       IRATE 3.5633 ul/min
+
+
+1125   > 8 ascii values.
+       IRUN
+
+
+1126   > 10 ascii values.
+       CITIME
+
+
+1127   > 12 ascii values.
+       TTIME 10
+
+
+1128   > 23 ascii values.
+       IRATE 3.5558 ul/min
+
+
+1129   > 8 ascii values.
+       IRUN
+
+
+1130   > 10 ascii values.
+       CITIME
+
+
+1131   > 12 ascii values.
+       TTIME 10
+
+
+1132   > 23 ascii values.
+       IRATE 3.5483 ul/min
+
+
+1133   > 8 ascii values.
+       IRUN
+
+
+1134   > 10 ascii values.
+       CITIME
+
+
+1135   > 12 ascii values.
+       TTIME 10
+
+
+1136   > 23 ascii values.
+       IRATE 3.5409 ul/min
+
+
+1137   > 8 ascii values.
+       IRUN
+
+
+1138   > 10 ascii values.
+       CITIME
+
+
+1139   > 12 ascii values.
+       TTIME 10
+
+
+1140   > 23 ascii values.
+       IRATE 3.5336 ul/min
+
+
+1141   > 8 ascii values.
+       IRUN
+
+
+1142   > 10 ascii values.
+       CITIME
+
+
+1143   > 12 ascii values.
+       TTIME 10
+
+
+1144   > 23 ascii values.
+       IRATE 3.5263 ul/min
+
+
+1145   > 8 ascii values.
+       IRUN
+
+
+1146   > 10 ascii values.
+       CITIME
+
+
+1147   > 12 ascii values.
+       TTIME 10
+
+
+1148   > 22 ascii values.
+       IRATE 3.519 ul/min
+
+
+1149   > 8 ascii values.
+       IRUN
+
+
+1150   > 10 ascii values.
+       CITIME
+
+
+1151   > 12 ascii values.
+       TTIME 10
+
+
+1152   > 23 ascii values.
+       IRATE 3.5118 ul/min
+
+
+1153   > 8 ascii values.
+       IRUN
+
+
+1154   > 10 ascii values.
+       CITIME
+
+
+1155   > 12 ascii values.
+       TTIME 10
+
+
+1156   > 23 ascii values.
+       IRATE 3.5046 ul/min
+
+
+1157   > 8 ascii values.
+       IRUN
+
+
+1158   > 10 ascii values.
+       CITIME
+
+
+1159   > 12 ascii values.
+       TTIME 10
+
+
+1160   > 23 ascii values.
+       IRATE 3.4975 ul/min
+
+
+1161   > 8 ascii values.
+       IRUN
+
+
+1162   > 10 ascii values.
+       CITIME
+
+
+1163   > 12 ascii values.
+       TTIME 10
+
+
+1164   > 23 ascii values.
+       IRATE 3.4905 ul/min
+
+
+1165   > 8 ascii values.
+       IRUN
+
+
+1166   > 10 ascii values.
+       CITIME
+
+
+1167   > 12 ascii values.
+       TTIME 10
+
+
+1168   > 23 ascii values.
+       IRATE 3.4835 ul/min
+
+
+1169   > 8 ascii values.
+       IRUN
+
+
+1170   > 10 ascii values.
+       CITIME
+
+
+1171   > 12 ascii values.
+       TTIME 10
+
+
+1172   > 23 ascii values.
+       IRATE 3.4766 ul/min
+
+
+1173   > 8 ascii values.
+       IRUN
+
+
+1174   > 10 ascii values.
+       CITIME
+
+
+1175   > 12 ascii values.
+       TTIME 10
+
+
+1176   > 23 ascii values.
+       IRATE 3.4697 ul/min
+
+
+1177   > 8 ascii values.
+       IRUN
+
+
+1178   > 10 ascii values.
+       CITIME
+
+
+1179   > 12 ascii values.
+       TTIME 10
+
+
+1180   > 23 ascii values.
+       IRATE 3.4629 ul/min
+
+
+1181   > 8 ascii values.
+       IRUN
+
+
+1182   > 10 ascii values.
+       CITIME
+
+
+1183   > 12 ascii values.
+       TTIME 10
+
+
+1184   > 23 ascii values.
+       IRATE 3.4561 ul/min
+
+
+1185   > 8 ascii values.
+       IRUN
+
+
+1186   > 10 ascii values.
+       CITIME
+
+
+1187   > 12 ascii values.
+       TTIME 10
+
+
+1188   > 23 ascii values.
+       IRATE 3.4493 ul/min
+
+
+1189   > 8 ascii values.
+       IRUN
+
+
+1190   > 10 ascii values.
+       CITIME
+
+
+1191   > 12 ascii values.
+       TTIME 10
+
+
+1192   > 23 ascii values.
+       IRATE 3.4426 ul/min
+
+
+1193   > 8 ascii values.
+       IRUN
+
+
+1194   > 10 ascii values.
+       CITIME
+
+
+1195   > 12 ascii values.
+       TTIME 10
+
+
+1196   > 22 ascii values.
+       IRATE 3.436 ul/min
+
+
+1197   > 8 ascii values.
+       IRUN
+
+
+1198   > 10 ascii values.
+       CITIME
+
+
+1199   > 12 ascii values.
+       TTIME 10
+
+
+1200   > 23 ascii values.
+       IRATE 3.4294 ul/min
+
+
+1201   > 8 ascii values.
+       IRUN
+
+
+1202   > 10 ascii values.
+       CITIME
+
+
+1203   > 12 ascii values.
+       TTIME 10
+
+
+1204   > 23 ascii values.
+       IRATE 3.4228 ul/min
+
+
+1205   > 8 ascii values.
+       IRUN
+
+
+1206   > 10 ascii values.
+       CITIME
+
+
+1207   > 12 ascii values.
+       TTIME 10
+
+
+1208   > 23 ascii values.
+       IRATE 3.4163 ul/min
+
+
+1209   > 8 ascii values.
+       IRUN
+
+
+1210   > 10 ascii values.
+       CITIME
+
+
+1211   > 12 ascii values.
+       TTIME 10
+
+
+1212   > 23 ascii values.
+       IRATE 3.4099 ul/min
+
+
+1213   > 8 ascii values.
+       IRUN
+
+
+1214   > 10 ascii values.
+       CITIME
+
+
+1215   > 12 ascii values.
+       TTIME 10
+
+
+1216   > 23 ascii values.
+       IRATE 3.4034 ul/min
+
+
+1217   > 8 ascii values.
+       IRUN
+
+
+1218   > 10 ascii values.
+       CITIME
+
+
+1219   > 12 ascii values.
+       TTIME 10
+
+
+1220   > 23 ascii values.
+       IRATE 3.3971 ul/min
+
+
+1221   > 8 ascii values.
+       IRUN
+
+
+1222   > 10 ascii values.
+       CITIME
+
+
+1223   > 12 ascii values.
+       TTIME 10
+
+
+1224   > 23 ascii values.
+       IRATE 3.3907 ul/min
+
+
+1225   > 8 ascii values.
+       IRUN
+
+
+1226   > 10 ascii values.
+       CITIME
+
+
+1227   > 12 ascii values.
+       TTIME 10
+
+
+1228   > 23 ascii values.
+       IRATE 3.3845 ul/min
+
+
+1229   > 8 ascii values.
+       IRUN
+
+
+1230   > 10 ascii values.
+       CITIME
+
+
+1231   > 12 ascii values.
+       TTIME 10
+
+
+1232   > 23 ascii values.
+       IRATE 3.3782 ul/min
+
+
+1233   > 8 ascii values.
+       IRUN
+
+
+1234   > 10 ascii values.
+       CITIME
+
+
+1235   > 12 ascii values.
+       TTIME 10
+
+
+1236   > 22 ascii values.
+       IRATE 3.372 ul/min
+
+
+1237   > 8 ascii values.
+       IRUN
+
+
+1238   > 10 ascii values.
+       CITIME
+
+
+1239   > 12 ascii values.
+       TTIME 10
+
+
+1240   > 23 ascii values.
+       IRATE 3.3659 ul/min
+
+
+1241   > 8 ascii values.
+       IRUN
+
+
+1242   > 10 ascii values.
+       CITIME
+
+
+1243   > 12 ascii values.
+       TTIME 10
+
+
+1244   > 23 ascii values.
+       IRATE 3.3598 ul/min
+
+
+1245   > 8 ascii values.
+       IRUN
+
+
+1246   > 10 ascii values.
+       CITIME
+
+
+1247   > 12 ascii values.
+       TTIME 10
+
+
+1248   > 23 ascii values.
+       IRATE 3.3537 ul/min
+
+
+1249   > 8 ascii values.
+       IRUN
+
+
+1250   > 10 ascii values.
+       CITIME
+
+
+1251   > 12 ascii values.
+       TTIME 10
+
+
+1252   > 23 ascii values.
+       IRATE 3.3477 ul/min
+
+
+1253   > 8 ascii values.
+       IRUN
+
+
+1254   > 10 ascii values.
+       CITIME
+
+
+1255   > 12 ascii values.
+       TTIME 10
+
+
+1256   > 23 ascii values.
+       IRATE 3.3417 ul/min
+
+
+1257   > 8 ascii values.
+       IRUN
+
+
+1258   > 10 ascii values.
+       CITIME
+
+
+1259   > 12 ascii values.
+       TTIME 10
+
+
+1260   > 23 ascii values.
+       IRATE 3.3357 ul/min
+
+
+1261   > 8 ascii values.
+       IRUN
+
+
+1262   > 10 ascii values.
+       CITIME
+
+
+1263   > 12 ascii values.
+       TTIME 10
+
+
+1264   > 23 ascii values.
+       IRATE 3.3298 ul/min
+
+
+1265   > 8 ascii values.
+       IRUN
+
+
+1266   > 10 ascii values.
+       CITIME
+
+
+1267   > 12 ascii values.
+       TTIME 10
+
+
+1268   > 22 ascii values.
+       IRATE 3.324 ul/min
+
+
+1269   > 8 ascii values.
+       IRUN
+
+
+1270   > 10 ascii values.
+       CITIME
+
+
+1271   > 12 ascii values.
+       TTIME 10
+
+
+1272   > 23 ascii values.
+       IRATE 3.3182 ul/min
+
+
+1273   > 8 ascii values.
+       IRUN
+
+
+1274   > 10 ascii values.
+       CITIME
+
+
+1275   > 12 ascii values.
+       TTIME 10
+
+
+1276   > 23 ascii values.
+       IRATE 3.3124 ul/min
+
+
+1277   > 8 ascii values.
+       IRUN
+
+
+1278   > 10 ascii values.
+       CITIME
+
+
+1279   > 12 ascii values.
+       TTIME 10
+
+
+1280   > 23 ascii values.
+       IRATE 3.3066 ul/min
+
+
+1281   > 8 ascii values.
+       IRUN
+
+
+1282   > 10 ascii values.
+       CITIME
+
+
+1283   > 12 ascii values.
+       TTIME 10
+
+
+1284   > 22 ascii values.
+       IRATE 3.301 ul/min
+
+
+1285   > 8 ascii values.
+       IRUN
+
+
+1286   > 10 ascii values.
+       CITIME
+
+
+1287   > 12 ascii values.
+       TTIME 10
+
+
+1288   > 23 ascii values.
+       IRATE 3.2953 ul/min
+
+
+1289   > 8 ascii values.
+       IRUN
+
+
+1290   > 10 ascii values.
+       CITIME
+
+
+1291   > 12 ascii values.
+       TTIME 10
+
+
+1292   > 23 ascii values.
+       IRATE 3.2897 ul/min
+
+
+1293   > 8 ascii values.
+       IRUN
+
+
+1294   > 10 ascii values.
+       CITIME
+
+
+1295   > 12 ascii values.
+       TTIME 10
+
+
+1296   > 23 ascii values.
+       IRATE 3.2841 ul/min
+
+
+1297   > 8 ascii values.
+       IRUN
+
+
+1298   > 10 ascii values.
+       CITIME
+
+
+1299   > 12 ascii values.
+       TTIME 10
+
+
+1300   > 23 ascii values.
+       IRATE 3.2786 ul/min
+
+
+1301   > 8 ascii values.
+       IRUN
+
+
+1302   > 10 ascii values.
+       CITIME
+
+
+1303   > 12 ascii values.
+       TTIME 10
+
+
+1304   > 23 ascii values.
+       IRATE 3.2731 ul/min
+
+
+1305   > 8 ascii values.
+       IRUN
+
+
+1306   > 10 ascii values.
+       CITIME
+
+
+1307   > 12 ascii values.
+       TTIME 10
+
+
+1308   > 23 ascii values.
+       IRATE 3.2676 ul/min
+
+
+1309   > 8 ascii values.
+       IRUN
+
+
+1310   > 10 ascii values.
+       CITIME
+
+
+1311   > 12 ascii values.
+       TTIME 10
+
+
+1312   > 23 ascii values.
+       IRATE 3.2622 ul/min
+
+
+1313   > 8 ascii values.
+       IRUN
+
+
+1314   > 10 ascii values.
+       CITIME
+
+
+1315   > 12 ascii values.
+       TTIME 10
+
+
+1316   > 23 ascii values.
+       IRATE 3.2568 ul/min
+
+
+1317   > 8 ascii values.
+       IRUN
+
+
+1318   > 10 ascii values.
+       CITIME
+
+
+1319   > 12 ascii values.
+       TTIME 10
+
+
+1320   > 23 ascii values.
+       IRATE 3.2514 ul/min
+
+
+1321   > 8 ascii values.
+       IRUN
+
+
+1322   > 10 ascii values.
+       CITIME
+
+
+1323   > 12 ascii values.
+       TTIME 10
+
+
+1324   > 23 ascii values.
+       IRATE 3.2461 ul/min
+
+
+1325   > 8 ascii values.
+       IRUN
+
+
+1326   > 10 ascii values.
+       CITIME
+
+
+1327   > 12 ascii values.
+       TTIME 10
+
+
+1328   > 23 ascii values.
+       IRATE 3.2408 ul/min
+
+
+1329   > 8 ascii values.
+       IRUN
+
+
+1330   > 10 ascii values.
+       CITIME
+
+
+1331   > 12 ascii values.
+       TTIME 10
+
+
+1332   > 23 ascii values.
+       IRATE 3.2356 ul/min
+
+
+1333   > 8 ascii values.
+       IRUN
+
+
+1334   > 10 ascii values.
+       CITIME
+
+
+1335   > 12 ascii values.
+       TTIME 10
+
+
+1336   > 23 ascii values.
+       IRATE 3.2304 ul/min
+
+
+1337   > 8 ascii values.
+       IRUN
+
+
+1338   > 10 ascii values.
+       CITIME
+
+
+1339   > 12 ascii values.
+       TTIME 10
+
+
+1340   > 23 ascii values.
+       IRATE 3.2252 ul/min
+
+
+1341   > 8 ascii values.
+       IRUN
+
+
+1342   > 10 ascii values.
+       CITIME
+
+
+1343   > 12 ascii values.
+       TTIME 10
+
+
+1344   > 23 ascii values.
+       IRATE 3.2201 ul/min
+
+
+1345   > 8 ascii values.
+       IRUN
+
+
+1346   > 10 ascii values.
+       CITIME
+
+
+1347   > 12 ascii values.
+       TTIME 10
+
+
+1348   > 22 ascii values.
+       IRATE 3.215 ul/min
+
+
+1349   > 8 ascii values.
+       IRUN
+
+
+1350   > 10 ascii values.
+       CITIME
+
+
+1351   > 12 ascii values.
+       TTIME 10
+
+
+1352   > 23 ascii values.
+       IRATE 3.2099 ul/min
+
+
+1353   > 8 ascii values.
+       IRUN
+
+
+1354   > 10 ascii values.
+       CITIME
+
+
+1355   > 12 ascii values.
+       TTIME 10
+
+
+1356   > 23 ascii values.
+       IRATE 3.2049 ul/min
+
+
+1357   > 8 ascii values.
+       IRUN
+
+
+1358   > 10 ascii values.
+       CITIME
+
+
+1359   > 12 ascii values.
+       TTIME 10
+
+
+1360   > 23 ascii values.
+       IRATE 3.1999 ul/min
+
+
+1361   > 8 ascii values.
+       IRUN
+
+
+1362   > 10 ascii values.
+       CITIME
+
+
+1363   > 12 ascii values.
+       TTIME 10
+
+
+1364   > 23 ascii values.
+       IRATE 3.1949 ul/min
+
+
+1365   > 8 ascii values.
+       IRUN
+
+
+1366   > 10 ascii values.
+       CITIME
+
+
+1367   > 12 ascii values.
+       TTIME 10
+
+
+1368   > 21 ascii values.
+       IRATE 3.19 ul/min
+
+
+1369   > 8 ascii values.
+       IRUN
+
+
+1370   > 10 ascii values.
+       CITIME
+
+
+1371   > 12 ascii values.
+       TTIME 10
+
+
+1372   > 23 ascii values.
+       IRATE 3.1851 ul/min
+
+
+1373   > 8 ascii values.
+       IRUN
+
+
+1374   > 10 ascii values.
+       CITIME
+
+
+1375   > 12 ascii values.
+       TTIME 10
+
+
+1376   > 23 ascii values.
+       IRATE 3.1803 ul/min
+
+
+1377   > 8 ascii values.
+       IRUN
+
+
+1378   > 10 ascii values.
+       CITIME
+
+
+1379   > 12 ascii values.
+       TTIME 10
+
+
+1380   > 23 ascii values.
+       IRATE 3.1755 ul/min
+
+
+1381   > 8 ascii values.
+       IRUN
+
+
+1382   > 10 ascii values.
+       CITIME
+
+
+1383   > 12 ascii values.
+       TTIME 10
+
+
+1384   > 23 ascii values.
+       IRATE 3.1707 ul/min
+
+
+1385   > 8 ascii values.
+       IRUN
+
+
+1386   > 10 ascii values.
+       CITIME
+
+
+1387   > 12 ascii values.
+       TTIME 10
+
+
+1388   > 23 ascii values.
+       IRATE 3.1659 ul/min
+
+
+1389   > 8 ascii values.
+       IRUN
+
+
+1390   > 10 ascii values.
+       CITIME
+
+
+1391   > 12 ascii values.
+       TTIME 10
+
+
+1392   > 23 ascii values.
+       IRATE 3.1612 ul/min
+
+
+1393   > 8 ascii values.
+       IRUN
+
+
+1394   > 10 ascii values.
+       CITIME
+
+
+1395   > 12 ascii values.
+       TTIME 10
+
+
+1396   > 23 ascii values.
+       IRATE 3.1565 ul/min
+
+
+1397   > 8 ascii values.
+       IRUN
+
+
+1398   > 10 ascii values.
+       CITIME
+
+
+1399   > 12 ascii values.
+       TTIME 10
+
+
+1400   > 23 ascii values.
+       IRATE 3.1519 ul/min
+
+
+1401   > 8 ascii values.
+       IRUN
+
+
+1402   > 10 ascii values.
+       CITIME
+
+
+1403   > 12 ascii values.
+       TTIME 10
+
+
+1404   > 23 ascii values.
+       IRATE 3.1473 ul/min
+
+
+1405   > 8 ascii values.
+       IRUN
+
+
+1406   > 10 ascii values.
+       CITIME
+
+
+1407   > 12 ascii values.
+       TTIME 10
+
+
+1408   > 23 ascii values.
+       IRATE 3.1427 ul/min
+
+
+1409   > 8 ascii values.
+       IRUN
+
+
+1410   > 10 ascii values.
+       CITIME
+
+
+1411   > 12 ascii values.
+       TTIME 10
+
+
+1412   > 23 ascii values.
+       IRATE 3.1382 ul/min
+
+
+1413   > 8 ascii values.
+       IRUN
+
+
+1414   > 10 ascii values.
+       CITIME
+
+
+1415   > 12 ascii values.
+       TTIME 10
+
+
+1416   > 23 ascii values.
+       IRATE 3.1336 ul/min
+
+
+1417   > 8 ascii values.
+       IRUN
+
+
+1418   > 10 ascii values.
+       CITIME
+
+
+1419   > 12 ascii values.
+       TTIME 10
+
+
+1420   > 23 ascii values.
+       IRATE 3.1292 ul/min
+
+
+1421   > 8 ascii values.
+       IRUN
+
+
+1422   > 10 ascii values.
+       CITIME
+
+
+1423   > 12 ascii values.
+       TTIME 10
+
+
+1424   > 23 ascii values.
+       IRATE 3.1247 ul/min
+
+
+1425   > 8 ascii values.
+       IRUN
+
+
+1426   > 10 ascii values.
+       CITIME
+
+
+1427   > 12 ascii values.
+       TTIME 10
+
+
+1428   > 23 ascii values.
+       IRATE 3.1203 ul/min
+
+
+1429   > 8 ascii values.
+       IRUN
+
+
+1430   > 10 ascii values.
+       CITIME
+
+
+1431   > 12 ascii values.
+       TTIME 10
+
+
+1432   > 23 ascii values.
+       IRATE 3.1159 ul/min
+
+
+1433   > 8 ascii values.
+       IRUN
+
+
+1434   > 10 ascii values.
+       CITIME
+
+
+1435   > 12 ascii values.
+       TTIME 10
+
+
+1436   > 25 ascii values.
+       IRATE 298.4451 ul/min
+
+
+1437   > 8 ascii values.
+       IRUN
+
+
+1438   > 10 ascii values.
+       CITIME
+
+
+1439   > 12 ascii values.
+       TTIME 10
+
+
+1440   > 23 ascii values.
+       IRATE 4.0788 ul/min
+
+
+1441   > 8 ascii values.
+       IRUN
+
+
+1442   > 10 ascii values.
+       CITIME
+
+
+1443   > 12 ascii values.
+       TTIME 10
+
+
+1444   > 18 ascii values.
+       IRATE 0 ul/min
+
+
+1445   > 8 ascii values.
+       IRUN
+
+
+1446   > 10 ascii values.
+       CITIME
+
+
+1447   > 12 ascii values.
+       TTIME 10
+
+
+1448   > 18 ascii values.
+       IRATE 0 ul/min
+
+
+1449   > 8 ascii values.
+       IRUN
+
+
+1450   > 10 ascii values.
+       CITIME
+
+
+1451   > 12 ascii values.
+       TTIME 10
+
+
+1452   > 23 ascii values.
+       IRATE 3.3598 ul/min
+
+
+1453   > 8 ascii values.
+       IRUN
+
+
+1454   > 10 ascii values.
+       CITIME
+
+
+1455   > 12 ascii values.
+       TTIME 10
+
+
+1456   > 23 ascii values.
+       IRATE 8.9145 ul/min
+
+
+1457   > 8 ascii values.
+       IRUN
+
+
+1458   > 10 ascii values.
+       CITIME
+
+
+1459   > 12 ascii values.
+       TTIME 10
+
+
+1460   > 24 ascii values.
+       IRATE 10.4186 ul/min
+
+
+1461   > 8 ascii values.
+       IRUN
+
+
+1462   > 10 ascii values.
+       CITIME
+
+
+1463   > 12 ascii values.
+       TTIME 10
+
+
+1464   > 24 ascii values.
+       IRATE 10.5715 ul/min
+
+
+1465   > 8 ascii values.
+       IRUN
+
+
+1466   > 10 ascii values.
+       CITIME
+
+
+1467   > 12 ascii values.
+       TTIME 10
+
+
+1468   > 24 ascii values.
+       IRATE 10.4626 ul/min
+
+
+1469   > 8 ascii values.
+       IRUN
+
+
+1470   > 10 ascii values.
+       CITIME
+
+
+1471   > 12 ascii values.
+       TTIME 10
+
+
+1472   > 23 ascii values.
+       IRATE 10.359 ul/min
+
+
+1473   > 8 ascii values.
+       IRUN
+
+
+1474   > 10 ascii values.
+       CITIME
+
+
+1475   > 12 ascii values.
+       TTIME 10
+
+
+1476   > 24 ascii values.
+       IRATE 10.2973 ul/min
+
+
+1477   > 8 ascii values.
+       IRUN
+
+
+1478   > 10 ascii values.
+       CITIME
+
+
+1479   > 12 ascii values.
+       TTIME 10
+
+
+1480   > 23 ascii values.
+       IRATE 10.247 ul/min
+
+
+1481   > 8 ascii values.
+       IRUN
+
+
+1482   > 10 ascii values.
+       CITIME
+
+
+1483   > 12 ascii values.
+       TTIME 10
+
+
+1484   > 24 ascii values.
+       IRATE 10.2068 ul/min
+
+
+1485   > 8 ascii values.
+       IRUN
+
+
+1486   > 10 ascii values.
+       CITIME
+
+
+1487   > 12 ascii values.
+       TTIME 10
+
+
+1488   > 24 ascii values.
+       IRATE 10.1687 ul/min
+
+
+1489   > 8 ascii values.
+       IRUN
+
+
+1490   > 10 ascii values.
+       CITIME
+
+
+1491   > 12 ascii values.
+       TTIME 10
+
+
+1492   > 23 ascii values.
+       IRATE 10.128 ul/min
+
+
+1493   > 8 ascii values.
+       IRUN
+
+
+1494   > 10 ascii values.
+       CITIME
+
+
+1495   > 12 ascii values.
+       TTIME 10
+
+
+1496   > 24 ascii values.
+       IRATE 10.0825 ul/min
+
+
+1497   > 8 ascii values.
+       IRUN
+
+
+1498   > 10 ascii values.
+       CITIME
+
+
+1499   > 12 ascii values.
+       TTIME 10
+
+
+1500   > 24 ascii values.
+       IRATE 10.0466 ul/min
+
+
+1501   > 8 ascii values.
+       IRUN
+
+
+1502   > 10 ascii values.
+       CITIME
+
+
+1503   > 12 ascii values.
+       TTIME 10
+
+
+1504   > 24 ascii values.
+       IRATE 10.0097 ul/min
+
+
+1505   > 8 ascii values.
+       IRUN
+
+
+1506   > 10 ascii values.
+       CITIME
+
+
+1507   > 12 ascii values.
+       TTIME 10
+
+
+1508   > 22 ascii values.
+       IRATE 9.965 ul/min
+
+
+1509   > 8 ascii values.
+       IRUN
+
+
+1510   > 10 ascii values.
+       CITIME
+
+
+1511   > 12 ascii values.
+       TTIME 10
+
+
+1512   > 22 ascii values.
+       IRATE 9.924 ul/min
+
+
+1513   > 8 ascii values.
+       IRUN
+
+
+1514   > 10 ascii values.
+       CITIME
+
+
+1515   > 12 ascii values.
+       TTIME 10
+
+
+1516   > 23 ascii values.
+       IRATE 9.8912 ul/min
+
+
+1517   > 8 ascii values.
+       IRUN
+
+
+1518   > 10 ascii values.
+       CITIME
+
+
+1519   > 12 ascii values.
+       TTIME 10
+
+
+1520   > 23 ascii values.
+       IRATE 9.8534 ul/min
+
+
+1521   > 8 ascii values.
+       IRUN
+
+
+1522   > 10 ascii values.
+       CITIME
+
+
+1523   > 12 ascii values.
+       TTIME 10
+
+
+1524   > 23 ascii values.
+       IRATE 9.8082 ul/min
+
+
+1525   > 8 ascii values.
+       IRUN
+
+
+1526   > 10 ascii values.
+       CITIME
+
+
+1527   > 12 ascii values.
+       TTIME 10
+
+
+1528   > 23 ascii values.
+       IRATE 9.7707 ul/min
+
+
+1529   > 8 ascii values.
+       IRUN
+
+
+1530   > 10 ascii values.
+       CITIME
+
+
+1531   > 12 ascii values.
+       TTIME 10
+
+
+1532   > 23 ascii values.
+       IRATE 9.7389 ul/min
+
+
+1533   > 8 ascii values.
+       IRUN
+
+
+1534   > 10 ascii values.
+       CITIME
+
+
+1535   > 12 ascii values.
+       TTIME 10
+
+
+1536   > 22 ascii values.
+       IRATE 9.702 ul/min
+
+
+1537   > 8 ascii values.
+       IRUN
+
+
+1538   > 10 ascii values.
+       CITIME
+
+
+1539   > 12 ascii values.
+       TTIME 10
+
+
+1540   > 23 ascii values.
+       IRATE 9.6582 ul/min
+
+
+1541   > 8 ascii values.
+       IRUN
+
+
+1542   > 10 ascii values.
+       CITIME
+
+
+1543   > 12 ascii values.
+       TTIME 10
+
+
+1544   > 23 ascii values.
+       IRATE 9.6198 ul/min
+
+
+1545   > 8 ascii values.
+       IRUN
+
+
+1546   > 10 ascii values.
+       CITIME
+
+
+1547   > 12 ascii values.
+       TTIME 10
+
+
+1548   > 23 ascii values.
+       IRATE 9.5893 ul/min
+
+
+1549   > 8 ascii values.
+       IRUN
+
+
+1550   > 10 ascii values.
+       CITIME
+
+
+1551   > 12 ascii values.
+       TTIME 10
+
+
+1552   > 23 ascii values.
+       IRATE 9.5551 ul/min
+
+
+1553   > 8 ascii values.
+       IRUN
+
+
+1554   > 10 ascii values.
+       CITIME
+
+
+1555   > 12 ascii values.
+       TTIME 10
+
+
+1556   > 23 ascii values.
+       IRATE 9.5152 ul/min
+
+
+1557   > 8 ascii values.
+       IRUN
+
+
+1558   > 10 ascii values.
+       CITIME
+
+
+1559   > 12 ascii values.
+       TTIME 10
+
+
+1560   > 22 ascii values.
+       IRATE 9.473 ul/min
+
+
+1561   > 8 ascii values.
+       IRUN
+
+
+1562   > 10 ascii values.
+       CITIME
+
+
+1563   > 12 ascii values.
+       TTIME 10
+
+
+1564   > 23 ascii values.
+       IRATE 9.4417 ul/min
+
+
+1565   > 8 ascii values.
+       IRUN
+
+
+1566   > 10 ascii values.
+       CITIME
+
+
+1567   > 12 ascii values.
+       TTIME 10
+
+
+1568   > 23 ascii values.
+       IRATE 9.4104 ul/min
+
+
+1569   > 8 ascii values.
+       IRUN
+
+
+1570   > 10 ascii values.
+       CITIME
+
+
+1571   > 12 ascii values.
+       TTIME 10
+
+
+1572   > 23 ascii values.
+       IRATE 9.3747 ul/min
+
+
+1573   > 8 ascii values.
+       IRUN
+
+
+1574   > 10 ascii values.
+       CITIME
+
+
+1575   > 12 ascii values.
+       TTIME 10
+
+
+1576   > 22 ascii values.
+       IRATE 9.334 ul/min
+
+
+1577   > 8 ascii values.
+       IRUN
+
+
+1578   > 10 ascii values.
+       CITIME
+
+
+1579   > 12 ascii values.
+       TTIME 10
+
+
+1580   > 23 ascii values.
+       IRATE 9.2981 ul/min
+
+
+1581   > 8 ascii values.
+       IRUN
+
+
+1582   > 10 ascii values.
+       CITIME
+
+
+1583   > 12 ascii values.
+       TTIME 10
+
+
+1584   > 23 ascii values.
+       IRATE 9.2685 ul/min
+
+
+1585   > 8 ascii values.
+       IRUN
+
+
+1586   > 10 ascii values.
+       CITIME
+
+
+1587   > 12 ascii values.
+       TTIME 10
+
+
+1588   > 23 ascii values.
+       IRATE 9.2363 ul/min
+
+
+1589   > 8 ascii values.
+       IRUN
+
+
+1590   > 10 ascii values.
+       CITIME
+
+
+1591   > 12 ascii values.
+       TTIME 10
+
+
+1592   > 20 ascii values.
+       IRATE 9.2 ul/min
+
+
+1593   > 8 ascii values.
+       IRUN
+
+
+1594   > 10 ascii values.
+       CITIME
+
+
+1595   > 12 ascii values.
+       TTIME 10
+
+
+1596   > 23 ascii values.
+       IRATE 9.1608 ul/min
+
+
+1597   > 8 ascii values.
+       IRUN
+
+
+1598   > 10 ascii values.
+       CITIME
+
+
+1599   > 12 ascii values.
+       TTIME 10
+
+
+1600   > 23 ascii values.
+       IRATE 9.1297 ul/min
+
+
+1601   > 8 ascii values.
+       IRUN
+
+
+1602   > 10 ascii values.
+       CITIME
+
+
+1603   > 12 ascii values.
+       TTIME 10
+
+
+1604   > 23 ascii values.
+       IRATE 9.1001 ul/min
+
+
+1605   > 8 ascii values.
+       IRUN
+
+
+1606   > 10 ascii values.
+       CITIME
+
+
+1607   > 12 ascii values.
+       TTIME 10
+
+
+1608   > 23 ascii values.
+       IRATE 9.0675 ul/min
+
+
+1609   > 8 ascii values.
+       IRUN
+
+
+1610   > 10 ascii values.
+       CITIME
+
+
+1611   > 12 ascii values.
+       TTIME 10
+
+
+1612   > 23 ascii values.
+       IRATE 9.0314 ul/min
+
+
+1613   > 8 ascii values.
+       IRUN
+
+
+1614   > 10 ascii values.
+       CITIME
+
+
+1615   > 12 ascii values.
+       TTIME 10
+
+
+1616   > 23 ascii values.
+       IRATE 8.9953 ul/min
+
+
+1617   > 8 ascii values.
+       IRUN
+
+
+1618   > 10 ascii values.
+       CITIME
+
+
+1619   > 12 ascii values.
+       TTIME 10
+
+
+1620   > 23 ascii values.
+       IRATE 8.9664 ul/min
+
+
+1621   > 8 ascii values.
+       IRUN
+
+
+1622   > 10 ascii values.
+       CITIME
+
+
+1623   > 12 ascii values.
+       TTIME 10
+
+
+1624   > 23 ascii values.
+       IRATE 8.9369 ul/min
+
+
+1625   > 8 ascii values.
+       IRUN
+
+
+1626   > 10 ascii values.
+       CITIME
+
+
+1627   > 12 ascii values.
+       TTIME 10
+
+
+1628   > 23 ascii values.
+       IRATE 8.9046 ul/min
+
+
+1629   > 8 ascii values.
+       IRUN
+
+
+1630   > 10 ascii values.
+       CITIME
+
+
+1631   > 12 ascii values.
+       TTIME 10
+
+
+1632   > 23 ascii values.
+       IRATE 8.8693 ul/min
+
+
+1633   > 8 ascii values.
+       IRUN
+
+
+1634   > 10 ascii values.
+       CITIME
+
+
+1635   > 12 ascii values.
+       TTIME 10
+
+
+1636   > 23 ascii values.
+       IRATE 8.8359 ul/min
+
+
+1637   > 8 ascii values.
+       IRUN
+
+
+1638   > 10 ascii values.
+       CITIME
+
+
+1639   > 12 ascii values.
+       TTIME 10
+
+
+1640   > 22 ascii values.
+       IRATE 8.808 ul/min
+
+
+1641   > 8 ascii values.
+       IRUN
+
+
+1642   > 10 ascii values.
+       CITIME
+
+
+1643   > 12 ascii values.
+       TTIME 10
+
+
+1644   > 23 ascii values.
+       IRATE 8.7789 ul/min
+
+
+1645   > 8 ascii values.
+       IRUN
+
+
+1646   > 10 ascii values.
+       CITIME
+
+
+1647   > 12 ascii values.
+       TTIME 10
+
+
+1648   > 23 ascii values.
+       IRATE 8.7474 ul/min
+
+
+1649   > 8 ascii values.
+       IRUN
+
+
+1650   > 10 ascii values.
+       CITIME
+
+
+1651   > 12 ascii values.
+       TTIME 10
+
+
+1652   > 23 ascii values.
+       IRATE 8.7135 ul/min
+
+
+1653   > 8 ascii values.
+       IRUN
+
+
+1654   > 10 ascii values.
+       CITIME
+
+
+1655   > 12 ascii values.
+       TTIME 10
+
+
+1656   > 23 ascii values.
+       IRATE 8.6818 ul/min
+
+
+1657   > 8 ascii values.
+       IRUN
+
+
+1658   > 10 ascii values.
+       CITIME
+
+
+1659   > 12 ascii values.
+       TTIME 10
+
+
+1660   > 23 ascii values.
+       IRATE 8.6546 ul/min
+
+
+1661   > 8 ascii values.
+       IRUN
+
+
+1662   > 10 ascii values.
+       CITIME
+
+
+1663   > 12 ascii values.
+       TTIME 10
+
+
+1664   > 23 ascii values.
+       IRATE 8.6263 ul/min
+
+
+1665   > 8 ascii values.
+       IRUN
+
+
+1666   > 10 ascii values.
+       CITIME
+
+
+1667   > 12 ascii values.
+       TTIME 10
+
+
+1668   > 22 ascii values.
+       IRATE 8.596 ul/min
+
+
+1669   > 8 ascii values.
+       IRUN
+
+
+1670   > 10 ascii values.
+       CITIME
+
+
+1671   > 12 ascii values.
+       TTIME 10
+
+
+1672   > 23 ascii values.
+       IRATE 8.5636 ul/min
+
+
+1673   > 8 ascii values.
+       IRUN
+
+
+1674   > 10 ascii values.
+       CITIME
+
+
+1675   > 12 ascii values.
+       TTIME 10
+
+
+1676   > 23 ascii values.
+       IRATE 8.5326 ul/min
+
+
+1677   > 8 ascii values.
+       IRUN
+
+
+1678   > 10 ascii values.
+       CITIME
+
+
+1679   > 12 ascii values.
+       TTIME 10
+
+
+1680   > 22 ascii values.
+       IRATE 8.506 ul/min
+
+
+1681   > 8 ascii values.
+       IRUN
+
+
+1682   > 10 ascii values.
+       CITIME
+
+
+1683   > 12 ascii values.
+       TTIME 10
+
+
+1684   > 23 ascii values.
+       IRATE 8.4787 ul/min
+
+
+1685   > 8 ascii values.
+       IRUN
+
+
+1686   > 10 ascii values.
+       CITIME
+
+
+1687   > 12 ascii values.
+       TTIME 10
+
+
+1688   > 23 ascii values.
+       IRATE 8.4498 ul/min
+
+
+1689   > 8 ascii values.
+       IRUN
+
+
+1690   > 10 ascii values.
+       CITIME
+
+
+1691   > 12 ascii values.
+       TTIME 10
+
+
+1692   > 23 ascii values.
+       IRATE 8.4193 ul/min
+
+
+1693   > 8 ascii values.
+       IRUN
+
+
+1694   > 10 ascii values.
+       CITIME
+
+
+1695   > 12 ascii values.
+       TTIME 10
+
+
+1696   > 23 ascii values.
+       IRATE 8.3886 ul/min
+
+
+1697   > 8 ascii values.
+       IRUN
+
+
+1698   > 10 ascii values.
+       CITIME
+
+
+1699   > 12 ascii values.
+       TTIME 10
+
+
+1700   > 23 ascii values.
+       IRATE 8.3623 ul/min
+
+
+1701   > 8 ascii values.
+       IRUN
+
+
+1702   > 10 ascii values.
+       CITIME
+
+
+1703   > 12 ascii values.
+       TTIME 10
+
+
+1704   > 23 ascii values.
+       IRATE 8.3362 ul/min
+
+
+1705   > 8 ascii values.
+       IRUN
+
+
+1706   > 10 ascii values.
+       CITIME
+
+
+1707   > 12 ascii values.
+       TTIME 10
+
+
+1708   > 23 ascii values.
+       IRATE 8.3088 ul/min
+
+
+1709   > 8 ascii values.
+       IRUN
+
+
+1710   > 10 ascii values.
+       CITIME
+
+
+1711   > 12 ascii values.
+       TTIME 10
+
+
+1712   > 23 ascii values.
+       IRATE 8.2802 ul/min
+
+
+1713   > 8 ascii values.
+       IRUN
+
+
+1714   > 10 ascii values.
+       CITIME
+
+
+1715   > 12 ascii values.
+       TTIME 10
+
+
+1716   > 23 ascii values.
+       IRATE 8.2503 ul/min
+
+
+1717   > 8 ascii values.
+       IRUN
+
+
+1718   > 10 ascii values.
+       CITIME
+
+
+1719   > 12 ascii values.
+       TTIME 10
+
+
+1720   > 23 ascii values.
+       IRATE 8.2233 ul/min
+
+
+1721   > 8 ascii values.
+       IRUN
+
+
+1722   > 10 ascii values.
+       CITIME
+
+
+1723   > 12 ascii values.
+       TTIME 10
+
+
+1724   > 23 ascii values.
+       IRATE 8.1983 ul/min
+
+
+1725   > 8 ascii values.
+       IRUN
+
+
+1726   > 10 ascii values.
+       CITIME
+
+
+1727   > 12 ascii values.
+       TTIME 10
+
+
+1728   > 23 ascii values.
+       IRATE 8.1725 ul/min
+
+
+1729   > 8 ascii values.
+       IRUN
+
+
+1730   > 10 ascii values.
+       CITIME
+
+
+1731   > 12 ascii values.
+       TTIME 10
+
+
+1732   > 23 ascii values.
+       IRATE 8.1456 ul/min
+
+
+1733   > 8 ascii values.
+       IRUN
+
+
+1734   > 10 ascii values.
+       CITIME
+
+
+1735   > 12 ascii values.
+       TTIME 10
+
+
+1736   > 23 ascii values.
+       IRATE 8.1177 ul/min
+
+
+1737   > 8 ascii values.
+       IRUN
+
+
+1738   > 10 ascii values.
+       CITIME
+
+
+1739   > 12 ascii values.
+       TTIME 10
+
+
+1740   > 23 ascii values.
+       IRATE 8.0894 ul/min
+
+
+1741   > 8 ascii values.
+       IRUN
+
+
+1742   > 10 ascii values.
+       CITIME
+
+
+1743   > 12 ascii values.
+       TTIME 10
+
+
+1744   > 23 ascii values.
+       IRATE 8.0646 ul/min
+
+
+1745   > 8 ascii values.
+       IRUN
+
+
+1746   > 10 ascii values.
+       CITIME
+
+
+1747   > 12 ascii values.
+       TTIME 10
+
+
+1748   > 23 ascii values.
+       IRATE 8.0403 ul/min
+
+
+1749   > 8 ascii values.
+       IRUN
+
+
+1750   > 10 ascii values.
+       CITIME
+
+
+1751   > 12 ascii values.
+       TTIME 10
+
+
+1752   > 23 ascii values.
+       IRATE 8.0152 ul/min
+
+
+1753   > 8 ascii values.
+       IRUN
+
+
+1754   > 10 ascii values.
+       CITIME
+
+
+1755   > 12 ascii values.
+       TTIME 10
+
+
+1756   > 23 ascii values.
+       IRATE 7.9892 ul/min
+
+
+1757   > 8 ascii values.
+       IRUN
+
+
+1758   > 10 ascii values.
+       CITIME
+
+
+1759   > 12 ascii values.
+       TTIME 10
+
+
+1760   > 23 ascii values.
+       IRATE 7.9624 ul/min
+
+
+1761   > 8 ascii values.
+       IRUN
+
+
+1762   > 10 ascii values.
+       CITIME
+
+
+1763   > 12 ascii values.
+       TTIME 10
+
+
+1764   > 23 ascii values.
+       IRATE 7.9357 ul/min
+
+
+1765   > 8 ascii values.
+       IRUN
+
+
+1766   > 10 ascii values.
+       CITIME
+
+
+1767   > 12 ascii values.
+       TTIME 10
+
+
+1768   > 22 ascii values.
+       IRATE 7.912 ul/min
+
+
+1769   > 8 ascii values.
+       IRUN
+
+
+1770   > 10 ascii values.
+       CITIME
+
+
+1771   > 12 ascii values.
+       TTIME 10
+
+
+1772   > 23 ascii values.
+       IRATE 7.8885 ul/min
+
+
+1773   > 8 ascii values.
+       IRUN
+
+
+1774   > 10 ascii values.
+       CITIME
+
+
+1775   > 12 ascii values.
+       TTIME 10
+
+
+1776   > 23 ascii values.
+       IRATE 7.8643 ul/min
+
+
+1777   > 8 ascii values.
+       IRUN
+
+
+1778   > 10 ascii values.
+       CITIME
+
+
+1779   > 12 ascii values.
+       TTIME 10
+
+
+1780   > 23 ascii values.
+       IRATE 7.8395 ul/min
+
+
+1781   > 8 ascii values.
+       IRUN
+
+
+1782   > 10 ascii values.
+       CITIME
+
+
+1783   > 12 ascii values.
+       TTIME 10
+
+
+1784   > 23 ascii values.
+       IRATE 7.8141 ul/min
+
+
+1785   > 8 ascii values.
+       IRUN
+
+
+1786   > 10 ascii values.
+       CITIME
+
+
+1787   > 12 ascii values.
+       TTIME 10
+
+
+1788   > 23 ascii values.
+       IRATE 7.7883 ul/min
+
+
+1789   > 8 ascii values.
+       IRUN
+
+
+1790   > 10 ascii values.
+       CITIME
+
+
+1791   > 12 ascii values.
+       TTIME 10
+
+
+1792   > 23 ascii values.
+       IRATE 7.7652 ul/min
+
+
+1793   > 8 ascii values.
+       IRUN
+
+
+1794   > 10 ascii values.
+       CITIME
+
+
+1795   > 12 ascii values.
+       TTIME 10
+
+
+1796   > 23 ascii values.
+       IRATE 7.7426 ul/min
+
+
+1797   > 8 ascii values.
+       IRUN
+
+
+1798   > 10 ascii values.
+       CITIME
+
+
+1799   > 12 ascii values.
+       TTIME 10
+
+
+1800   > 23 ascii values.
+       IRATE 7.7196 ul/min
+
+
+1801   > 8 ascii values.
+       IRUN
+
+
+1802   > 10 ascii values.
+       CITIME
+
+
+1803   > 12 ascii values.
+       TTIME 10
+
+
+1804   > 23 ascii values.
+       IRATE 7.6961 ul/min
+
+
+1805   > 8 ascii values.
+       IRUN
+
+
+1806   > 10 ascii values.
+       CITIME
+
+
+1807   > 12 ascii values.
+       TTIME 10
+
+
+1808   > 23 ascii values.
+       IRATE 7.6721 ul/min
+
+
+1809   > 8 ascii values.
+       IRUN
+
+
+1810   > 10 ascii values.
+       CITIME
+
+
+1811   > 12 ascii values.
+       TTIME 10
+
+
+1812   > 23 ascii values.
+       IRATE 7.6477 ul/min
+
+
+1813   > 8 ascii values.
+       IRUN
+
+
+1814   > 10 ascii values.
+       CITIME
+
+
+1815   > 12 ascii values.
+       TTIME 10
+
+
+1816   > 23 ascii values.
+       IRATE 7.6241 ul/min
+
+
+1817   > 8 ascii values.
+       IRUN
+
+
+1818   > 10 ascii values.
+       CITIME
+
+
+1819   > 12 ascii values.
+       TTIME 10
+
+
+1820   > 23 ascii values.
+       IRATE 7.6025 ul/min
+
+
+1821   > 8 ascii values.
+       IRUN
+
+
+1822   > 10 ascii values.
+       CITIME
+
+
+1823   > 12 ascii values.
+       TTIME 10
+
+
+1824   > 23 ascii values.
+       IRATE 7.5807 ul/min
+
+
+1825   > 8 ascii values.
+       IRUN
+
+
+1826   > 10 ascii values.
+       CITIME
+
+
+1827   > 12 ascii values.
+       TTIME 10
+
+
+1828   > 23 ascii values.
+       IRATE 7.5585 ul/min
+
+
+1829   > 8 ascii values.
+       IRUN
+
+
+1830   > 10 ascii values.
+       CITIME
+
+
+1831   > 12 ascii values.
+       TTIME 10
+
+
+1832   > 23 ascii values.
+       IRATE 7.5359 ul/min
+
+
+1833   > 8 ascii values.
+       IRUN
+
+
+1834   > 10 ascii values.
+       CITIME
+
+
+1835   > 12 ascii values.
+       TTIME 10
+
+
+1836   > 23 ascii values.
+       IRATE 7.5131 ul/min
+
+
+1837   > 8 ascii values.
+       IRUN
+
+
+1838   > 10 ascii values.
+       CITIME
+
+
+1839   > 12 ascii values.
+       TTIME 10
+
+
+1840   > 23 ascii values.
+       IRATE 7.4899 ul/min
+
+
+1841   > 8 ascii values.
+       IRUN
+
+
+1842   > 10 ascii values.
+       CITIME
+
+
+1843   > 12 ascii values.
+       TTIME 10
+
+
+1844   > 23 ascii values.
+       IRATE 7.4677 ul/min
+
+
+1845   > 8 ascii values.
+       IRUN
+
+
+1846   > 10 ascii values.
+       CITIME
+
+
+1847   > 12 ascii values.
+       TTIME 10
+
+
+1848   > 22 ascii values.
+       IRATE 7.447 ul/min
+
+
+1849   > 8 ascii values.
+       IRUN
+
+
+1850   > 10 ascii values.
+       CITIME
+
+
+1851   > 12 ascii values.
+       TTIME 10
+
+
+1852   > 23 ascii values.
+       IRATE 7.4262 ul/min
+
+
+1853   > 8 ascii values.
+       IRUN
+
+
+1854   > 10 ascii values.
+       CITIME
+
+
+1855   > 12 ascii values.
+       TTIME 10
+
+
+1856   > 22 ascii values.
+       IRATE 7.405 ul/min
+
+
+1857   > 8 ascii values.
+       IRUN
+
+
+1858   > 10 ascii values.
+       CITIME
+
+
+1859   > 12 ascii values.
+       TTIME 10
+
+
+1860   > 23 ascii values.
+       IRATE 7.3836 ul/min
+
+
+1861   > 8 ascii values.
+       IRUN
+
+
+1862   > 10 ascii values.
+       CITIME
+
+
+1863   > 12 ascii values.
+       TTIME 10
+
+
+1864   > 23 ascii values.
+       IRATE 7.3621 ul/min
+
+
+1865   > 8 ascii values.
+       IRUN
+
+
+1866   > 10 ascii values.
+       CITIME
+
+
+1867   > 12 ascii values.
+       TTIME 10
+
+
+1868   > 23 ascii values.
+       IRATE 7.3403 ul/min
+
+
+1869   > 8 ascii values.
+       IRUN
+
+
+1870   > 10 ascii values.
+       CITIME
+
+
+1871   > 12 ascii values.
+       TTIME 10
+
+
+1872   > 23 ascii values.
+       IRATE 7.3186 ul/min
+
+
+1873   > 8 ascii values.
+       IRUN
+
+
+1874   > 10 ascii values.
+       CITIME
+
+
+1875   > 12 ascii values.
+       TTIME 10
+
+
+1876   > 23 ascii values.
+       IRATE 7.2986 ul/min
+
+
+1877   > 8 ascii values.
+       IRUN
+
+
+1878   > 10 ascii values.
+       CITIME
+
+
+1879   > 12 ascii values.
+       TTIME 10
+
+
+1880   > 23 ascii values.
+       IRATE 7.2789 ul/min
+
+
+1881   > 8 ascii values.
+       IRUN
+
+
+1882   > 10 ascii values.
+       CITIME
+
+
+1883   > 12 ascii values.
+       TTIME 10
+
+
+1884   > 23 ascii values.
+       IRATE 7.2589 ul/min
+
+
+1885   > 8 ascii values.
+       IRUN
+
+
+1886   > 10 ascii values.
+       CITIME
+
+
+1887   > 12 ascii values.
+       TTIME 10
+
+
+1888   > 23 ascii values.
+       IRATE 7.2387 ul/min
+
+
+1889   > 8 ascii values.
+       IRUN
+
+
+1890   > 10 ascii values.
+       CITIME
+
+
+1891   > 12 ascii values.
+       TTIME 10
+
+
+1892   > 23 ascii values.
+       IRATE 7.2184 ul/min
+
+
+1893   > 8 ascii values.
+       IRUN
+
+
+1894   > 10 ascii values.
+       CITIME
+
+
+1895   > 12 ascii values.
+       TTIME 10
+
+
+1896   > 22 ascii values.
+       IRATE 7.198 ul/min
+
+
+1897   > 8 ascii values.
+       IRUN
+
+
+1898   > 10 ascii values.
+       CITIME
+
+
+1899   > 12 ascii values.
+       TTIME 10
+
+
+1900   > 23 ascii values.
+       IRATE 7.1775 ul/min
+
+
+1901   > 8 ascii values.
+       IRUN
+
+
+1902   > 10 ascii values.
+       CITIME
+
+
+1903   > 12 ascii values.
+       TTIME 10
+
+
+1904   > 23 ascii values.
+       IRATE 7.1572 ul/min
+
+
+1905   > 8 ascii values.
+       IRUN
+
+
+1906   > 10 ascii values.
+       CITIME
+
+
+1907   > 12 ascii values.
+       TTIME 10
+
+
+1908   > 23 ascii values.
+       IRATE 7.1382 ul/min
+
+
+1909   > 8 ascii values.
+       IRUN
+
+
+1910   > 10 ascii values.
+       CITIME
+
+
+1911   > 12 ascii values.
+       TTIME 10
+
+
+1912   > 23 ascii values.
+       IRATE 7.1194 ul/min
+
+
+1913   > 8 ascii values.
+       IRUN
+
+
+1914   > 10 ascii values.
+       CITIME
+
+
+1915   > 12 ascii values.
+       TTIME 10
+
+
+1916   > 23 ascii values.
+       IRATE 7.1005 ul/min
+
+
+1917   > 8 ascii values.
+       IRUN
+
+
+1918   > 10 ascii values.
+       CITIME
+
+
+1919   > 12 ascii values.
+       TTIME 10
+
+
+1920   > 23 ascii values.
+       IRATE 7.0814 ul/min
+
+
+1921   > 8 ascii values.
+       IRUN
+
+
+1922   > 10 ascii values.
+       CITIME
+
+
+1923   > 12 ascii values.
+       TTIME 10
+
+
+1924   > 23 ascii values.
+       IRATE 7.0623 ul/min
+
+
+1925   > 8 ascii values.
+       IRUN
+
+
+1926   > 10 ascii values.
+       CITIME
+
+
+1927   > 12 ascii values.
+       TTIME 10
+
+
+1928   > 23 ascii values.
+       IRATE 7.0432 ul/min
+
+
+1929   > 8 ascii values.
+       IRUN
+
+
+1930   > 10 ascii values.
+       CITIME
+
+
+1931   > 12 ascii values.
+       TTIME 10
+
+
+1932   > 23 ascii values.
+       IRATE 7.0241 ul/min
+
+
+1933   > 8 ascii values.
+       IRUN
+
+
+1934   > 10 ascii values.
+       CITIME
+
+
+1935   > 12 ascii values.
+       TTIME 10
+
+
+1936   > 23 ascii values.
+       IRATE 7.0047 ul/min
+
+
+1937   > 8 ascii values.
+       IRUN
+
+
+1938   > 10 ascii values.
+       CITIME
+
+
+1939   > 12 ascii values.
+       TTIME 10
+
+
+1940   > 23 ascii values.
+       IRATE 6.9862 ul/min
+
+
+1941   > 8 ascii values.
+       IRUN
+
+
+1942   > 10 ascii values.
+       CITIME
+
+
+1943   > 12 ascii values.
+       TTIME 10
+
+
+1944   > 23 ascii values.
+       IRATE 6.9684 ul/min
+
+
+1945   > 8 ascii values.
+       IRUN
+
+
+1946   > 10 ascii values.
+       CITIME
+
+
+1947   > 12 ascii values.
+       TTIME 10
+
+
+1948   > 23 ascii values.
+       IRATE 6.9506 ul/min
+
+
+1949   > 8 ascii values.
+       IRUN
+
+
+1950   > 10 ascii values.
+       CITIME
+
+
+1951   > 12 ascii values.
+       TTIME 10
+
+
+1952   > 23 ascii values.
+       IRATE 6.9327 ul/min
+
+
+1953   > 8 ascii values.
+       IRUN
+
+
+1954   > 10 ascii values.
+       CITIME
+
+
+1955   > 12 ascii values.
+       TTIME 10
+
+
+1956   > 23 ascii values.
+       IRATE 6.9148 ul/min
+
+
+1957   > 8 ascii values.
+       IRUN
+
+
+1958   > 10 ascii values.
+       CITIME
+
+
+1959   > 12 ascii values.
+       TTIME 10
+
+
+1960   > 23 ascii values.
+       IRATE 6.8968 ul/min
+
+
+1961   > 8 ascii values.
+       IRUN
+
+
+1962   > 10 ascii values.
+       CITIME
+
+
+1963   > 12 ascii values.
+       TTIME 10
+
+
+1964   > 23 ascii values.
+       IRATE 6.8789 ul/min
+
+
+1965   > 8 ascii values.
+       IRUN
+
+
+1966   > 10 ascii values.
+       CITIME
+
+
+1967   > 12 ascii values.
+       TTIME 10
+
+
+1968   > 23 ascii values.
+       IRATE 6.8611 ul/min
+
+
+1969   > 8 ascii values.
+       IRUN
+
+
+1970   > 10 ascii values.
+       CITIME
+
+
+1971   > 12 ascii values.
+       TTIME 10
+
+
+1972   > 23 ascii values.
+       IRATE 6.8431 ul/min
+
+
+1973   > 8 ascii values.
+       IRUN
+
+
+1974   > 10 ascii values.
+       CITIME
+
+
+1975   > 12 ascii values.
+       TTIME 10
+
+
+1976   > 23 ascii values.
+       IRATE 6.8253 ul/min
+
+
+1977   > 8 ascii values.
+       IRUN
+
+
+1978   > 10 ascii values.
+       CITIME
+
+
+1979   > 12 ascii values.
+       TTIME 10
+
+
+1980   > 23 ascii values.
+       IRATE 6.8085 ul/min
+
+
+1981   > 8 ascii values.
+       IRUN
+
+
+1982   > 10 ascii values.
+       CITIME
+
+
+1983   > 12 ascii values.
+       TTIME 10
+
+
+1984   > 23 ascii values.
+       IRATE 6.7918 ul/min
+
+
+1985   > 8 ascii values.
+       IRUN
+
+
+1986   > 10 ascii values.
+       CITIME
+
+
+1987   > 12 ascii values.
+       TTIME 10
+
+
+1988   > 23 ascii values.
+       IRATE 6.7751 ul/min
+
+
+1989   > 8 ascii values.
+       IRUN
+
+
+1990   > 10 ascii values.
+       CITIME
+
+
+1991   > 12 ascii values.
+       TTIME 10
+
+
+1992   > 23 ascii values.
+       IRATE 6.7583 ul/min
+
+
+1993   > 8 ascii values.
+       IRUN
+
+
+1994   > 10 ascii values.
+       CITIME
+
+
+1995   > 12 ascii values.
+       TTIME 10
+
+
+1996   > 23 ascii values.
+       IRATE 6.7416 ul/min
+
+
+1997   > 8 ascii values.
+       IRUN
+
+
+1998   > 10 ascii values.
+       CITIME
+
+
+1999   > 12 ascii values.
+       TTIME 10
+
+
+2000   > 23 ascii values.
+       IRATE 6.7248 ul/min
+
+
+2001   > 8 ascii values.
+       IRUN
+
+
+2002   > 10 ascii values.
+       CITIME
+
+
+2003   > 12 ascii values.
+       TTIME 10
+
+
+2004   > 23 ascii values.
+       IRATE 6.7082 ul/min
+
+
+2005   > 8 ascii values.
+       IRUN
+
+
+2006   > 10 ascii values.
+       CITIME
+
+
+2007   > 12 ascii values.
+       TTIME 10
+
+
+2008   > 23 ascii values.
+       IRATE 6.6916 ul/min
+
+
+2009   > 8 ascii values.
+       IRUN
+
+
+2010   > 10 ascii values.
+       CITIME
+
+
+2011   > 12 ascii values.
+       TTIME 10
+
+
+2012   > 22 ascii values.
+       IRATE 6.675 ul/min
+
+
+2013   > 8 ascii values.
+       IRUN
+
+
+2014   > 10 ascii values.
+       CITIME
+
+
+2015   > 12 ascii values.
+       TTIME 10
+
+
+2016   > 23 ascii values.
+       IRATE 6.6583 ul/min
+
+
+2017   > 8 ascii values.
+       IRUN
+
+
+2018   > 10 ascii values.
+       CITIME
+
+
+2019   > 12 ascii values.
+       TTIME 10
+
+
+2020   > 23 ascii values.
+       IRATE 6.6424 ul/min
+
+
+2021   > 8 ascii values.
+       IRUN
+
+
+2022   > 10 ascii values.
+       CITIME
+
+
+2023   > 12 ascii values.
+       TTIME 10
+
+
+2024   > 23 ascii values.
+       IRATE 6.6268 ul/min
+
+
+2025   > 8 ascii values.
+       IRUN
+
+
+2026   > 10 ascii values.
+       CITIME
+
+
+2027   > 12 ascii values.
+       TTIME 10
+
+
+2028   > 23 ascii values.
+       IRATE 6.6112 ul/min
+
+
+2029   > 8 ascii values.
+       IRUN
+
+
+2030   > 10 ascii values.
+       CITIME
+
+
+2031   > 12 ascii values.
+       TTIME 10
+
+
+2032   > 23 ascii values.
+       IRATE 6.5956 ul/min
+
+
+2033   > 8 ascii values.
+       IRUN
+
+
+2034   > 10 ascii values.
+       CITIME
+
+
+2035   > 12 ascii values.
+       TTIME 10
+
+
+2036   > 23 ascii values.
+       IRATE 6.5801 ul/min
+
+
+2037   > 8 ascii values.
+       IRUN
+
+
+2038   > 10 ascii values.
+       CITIME
+
+
+2039   > 12 ascii values.
+       TTIME 10
+
+
+2040   > 23 ascii values.
+       IRATE 6.5645 ul/min
+
+
+2041   > 8 ascii values.
+       IRUN
+
+
+2042   > 10 ascii values.
+       CITIME
+
+
+2043   > 12 ascii values.
+       TTIME 10
+
+
+2044   > 23 ascii values.
+       IRATE 6.5491 ul/min
+
+
+2045   > 8 ascii values.
+       IRUN
+
+
+2046   > 10 ascii values.
+       CITIME
+
+
+2047   > 12 ascii values.
+       TTIME 10
+
+
+2048   > 23 ascii values.
+       IRATE 6.5337 ul/min
+
+
+2049   > 8 ascii values.
+       IRUN
+
+
+2050   > 10 ascii values.
+       CITIME
+
+
+2051   > 12 ascii values.
+       TTIME 10
+
+
+2052   > 23 ascii values.
+       IRATE 6.5183 ul/min
+
+
+2053   > 8 ascii values.
+       IRUN
+
+
+2054   > 10 ascii values.
+       CITIME
+
+
+2055   > 12 ascii values.
+       TTIME 10
+
+
+2056   > 22 ascii values.
+       IRATE 6.503 ul/min
+
+
+2057   > 8 ascii values.
+       IRUN
+
+
+2058   > 10 ascii values.
+       CITIME
+
+
+2059   > 12 ascii values.
+       TTIME 10
+
+
+2060   > 23 ascii values.
+       IRATE 6.4877 ul/min
+
+
+2061   > 8 ascii values.
+       IRUN
+
+
+2062   > 10 ascii values.
+       CITIME
+
+
+2063   > 12 ascii values.
+       TTIME 10
+
+
+2064   > 23 ascii values.
+       IRATE 6.4726 ul/min
+
+
+2065   > 8 ascii values.
+       IRUN
+
+
+2066   > 10 ascii values.
+       CITIME
+
+
+2067   > 12 ascii values.
+       TTIME 10
+
+
+2068   > 23 ascii values.
+       IRATE 6.4581 ul/min
+
+
+2069   > 8 ascii values.
+       IRUN
+
+
+2070   > 10 ascii values.
+       CITIME
+
+
+2071   > 12 ascii values.
+       TTIME 10
+
+
+2072   > 23 ascii values.
+       IRATE 6.4437 ul/min
+
+
+2073   > 8 ascii values.
+       IRUN
+
+
+2074   > 10 ascii values.
+       CITIME
+
+
+2075   > 12 ascii values.
+       TTIME 10
+
+
+2076   > 23 ascii values.
+       IRATE 6.4293 ul/min
+
+
+2077   > 8 ascii values.
+       IRUN
+
+
+2078   > 10 ascii values.
+       CITIME
+
+
+2079   > 12 ascii values.
+       TTIME 10
+
+
+2080   > 23 ascii values.
+       IRATE 6.4149 ul/min
+
+
+2081   > 8 ascii values.
+       IRUN
+
+
+2082   > 10 ascii values.
+       CITIME
+
+
+2083   > 12 ascii values.
+       TTIME 10
+
+
+2084   > 23 ascii values.
+       IRATE 6.4006 ul/min
+
+
+2085   > 8 ascii values.
+       IRUN
+
+
+2086   > 10 ascii values.
+       CITIME
+
+
+2087   > 12 ascii values.
+       TTIME 10
+
+
+2088   > 23 ascii values.
+       IRATE 6.3864 ul/min
+
+
+2089   > 8 ascii values.
+       IRUN
+
+
+2090   > 10 ascii values.
+       CITIME
+
+
+2091   > 12 ascii values.
+       TTIME 10
+
+
+2092   > 23 ascii values.
+       IRATE 6.3722 ul/min
+
+
+2093   > 8 ascii values.
+       IRUN
+
+
+2094   > 10 ascii values.
+       CITIME
+
+
+2095   > 12 ascii values.
+       TTIME 10
+
+
+2096   > 23 ascii values.
+       IRATE 6.3581 ul/min
+
+
+2097   > 8 ascii values.
+       IRUN
+
+
+2098   > 10 ascii values.
+       CITIME
+
+
+2099   > 12 ascii values.
+       TTIME 10
+
+
+2100   > 23 ascii values.
+       IRATE 6.3441 ul/min
+
+
+2101   > 8 ascii values.
+       IRUN
+
+
+2102   > 10 ascii values.
+       CITIME
+
+
+2103   > 12 ascii values.
+       TTIME 10
+
+
+2104   > 23 ascii values.
+       IRATE 6.3301 ul/min
+
+
+2105   > 8 ascii values.
+       IRUN
+
+
+2106   > 10 ascii values.
+       CITIME
+
+
+2107   > 12 ascii values.
+       TTIME 10
+
+
+2108   > 23 ascii values.
+       IRATE 6.3162 ul/min
+
+
+2109   > 8 ascii values.
+       IRUN
+
+
+2110   > 10 ascii values.
+       CITIME
+
+
+2111   > 12 ascii values.
+       TTIME 10
+
+
+2112   > 23 ascii values.
+       IRATE 6.3023 ul/min
+
+
+2113   > 8 ascii values.
+       IRUN
+
+
+2114   > 10 ascii values.
+       CITIME
+
+
+2115   > 12 ascii values.
+       TTIME 10
+
+
+2116   > 23 ascii values.
+       IRATE 6.2885 ul/min
+
+
+2117   > 8 ascii values.
+       IRUN
+
+
+2118   > 10 ascii values.
+       CITIME
+
+
+2119   > 12 ascii values.
+       TTIME 10
+
+
+2120   > 23 ascii values.
+       IRATE 6.2752 ul/min
+
+
+2121   > 8 ascii values.
+       IRUN
+
+
+2122   > 10 ascii values.
+       CITIME
+
+
+2123   > 12 ascii values.
+       TTIME 10
+
+
+2124   > 22 ascii values.
+       IRATE 6.262 ul/min
+
+
+2125   > 8 ascii values.
+       IRUN
+
+
+2126   > 10 ascii values.
+       CITIME
+
+
+2127   > 12 ascii values.
+       TTIME 10
+
+
+2128   > 23 ascii values.
+       IRATE 6.2488 ul/min
+
+
+2129   > 8 ascii values.
+       IRUN
+
+
+2130   > 10 ascii values.
+       CITIME
+
+
+2131   > 12 ascii values.
+       TTIME 10
+
+
+2132   > 23 ascii values.
+       IRATE 6.2357 ul/min
+
+
+2133   > 8 ascii values.
+       IRUN
+
+
+2134   > 10 ascii values.
+       CITIME
+
+
+2135   > 12 ascii values.
+       TTIME 10
+
+
+2136   > 23 ascii values.
+       IRATE 6.2227 ul/min
+
+
+2137   > 8 ascii values.
+       IRUN
+
+
+2138   > 10 ascii values.
+       CITIME
+
+
+2139   > 12 ascii values.
+       TTIME 10
+
+
+2140   > 23 ascii values.
+       IRATE 6.2097 ul/min
+
+
+2141   > 8 ascii values.
+       IRUN
+
+
+2142   > 10 ascii values.
+       CITIME
+
+
+2143   > 12 ascii values.
+       TTIME 10
+
+
+2144   > 23 ascii values.
+       IRATE 6.1968 ul/min
+
+
+2145   > 8 ascii values.
+       IRUN
+
+
+2146   > 10 ascii values.
+       CITIME
+
+
+2147   > 12 ascii values.
+       TTIME 10
+
+
+2148   > 23 ascii values.
+       IRATE 6.1839 ul/min
+
+
+2149   > 8 ascii values.
+       IRUN
+
+
+2150   > 10 ascii values.
+       CITIME
+
+
+2151   > 12 ascii values.
+       TTIME 10
+
+
+2152   > 23 ascii values.
+       IRATE 6.1712 ul/min
+
+
+2153   > 8 ascii values.
+       IRUN
+
+
+2154   > 10 ascii values.
+       CITIME
+
+
+2155   > 12 ascii values.
+       TTIME 10
+
+
+2156   > 23 ascii values.
+       IRATE 6.1585 ul/min
+
+
+2157   > 8 ascii values.
+       IRUN
+
+
+2158   > 10 ascii values.
+       CITIME
+
+
+2159   > 12 ascii values.
+       TTIME 10
+
+
+2160   > 23 ascii values.
+       IRATE 6.1459 ul/min
+
+
+2161   > 8 ascii values.
+       IRUN
+
+
+2162   > 10 ascii values.
+       CITIME
+
+
+2163   > 12 ascii values.
+       TTIME 10
+
+
+2164   > 23 ascii values.
+       IRATE 6.1333 ul/min
+
+
+2165   > 8 ascii values.
+       IRUN
+
+
+2166   > 10 ascii values.
+       CITIME
+
+
+2167   > 12 ascii values.
+       TTIME 10
+
+
+2168   > 23 ascii values.
+       IRATE 6.1208 ul/min
+
+
+2169   > 8 ascii values.
+       IRUN
+
+
+2170   > 10 ascii values.
+       CITIME
+
+
+2171   > 12 ascii values.
+       TTIME 10
+
+
+2172   > 23 ascii values.
+       IRATE 6.1084 ul/min
+
+
+2173   > 8 ascii values.
+       IRUN
+
+
+2174   > 10 ascii values.
+       CITIME
+
+
+2175   > 12 ascii values.
+       TTIME 10
+
+
+2176   > 23 ascii values.
+       IRATE 6.0959 ul/min
+
+
+2177   > 8 ascii values.
+       IRUN
+
+
+2178   > 10 ascii values.
+       CITIME
+
+
+2179   > 12 ascii values.
+       TTIME 10
+
+
+2180   > 23 ascii values.
+       IRATE 6.0839 ul/min
+
+
+2181   > 8 ascii values.
+       IRUN
+
+
+2182   > 10 ascii values.
+       CITIME
+
+
+2183   > 12 ascii values.
+       TTIME 10
+
+
+2184   > 22 ascii values.
+       IRATE 6.072 ul/min
+
+
+2185   > 8 ascii values.
+       IRUN
+
+
+2186   > 10 ascii values.
+       CITIME
+
+
+2187   > 12 ascii values.
+       TTIME 10
+
+
+2188   > 23 ascii values.
+       IRATE 6.0601 ul/min
+
+
+2189   > 8 ascii values.
+       IRUN
+
+
+2190   > 10 ascii values.
+       CITIME
+
+
+2191   > 12 ascii values.
+       TTIME 10
+
+
+2192   > 23 ascii values.
+       IRATE 6.0483 ul/min
+
+
+2193   > 8 ascii values.
+       IRUN
+
+
+2194   > 10 ascii values.
+       CITIME
+
+
+2195   > 12 ascii values.
+       TTIME 10
+
+
+2196   > 23 ascii values.
+       IRATE 6.0366 ul/min
+
+
+2197   > 8 ascii values.
+       IRUN
+
+
+2198   > 10 ascii values.
+       CITIME
+
+
+2199   > 12 ascii values.
+       TTIME 10
+
+
+2200   > 23 ascii values.
+       IRATE 6.0249 ul/min
+
+
+2201   > 8 ascii values.
+       IRUN
+
+
+2202   > 10 ascii values.
+       CITIME
+
+
+2203   > 12 ascii values.
+       TTIME 10
+
+
+2204   > 23 ascii values.
+       IRATE 6.0133 ul/min
+
+
+2205   > 8 ascii values.
+       IRUN
+
+
+2206   > 10 ascii values.
+       CITIME
+
+
+2207   > 12 ascii values.
+       TTIME 10
+
+
+2208   > 23 ascii values.
+       IRATE 6.0018 ul/min
+
+
+2209   > 8 ascii values.
+       IRUN
+
+
+2210   > 10 ascii values.
+       CITIME
+
+
+2211   > 12 ascii values.
+       TTIME 10
+
+
+2212   > 23 ascii values.
+       IRATE 5.9903 ul/min
+
+
+2213   > 8 ascii values.
+       IRUN
+
+
+2214   > 10 ascii values.
+       CITIME
+
+
+2215   > 12 ascii values.
+       TTIME 10
+
+
+2216   > 23 ascii values.
+       IRATE 5.9789 ul/min
+
+
+2217   > 8 ascii values.
+       IRUN
+
+
+2218   > 10 ascii values.
+       CITIME
+
+
+2219   > 12 ascii values.
+       TTIME 10
+
+
+2220   > 23 ascii values.
+       IRATE 5.9676 ul/min
+
+
+2221   > 8 ascii values.
+       IRUN
+
+
+2222   > 10 ascii values.
+       CITIME
+
+
+2223   > 12 ascii values.
+       TTIME 10
+
+
+2224   > 23 ascii values.
+       IRATE 5.9563 ul/min
+
+
+2225   > 8 ascii values.
+       IRUN
+
+
+2226   > 10 ascii values.
+       CITIME
+
+
+2227   > 12 ascii values.
+       TTIME 10
+
+
+2228   > 23 ascii values.
+       IRATE 5.9452 ul/min
+
+
+2229   > 8 ascii values.
+       IRUN
+
+
+2230   > 10 ascii values.
+       CITIME
+
+
+2231   > 12 ascii values.
+       TTIME 10
+
+
+2232   > 22 ascii values.
+       IRATE 5.934 ul/min
+
+
+2233   > 8 ascii values.
+       IRUN
+
+
+2234   > 10 ascii values.
+       CITIME
+
+
+2235   > 12 ascii values.
+       TTIME 10
+
+
+2236   > 22 ascii values.
+       IRATE 5.923 ul/min
+
+
+2237   > 8 ascii values.
+       IRUN
+
+
+2238   > 10 ascii values.
+       CITIME
+
+
+2239   > 12 ascii values.
+       TTIME 10
+
+
+2240   > 22 ascii values.
+       IRATE 5.912 ul/min
+
+
+2241   > 8 ascii values.
+       IRUN
+
+
+2242   > 10 ascii values.
+       CITIME
+
+
+2243   > 12 ascii values.
+       TTIME 10
+
+
+2244   > 22 ascii values.
+       IRATE 5.901 ul/min
+
+
+2245   > 8 ascii values.
+       IRUN
+
+
+2246   > 10 ascii values.
+       CITIME
+
+
+2247   > 12 ascii values.
+       TTIME 10
+
+
+2248   > 23 ascii values.
+       IRATE 5.8901 ul/min
+
+
+2249   > 8 ascii values.
+       IRUN
+
+
+2250   > 10 ascii values.
+       CITIME
+
+
+2251   > 12 ascii values.
+       TTIME 10
+
+
+2252   > 23 ascii values.
+       IRATE 5.8795 ul/min
+
+
+2253   > 8 ascii values.
+       IRUN
+
+
+2254   > 10 ascii values.
+       CITIME
+
+
+2255   > 12 ascii values.
+       TTIME 10
+
+
+2256   > 22 ascii values.
+       IRATE 5.869 ul/min
+
+
+2257   > 8 ascii values.
+       IRUN
+
+
+2258   > 10 ascii values.
+       CITIME
+
+
+2259   > 12 ascii values.
+       TTIME 10
+
+
+2260   > 23 ascii values.
+       IRATE 5.8585 ul/min
+
+
+2261   > 8 ascii values.
+       IRUN
+
+
+2262   > 10 ascii values.
+       CITIME
+
+
+2263   > 12 ascii values.
+       TTIME 10
+
+
+2264   > 23 ascii values.
+       IRATE 5.8481 ul/min
+
+
+2265   > 8 ascii values.
+       IRUN
+
+
+2266   > 10 ascii values.
+       CITIME
+
+
+2267   > 12 ascii values.
+       TTIME 10
+
+
+2268   > 23 ascii values.
+       IRATE 5.8377 ul/min
+
+
+2269   > 8 ascii values.
+       IRUN
+
+
+2270   > 10 ascii values.
+       CITIME
+
+
+2271   > 12 ascii values.
+       TTIME 10
+
+
+2272   > 23 ascii values.
+       IRATE 5.8274 ul/min
+
+
+2273   > 8 ascii values.
+       IRUN
+
+
+2274   > 10 ascii values.
+       CITIME
+
+
+2275   > 12 ascii values.
+       TTIME 10
+
+
+2276   > 23 ascii values.
+       IRATE 5.8172 ul/min
+
+
+2277   > 8 ascii values.
+       IRUN
+
+
+2278   > 10 ascii values.
+       CITIME
+
+
+2279   > 12 ascii values.
+       TTIME 10
+
+
+2280   > 23 ascii values.
+       IRATE 5.8071 ul/min
+
+
+2281   > 8 ascii values.
+       IRUN
+
+
+2282   > 10 ascii values.
+       CITIME
+
+
+2283   > 12 ascii values.
+       TTIME 10
+
+
+2284   > 22 ascii values.
+       IRATE 5.797 ul/min
+
+
+2285   > 8 ascii values.
+       IRUN
+
+
+2286   > 10 ascii values.
+       CITIME
+
+
+2287   > 12 ascii values.
+       TTIME 10
+
+
+2288   > 23 ascii values.
+       IRATE 5.7869 ul/min
+
+
+2289   > 8 ascii values.
+       IRUN
+
+
+2290   > 10 ascii values.
+       CITIME
+
+
+2291   > 12 ascii values.
+       TTIME 10
+
+
+2292   > 22 ascii values.
+       IRATE 5.777 ul/min
+
+
+2293   > 8 ascii values.
+       IRUN
+
+
+2294   > 10 ascii values.
+       CITIME
+
+
+2295   > 12 ascii values.
+       TTIME 10
+
+
+2296   > 23 ascii values.
+       IRATE 5.7671 ul/min
+
+
+2297   > 8 ascii values.
+       IRUN
+
+
+2298   > 10 ascii values.
+       CITIME
+
+
+2299   > 12 ascii values.
+       TTIME 10
+
+
+2300   > 23 ascii values.
+       IRATE 5.7572 ul/min
+
+
+2301   > 8 ascii values.
+       IRUN
+
+
+2302   > 10 ascii values.
+       CITIME
+
+
+2303   > 12 ascii values.
+       TTIME 10
+
+
+2304   > 23 ascii values.
+       IRATE 5.7475 ul/min
+
+
+2305   > 8 ascii values.
+       IRUN
+
+
+2306   > 10 ascii values.
+       CITIME
+
+
+2307   > 12 ascii values.
+       TTIME 10
+
+
+2308   > 23 ascii values.
+       IRATE 5.7378 ul/min
+
+
+2309   > 8 ascii values.
+       IRUN
+
+
+2310   > 10 ascii values.
+       CITIME
+
+
+2311   > 12 ascii values.
+       TTIME 10
+
+
+2312   > 25 ascii values.
+       IRATE 307.3431 ul/min
+
+
+2313   > 8 ascii values.
+       IRUN
+
+
+2314   > 10 ascii values.
+       CITIME
+
+
+2315   > 12 ascii values.
+       TTIME 10
+
+
+2316   > 23 ascii values.
+       IRATE 6.6985 ul/min
+
+
+2317   > 8 ascii values.
+       IRUN
+
+
+2318   > 10 ascii values.
+       CITIME
+
+
+2319   > 12 ascii values.
+       TTIME 10
+
+
+2320   > 18 ascii values.
+       IRATE 0 ul/min
+
+
+2321   > 8 ascii values.
+       IRUN
+
+
+2322   > 10 ascii values.
+       CITIME
+
+
+2323   > 12 ascii values.
+       TTIME 10
+
+
+2324   > 18 ascii values.
+       IRATE 0 ul/min
+
+
+2325   > 8 ascii values.
+       IRUN
+
+
+2326   > 10 ascii values.
+       CITIME
+
+
+2327   > 12 ascii values.
+       TTIME 10
+
+
+2328   > 23 ascii values.
+       IRATE 3.6917 ul/min
+
+
+2329   > 8 ascii values.
+       IRUN
+
+
+2330   > 10 ascii values.
+       CITIME
+
+
+2331   > 12 ascii values.
+       TTIME 10
+
+
+2332   > 24 ascii values.
+       IRATE 12.6519 ul/min
+
+
+2333   > 8 ascii values.
+       IRUN
+
+
+2334   > 10 ascii values.
+       CITIME
+
+
+2335   > 12 ascii values.
+       TTIME 10
+
+
+2336   > 24 ascii values.
+       IRATE 13.3895 ul/min
+
+
+2337   > 8 ascii values.
+       IRUN
+
+
+2338   > 10 ascii values.
+       CITIME
+
+
+2339   > 12 ascii values.
+       TTIME 10
+
+
+2340   > 24 ascii values.
+       IRATE 13.2274 ul/min
+
+
+2341   > 8 ascii values.
+       IRUN
+
+
+2342   > 10 ascii values.
+       CITIME
+
+
+2343   > 12 ascii values.
+       TTIME 10
+
+
+2344   > 24 ascii values.
+       IRATE 13.0342 ul/min
+
+
+2345   > 8 ascii values.
+       IRUN
+
+
+2346   > 10 ascii values.
+       CITIME
+
+
+2347   > 12 ascii values.
+       TTIME 10
+
+
+2348   > 24 ascii values.
+       IRATE 12.9179 ul/min
+
+
+2349   > 8 ascii values.
+       IRUN
+
+
+2350   > 10 ascii values.
+       CITIME
+
+
+2351   > 12 ascii values.
+       TTIME 10
+
+
+2352   > 24 ascii values.
+       IRATE 12.8561 ul/min
+
+
+2353   > 8 ascii values.
+       IRUN
+
+
+2354   > 10 ascii values.
+       CITIME
+
+
+2355   > 12 ascii values.
+       TTIME 10
+
+
+2356   > 24 ascii values.
+       IRATE 12.8044 ul/min
+
+
+2357   > 8 ascii values.
+       IRUN
+
+
+2358   > 10 ascii values.
+       CITIME
+
+
+2359   > 12 ascii values.
+       TTIME 10
+
+
+2360   > 24 ascii values.
+       IRATE 12.7606 ul/min
+
+
+2361   > 8 ascii values.
+       IRUN
+
+
+2362   > 10 ascii values.
+       CITIME
+
+
+2363   > 12 ascii values.
+       TTIME 10
+
+
+2364   > 24 ascii values.
+       IRATE 12.7181 ul/min
+
+
+2365   > 8 ascii values.
+       IRUN
+
+
+2366   > 10 ascii values.
+       CITIME
+
+
+2367   > 12 ascii values.
+       TTIME 10
+
+
+2368   > 24 ascii values.
+       IRATE 12.6726 ul/min
+
+
+2369   > 8 ascii values.
+       IRUN
+
+
+2370   > 10 ascii values.
+       CITIME
+
+
+2371   > 12 ascii values.
+       TTIME 10
+
+
+2372   > 24 ascii values.
+       IRATE 12.6223 ul/min
+
+
+2373   > 8 ascii values.
+       IRUN
+
+
+2374   > 10 ascii values.
+       CITIME
+
+
+2375   > 12 ascii values.
+       TTIME 10
+
+
+2376   > 24 ascii values.
+       IRATE 12.5817 ul/min
+
+
+2377   > 8 ascii values.
+       IRUN
+
+
+2378   > 10 ascii values.
+       CITIME
+
+
+2379   > 12 ascii values.
+       TTIME 10
+
+
+2380   > 24 ascii values.
+       IRATE 12.5403 ul/min
+
+
+2381   > 8 ascii values.
+       IRUN
+
+
+2382   > 10 ascii values.
+       CITIME
+
+
+2383   > 12 ascii values.
+       TTIME 10
+
+
+2384   > 24 ascii values.
+       IRATE 12.4909 ul/min
+
+
+2385   > 8 ascii values.
+       IRUN
+
+
+2386   > 10 ascii values.
+       CITIME
+
+
+2387   > 12 ascii values.
+       TTIME 10
+
+
+2388   > 24 ascii values.
+       IRATE 12.4452 ul/min
+
+
+2389   > 8 ascii values.
+       IRUN
+
+
+2390   > 10 ascii values.
+       CITIME
+
+
+2391   > 12 ascii values.
+       TTIME 10
+
+
+2392   > 24 ascii values.
+       IRATE 12.4079 ul/min
+
+
+2393   > 8 ascii values.
+       IRUN
+
+
+2394   > 10 ascii values.
+       CITIME
+
+
+2395   > 12 ascii values.
+       TTIME 10
+
+
+2396   > 24 ascii values.
+       IRATE 12.3657 ul/min
+
+
+2397   > 8 ascii values.
+       IRUN
+
+
+2398   > 10 ascii values.
+       CITIME
+
+
+2399   > 12 ascii values.
+       TTIME 10
+
+
+2400   > 24 ascii values.
+       IRATE 12.3159 ul/min
+
+
+2401   > 8 ascii values.
+       IRUN
+
+
+2402   > 10 ascii values.
+       CITIME
+
+
+2403   > 12 ascii values.
+       TTIME 10
+
+
+2404   > 24 ascii values.
+       IRATE 12.2739 ul/min
+
+
+2405   > 8 ascii values.
+       IRUN
+
+
+2406   > 10 ascii values.
+       CITIME
+
+
+2407   > 12 ascii values.
+       TTIME 10
+
+
+2408   > 24 ascii values.
+       IRATE 12.2377 ul/min
+
+
+2409   > 8 ascii values.
+       IRUN
+
+
+2410   > 10 ascii values.
+       CITIME
+
+
+2411   > 12 ascii values.
+       TTIME 10
+
+
+2412   > 24 ascii values.
+       IRATE 12.1965 ul/min
+
+
+2413   > 8 ascii values.
+       IRUN
+
+
+2414   > 10 ascii values.
+       CITIME
+
+
+2415   > 12 ascii values.
+       TTIME 10
+
+
+2416   > 24 ascii values.
+       IRATE 12.1482 ul/min
+
+
+2417   > 8 ascii values.
+       IRUN
+
+
+2418   > 10 ascii values.
+       CITIME
+
+
+2419   > 12 ascii values.
+       TTIME 10
+
+
+2420   > 24 ascii values.
+       IRATE 12.1053 ul/min
+
+
+2421   > 8 ascii values.
+       IRUN
+
+
+2422   > 10 ascii values.
+       CITIME
+
+
+2423   > 12 ascii values.
+       TTIME 10
+
+
+2424   > 24 ascii values.
+       IRATE 12.0706 ul/min
+
+
+2425   > 8 ascii values.
+       IRUN
+
+
+2426   > 10 ascii values.
+       CITIME
+
+
+2427   > 12 ascii values.
+       TTIME 10
+
+
+2428   > 24 ascii values.
+       IRATE 12.0322 ul/min
+
+
+2429   > 8 ascii values.
+       IRUN
+
+
+2430   > 10 ascii values.
+       CITIME
+
+
+2431   > 12 ascii values.
+       TTIME 10
+
+
+2432   > 23 ascii values.
+       IRATE 11.988 ul/min
+
+
+2433   > 8 ascii values.
+       IRUN
+
+
+2434   > 10 ascii values.
+       CITIME
+
+
+2435   > 12 ascii values.
+       TTIME 10
+
+
+2436   > 24 ascii values.
+       IRATE 11.9413 ul/min
+
+
+2437   > 8 ascii values.
+       IRUN
+
+
+2438   > 10 ascii values.
+       CITIME
+
+
+2439   > 12 ascii values.
+       TTIME 10
+
+
+2440   > 24 ascii values.
+       IRATE 11.9058 ul/min
+
+
+2441   > 8 ascii values.
+       IRUN
+
+
+2442   > 10 ascii values.
+       CITIME
+
+
+2443   > 12 ascii values.
+       TTIME 10
+
+
+2444   > 24 ascii values.
+       IRATE 11.8704 ul/min
+
+
+2445   > 8 ascii values.
+       IRUN
+
+
+2446   > 10 ascii values.
+       CITIME
+
+
+2447   > 12 ascii values.
+       TTIME 10
+
+
+2448   > 24 ascii values.
+       IRATE 11.8306 ul/min
+
+
+2449   > 8 ascii values.
+       IRUN
+
+
+2450   > 10 ascii values.
+       CITIME
+
+
+2451   > 12 ascii values.
+       TTIME 10
+
+
+2452   > 24 ascii values.
+       IRATE 11.7857 ul/min
+
+
+2453   > 8 ascii values.
+       IRUN
+
+
+2454   > 10 ascii values.
+       CITIME
+
+
+2455   > 12 ascii values.
+       TTIME 10
+
+
+2456   > 24 ascii values.
+       IRATE 11.7456 ul/min
+
+
+2457   > 8 ascii values.
+       IRUN
+
+
+2458   > 10 ascii values.
+       CITIME
+
+
+2459   > 12 ascii values.
+       TTIME 10
+
+
+2460   > 24 ascii values.
+       IRATE 11.7122 ul/min
+
+
+2461   > 8 ascii values.
+       IRUN
+
+
+2462   > 10 ascii values.
+       CITIME
+
+
+2463   > 12 ascii values.
+       TTIME 10
+
+
+2464   > 24 ascii values.
+       IRATE 11.6761 ul/min
+
+
+2465   > 8 ascii values.
+       IRUN
+
+
+2466   > 10 ascii values.
+       CITIME
+
+
+2467   > 12 ascii values.
+       TTIME 10
+
+
+2468   > 24 ascii values.
+       IRATE 11.6358 ul/min
+
+
+2469   > 8 ascii values.
+       IRUN
+
+
+2470   > 10 ascii values.
+       CITIME
+
+
+2471   > 12 ascii values.
+       TTIME 10
+
+
+2472   > 24 ascii values.
+       IRATE 11.5924 ul/min
+
+
+2473   > 8 ascii values.
+       IRUN
+
+
+2474   > 10 ascii values.
+       CITIME
+
+
+2475   > 12 ascii values.
+       TTIME 10
+
+
+2476   > 24 ascii values.
+       IRATE 11.5575 ul/min
+
+
+2477   > 8 ascii values.
+       IRUN
+
+
+2478   > 10 ascii values.
+       CITIME
+
+
+2479   > 12 ascii values.
+       TTIME 10
+
+
+2480   > 24 ascii values.
+       IRATE 11.5241 ul/min
+
+
+2481   > 8 ascii values.
+       IRUN
+
+
+2482   > 10 ascii values.
+       CITIME
+
+
+2483   > 12 ascii values.
+       TTIME 10
+
+
+2484   > 24 ascii values.
+       IRATE 11.4877 ul/min
+
+
+2485   > 8 ascii values.
+       IRUN
+
+
+2486   > 10 ascii values.
+       CITIME
+
+
+2487   > 12 ascii values.
+       TTIME 10
+
+
+2488   > 24 ascii values.
+       IRATE 11.4476 ul/min
+
+
+2489   > 8 ascii values.
+       IRUN
+
+
+2490   > 10 ascii values.
+       CITIME
+
+
+2491   > 12 ascii values.
+       TTIME 10
+
+
+2492   > 24 ascii values.
+       IRATE 11.4076 ul/min
+
+
+2493   > 8 ascii values.
+       IRUN
+
+
+2494   > 10 ascii values.
+       CITIME
+
+
+2495   > 12 ascii values.
+       TTIME 10
+
+
+2496   > 24 ascii values.
+       IRATE 11.3749 ul/min
+
+
+2497   > 8 ascii values.
+       IRUN
+
+
+2498   > 10 ascii values.
+       CITIME
+
+
+2499   > 12 ascii values.
+       TTIME 10
+
+
+2500   > 24 ascii values.
+       IRATE 11.3418 ul/min
+
+
+2501   > 8 ascii values.
+       IRUN
+
+
+2502   > 10 ascii values.
+       CITIME
+
+
+2503   > 12 ascii values.
+       TTIME 10
+
+
+2504   > 24 ascii values.
+       IRATE 11.3058 ul/min
+
+
+2505   > 8 ascii values.
+       IRUN
+
+
+2506   > 10 ascii values.
+       CITIME
+
+
+2507   > 12 ascii values.
+       TTIME 10
+
+
+2508   > 24 ascii values.
+       IRATE 11.2667 ul/min
+
+
+2509   > 8 ascii values.
+       IRUN
+
+
+2510   > 10 ascii values.
+       CITIME
+
+
+2511   > 12 ascii values.
+       TTIME 10
+
+
+2512   > 24 ascii values.
+       IRATE 11.2295 ul/min
+
+
+2513   > 8 ascii values.
+       IRUN
+
+
+2514   > 10 ascii values.
+       CITIME
+
+
+2515   > 12 ascii values.
+       TTIME 10
+
+
+2516   > 23 ascii values.
+       IRATE 11.198 ul/min
+
+
+2517   > 8 ascii values.
+       IRUN
+
+
+2518   > 10 ascii values.
+       CITIME
+
+
+2519   > 12 ascii values.
+       TTIME 10
+
+
+2520   > 24 ascii values.
+       IRATE 11.1654 ul/min
+
+
+2521   > 8 ascii values.
+       IRUN
+
+
+2522   > 10 ascii values.
+       CITIME
+
+
+2523   > 12 ascii values.
+       TTIME 10
+
+
+2524   > 24 ascii values.
+       IRATE 11.1303 ul/min
+
+
+2525   > 8 ascii values.
+       IRUN
+
+
+2526   > 10 ascii values.
+       CITIME
+
+
+2527   > 12 ascii values.
+       TTIME 10
+
+
+2528   > 24 ascii values.
+       IRATE 11.0927 ul/min
+
+
+2529   > 8 ascii values.
+       IRUN
+
+
+2530   > 10 ascii values.
+       CITIME
+
+
+2531   > 12 ascii values.
+       TTIME 10
+
+
+2532   > 24 ascii values.
+       IRATE 11.0574 ul/min
+
+
+2533   > 8 ascii values.
+       IRUN
+
+
+2534   > 10 ascii values.
+       CITIME
+
+
+2535   > 12 ascii values.
+       TTIME 10
+
+
+2536   > 24 ascii values.
+       IRATE 11.0267 ul/min
+
+
+2537   > 8 ascii values.
+       IRUN
+
+
+2538   > 10 ascii values.
+       CITIME
+
+
+2539   > 12 ascii values.
+       TTIME 10
+
+
+2540   > 24 ascii values.
+       IRATE 10.9949 ul/min
+
+
+2541   > 8 ascii values.
+       IRUN
+
+
+2542   > 10 ascii values.
+       CITIME
+
+
+2543   > 12 ascii values.
+       TTIME 10
+
+
+2544   > 24 ascii values.
+       IRATE 10.9612 ul/min
+
+
+2545   > 8 ascii values.
+       IRUN
+
+
+2546   > 10 ascii values.
+       CITIME
+
+
+2547   > 12 ascii values.
+       TTIME 10
+
+
+2548   > 24 ascii values.
+       IRATE 10.9253 ul/min
+
+
+2549   > 8 ascii values.
+       IRUN
+
+
+2550   > 10 ascii values.
+       CITIME
+
+
+2551   > 12 ascii values.
+       TTIME 10
+
+
+2552   > 24 ascii values.
+       IRATE 10.8908 ul/min
+
+
+2553   > 8 ascii values.
+       IRUN
+
+
+2554   > 10 ascii values.
+       CITIME
+
+
+2555   > 12 ascii values.
+       TTIME 10
+
+
+2556   > 24 ascii values.
+       IRATE 10.8609 ul/min
+
+
+2557   > 8 ascii values.
+       IRUN
+
+
+2558   > 10 ascii values.
+       CITIME
+
+
+2559   > 12 ascii values.
+       TTIME 10
+
+
+2560   > 24 ascii values.
+       IRATE 10.8303 ul/min
+
+
+2561   > 8 ascii values.
+       IRUN
+
+
+2562   > 10 ascii values.
+       CITIME
+
+
+2563   > 12 ascii values.
+       TTIME 10
+
+
+2564   > 23 ascii values.
+       IRATE 10.798 ul/min
+
+
+2565   > 8 ascii values.
+       IRUN
+
+
+2566   > 10 ascii values.
+       CITIME
+
+
+2567   > 12 ascii values.
+       TTIME 10
+
+
+2568   > 24 ascii values.
+       IRATE 10.7641 ul/min
+
+
+2569   > 8 ascii values.
+       IRUN
+
+
+2570   > 10 ascii values.
+       CITIME
+
+
+2571   > 12 ascii values.
+       TTIME 10
+
+
+2572   > 24 ascii values.
+       IRATE 10.7299 ul/min
+
+
+2573   > 8 ascii values.
+       IRUN
+
+
+2574   > 10 ascii values.
+       CITIME
+
+
+2575   > 12 ascii values.
+       TTIME 10
+
+
+2576   > 24 ascii values.
+       IRATE 10.7004 ul/min
+
+
+2577   > 8 ascii values.
+       IRUN
+
+
+2578   > 10 ascii values.
+       CITIME
+
+
+2579   > 12 ascii values.
+       TTIME 10
+
+
+2580   > 24 ascii values.
+       IRATE 10.6711 ul/min
+
+
+2581   > 8 ascii values.
+       IRUN
+
+
+2582   > 10 ascii values.
+       CITIME
+
+
+2583   > 12 ascii values.
+       TTIME 10
+
+
+2584   > 24 ascii values.
+       IRATE 10.6405 ul/min
+
+
+2585   > 8 ascii values.
+       IRUN
+
+
+2586   > 10 ascii values.
+       CITIME
+
+
+2587   > 12 ascii values.
+       TTIME 10
+
+
+2588   > 24 ascii values.
+       IRATE 10.6085 ul/min
+
+
+2589   > 8 ascii values.
+       IRUN
+
+
+2590   > 10 ascii values.
+       CITIME
+
+
+2591   > 12 ascii values.
+       TTIME 10
+
+
+2592   > 24 ascii values.
+       IRATE 10.5753 ul/min
+
+
+2593   > 8 ascii values.
+       IRUN
+
+
+2594   > 10 ascii values.
+       CITIME
+
+
+2595   > 12 ascii values.
+       TTIME 10
+
+
+2596   > 24 ascii values.
+       IRATE 10.5451 ul/min
+
+
+2597   > 8 ascii values.
+       IRUN
+
+
+2598   > 10 ascii values.
+       CITIME
+
+
+2599   > 12 ascii values.
+       TTIME 10
+
+
+2600   > 23 ascii values.
+       IRATE 10.517 ul/min
+
+
+2601   > 8 ascii values.
+       IRUN
+
+
+2602   > 10 ascii values.
+       CITIME
+
+
+2603   > 12 ascii values.
+       TTIME 10
+
+
+2604   > 24 ascii values.
+       IRATE 10.4881 ul/min
+
+
+2605   > 8 ascii values.
+       IRUN
+
+
+2606   > 10 ascii values.
+       CITIME
+
+
+2607   > 12 ascii values.
+       TTIME 10
+
+
+2608   > 24 ascii values.
+       IRATE 10.4581 ul/min
+
+
+2609   > 8 ascii values.
+       IRUN
+
+
+2610   > 10 ascii values.
+       CITIME
+
+
+2611   > 12 ascii values.
+       TTIME 10
+
+
+2612   > 24 ascii values.
+       IRATE 10.4271 ul/min
+
+
+2613   > 8 ascii values.
+       IRUN
+
+
+2614   > 10 ascii values.
+       CITIME
+
+
+2615   > 12 ascii values.
+       TTIME 10
+
+
+2616   > 24 ascii values.
+       IRATE 10.3957 ul/min
+
+
+2617   > 8 ascii values.
+       IRUN
+
+
+2618   > 10 ascii values.
+       CITIME
+
+
+2619   > 12 ascii values.
+       TTIME 10
+
+
+2620   > 24 ascii values.
+       IRATE 10.3679 ul/min
+
+
+2621   > 8 ascii values.
+       IRUN
+
+
+2622   > 10 ascii values.
+       CITIME
+
+
+2623   > 12 ascii values.
+       TTIME 10
+
+
+2624   > 24 ascii values.
+       IRATE 10.3406 ul/min
+
+
+2625   > 8 ascii values.
+       IRUN
+
+
+2626   > 10 ascii values.
+       CITIME
+
+
+2627   > 12 ascii values.
+       TTIME 10
+
+
+2628   > 24 ascii values.
+       IRATE 10.3125 ul/min
+
+
+2629   > 8 ascii values.
+       IRUN
+
+
+2630   > 10 ascii values.
+       CITIME
+
+
+2631   > 12 ascii values.
+       TTIME 10
+
+
+2632   > 24 ascii values.
+       IRATE 10.2835 ul/min
+
+
+2633   > 8 ascii values.
+       IRUN
+
+
+2634   > 10 ascii values.
+       CITIME
+
+
+2635   > 12 ascii values.
+       TTIME 10
+
+
+2636   > 24 ascii values.
+       IRATE 10.2537 ul/min
+
+
+2637   > 8 ascii values.
+       IRUN
+
+
+2638   > 10 ascii values.
+       CITIME
+
+
+2639   > 12 ascii values.
+       TTIME 10
+
+
+2640   > 23 ascii values.
+       IRATE 10.224 ul/min
+
+
+2641   > 8 ascii values.
+       IRUN
+
+
+2642   > 10 ascii values.
+       CITIME
+
+
+2643   > 12 ascii values.
+       TTIME 10
+
+
+2644   > 24 ascii values.
+       IRATE 10.1974 ul/min
+
+
+2645   > 8 ascii values.
+       IRUN
+
+
+2646   > 10 ascii values.
+       CITIME
+
+
+2647   > 12 ascii values.
+       TTIME 10
+
+
+2648   > 23 ascii values.
+       IRATE 10.171 ul/min
+
+
+2649   > 8 ascii values.
+       IRUN
+
+
+2650   > 10 ascii values.
+       CITIME
+
+
+2651   > 12 ascii values.
+       TTIME 10
+
+
+2652   > 23 ascii values.
+       IRATE 10.144 ul/min
+
+
+2653   > 8 ascii values.
+       IRUN
+
+
+2654   > 10 ascii values.
+       CITIME
+
+
+2655   > 12 ascii values.
+       TTIME 10
+
+
+2656   > 24 ascii values.
+       IRATE 10.1163 ul/min
+
+
+2657   > 8 ascii values.
+       IRUN
+
+
+2658   > 10 ascii values.
+       CITIME
+
+
+2659   > 12 ascii values.
+       TTIME 10
+
+
+2660   > 23 ascii values.
+       IRATE 10.088 ul/min
+
+
+2661   > 8 ascii values.
+       IRUN
+
+
+2662   > 10 ascii values.
+       CITIME
+
+
+2663   > 12 ascii values.
+       TTIME 10
+
+
+2664   > 24 ascii values.
+       IRATE 10.0594 ul/min
+
+
+2665   > 8 ascii values.
+       IRUN
+
+
+2666   > 10 ascii values.
+       CITIME
+
+
+2667   > 12 ascii values.
+       TTIME 10
+
+
+2668   > 24 ascii values.
+       IRATE 10.0334 ul/min
+
+
+2669   > 8 ascii values.
+       IRUN
+
+
+2670   > 10 ascii values.
+       CITIME
+
+
+2671   > 12 ascii values.
+       TTIME 10
+
+
+2672   > 24 ascii values.
+       IRATE 10.0082 ul/min
+
+
+2673   > 8 ascii values.
+       IRUN
+
+
+2674   > 10 ascii values.
+       CITIME
+
+
+2675   > 12 ascii values.
+       TTIME 10
+
+
+2676   > 23 ascii values.
+       IRATE 9.9824 ul/min
+
+
+2677   > 8 ascii values.
+       IRUN
+
+
+2678   > 10 ascii values.
+       CITIME
+
+
+2679   > 12 ascii values.
+       TTIME 10
+
+
+2680   > 23 ascii values.
+       IRATE 9.9561 ul/min
+
+
+2681   > 8 ascii values.
+       IRUN
+
+
+2682   > 10 ascii values.
+       CITIME
+
+
+2683   > 12 ascii values.
+       TTIME 10
+
+
+2684   > 23 ascii values.
+       IRATE 9.9294 ul/min
+
+
+2685   > 8 ascii values.
+       IRUN
+
+
+2686   > 10 ascii values.
+       CITIME
+
+
+2687   > 12 ascii values.
+       TTIME 10
+
+
+2688   > 23 ascii values.
+       IRATE 9.9022 ul/min
+
+
+2689   > 8 ascii values.
+       IRUN
+
+
+2690   > 10 ascii values.
+       CITIME
+
+
+2691   > 12 ascii values.
+       TTIME 10
+
+
+2692   > 23 ascii values.
+       IRATE 9.8759 ul/min
+
+
+2693   > 8 ascii values.
+       IRUN
+
+
+2694   > 10 ascii values.
+       CITIME
+
+
+2695   > 12 ascii values.
+       TTIME 10
+
+
+2696   > 23 ascii values.
+       IRATE 9.8517 ul/min
+
+
+2697   > 8 ascii values.
+       IRUN
+
+
+2698   > 10 ascii values.
+       CITIME
+
+
+2699   > 12 ascii values.
+       TTIME 10
+
+
+2700   > 23 ascii values.
+       IRATE 9.8273 ul/min
+
+
+2701   > 8 ascii values.
+       IRUN
+
+
+2702   > 10 ascii values.
+       CITIME
+
+
+2703   > 12 ascii values.
+       TTIME 10
+
+
+2704   > 23 ascii values.
+       IRATE 9.8024 ul/min
+
+
+2705   > 8 ascii values.
+       IRUN
+
+
+2706   > 10 ascii values.
+       CITIME
+
+
+2707   > 12 ascii values.
+       TTIME 10
+
+
+2708   > 23 ascii values.
+       IRATE 9.7772 ul/min
+
+
+2709   > 8 ascii values.
+       IRUN
+
+
+2710   > 10 ascii values.
+       CITIME
+
+
+2711   > 12 ascii values.
+       TTIME 10
+
+
+2712   > 23 ascii values.
+       IRATE 9.7518 ul/min
+
+
+2713   > 8 ascii values.
+       IRUN
+
+
+2714   > 10 ascii values.
+       CITIME
+
+
+2715   > 12 ascii values.
+       TTIME 10
+
+
+2716   > 22 ascii values.
+       IRATE 9.726 ul/min
+
+
+2717   > 8 ascii values.
+       IRUN
+
+
+2718   > 10 ascii values.
+       CITIME
+
+
+2719   > 12 ascii values.
+       TTIME 10
+
+
+2720   > 23 ascii values.
+       IRATE 9.7012 ul/min
+
+
+2721   > 8 ascii values.
+       IRUN
+
+
+2722   > 10 ascii values.
+       CITIME
+
+
+2723   > 12 ascii values.
+       TTIME 10
+
+
+2724   > 22 ascii values.
+       IRATE 9.678 ul/min
+
+
+2725   > 8 ascii values.
+       IRUN
+
+
+2726   > 10 ascii values.
+       CITIME
+
+
+2727   > 12 ascii values.
+       TTIME 10
+
+
+2728   > 23 ascii values.
+       IRATE 9.6547 ul/min
+
+
+2729   > 8 ascii values.
+       IRUN
+
+
+2730   > 10 ascii values.
+       CITIME
+
+
+2731   > 12 ascii values.
+       TTIME 10
+
+
+2732   > 22 ascii values.
+       IRATE 9.631 ul/min
+
+
+2733   > 8 ascii values.
+       IRUN
+
+
+2734   > 10 ascii values.
+       CITIME
+
+
+2735   > 12 ascii values.
+       TTIME 10
+
+
+2736   > 23 ascii values.
+       IRATE 9.6071 ul/min
+
+
+2737   > 8 ascii values.
+       IRUN
+
+
+2738   > 10 ascii values.
+       CITIME
+
+
+2739   > 12 ascii values.
+       TTIME 10
+
+
+2740   > 23 ascii values.
+       IRATE 9.5831 ul/min
+
+
+2741   > 8 ascii values.
+       IRUN
+
+
+2742   > 10 ascii values.
+       CITIME
+
+
+2743   > 12 ascii values.
+       TTIME 10
+
+
+2744   > 23 ascii values.
+       IRATE 9.5588 ul/min
+
+
+2745   > 8 ascii values.
+       IRUN
+
+
+2746   > 10 ascii values.
+       CITIME
+
+
+2747   > 12 ascii values.
+       TTIME 10
+
+
+2748   > 23 ascii values.
+       IRATE 9.5347 ul/min
+
+
+2749   > 8 ascii values.
+       IRUN
+
+
+2750   > 10 ascii values.
+       CITIME
+
+
+2751   > 12 ascii values.
+       TTIME 10
+
+
+2752   > 23 ascii values.
+       IRATE 9.5123 ul/min
+
+
+2753   > 8 ascii values.
+       IRUN
+
+
+2754   > 10 ascii values.
+       CITIME
+
+
+2755   > 12 ascii values.
+       TTIME 10
+
+
+2756   > 23 ascii values.
+       IRATE 9.4901 ul/min
+
+
+2757   > 8 ascii values.
+       IRUN
+
+
+2758   > 10 ascii values.
+       CITIME
+
+
+2759   > 12 ascii values.
+       TTIME 10
+
+
+2760   > 23 ascii values.
+       IRATE 9.4678 ul/min
+
+
+2761   > 8 ascii values.
+       IRUN
+
+
+2762   > 10 ascii values.
+       CITIME
+
+
+2763   > 12 ascii values.
+       TTIME 10
+
+
+2764   > 23 ascii values.
+       IRATE 9.4452 ul/min
+
+
+2765   > 8 ascii values.
+       IRUN
+
+
+2766   > 10 ascii values.
+       CITIME
+
+
+2767   > 12 ascii values.
+       TTIME 10
+
+
+2768   > 23 ascii values.
+       IRATE 9.4225 ul/min
+
+
+2769   > 8 ascii values.
+       IRUN
+
+
+2770   > 10 ascii values.
+       CITIME
+
+
+2771   > 12 ascii values.
+       TTIME 10
+
+
+2772   > 23 ascii values.
+       IRATE 9.3998 ul/min
+
+
+2773   > 8 ascii values.
+       IRUN
+
+
+2774   > 10 ascii values.
+       CITIME
+
+
+2775   > 12 ascii values.
+       TTIME 10
+
+
+2776   > 23 ascii values.
+       IRATE 9.3769 ul/min
+
+
+2777   > 8 ascii values.
+       IRUN
+
+
+2778   > 10 ascii values.
+       CITIME
+
+
+2779   > 12 ascii values.
+       TTIME 10
+
+
+2780   > 23 ascii values.
+       IRATE 9.3543 ul/min
+
+
+2781   > 8 ascii values.
+       IRUN
+
+
+2782   > 10 ascii values.
+       CITIME
+
+
+2783   > 12 ascii values.
+       TTIME 10
+
+
+2784   > 22 ascii values.
+       IRATE 9.333 ul/min
+
+
+2785   > 8 ascii values.
+       IRUN
+
+
+2786   > 10 ascii values.
+       CITIME
+
+
+2787   > 12 ascii values.
+       TTIME 10
+
+
+2788   > 22 ascii values.
+       IRATE 9.312 ul/min
+
+
+2789   > 8 ascii values.
+       IRUN
+
+
+2790   > 10 ascii values.
+       CITIME
+
+
+2791   > 12 ascii values.
+       TTIME 10
+
+
+2792   > 23 ascii values.
+       IRATE 9.2908 ul/min
+
+
+2793   > 8 ascii values.
+       IRUN
+
+
+2794   > 10 ascii values.
+       CITIME
+
+
+2795   > 12 ascii values.
+       TTIME 10
+
+
+2796   > 23 ascii values.
+       IRATE 9.2695 ul/min
+
+
+2797   > 8 ascii values.
+       IRUN
+
+
+2798   > 10 ascii values.
+       CITIME
+
+
+2799   > 12 ascii values.
+       TTIME 10
+
+
+2800   > 23 ascii values.
+       IRATE 9.2481 ul/min
+
+
+2801   > 8 ascii values.
+       IRUN
+
+
+2802   > 10 ascii values.
+       CITIME
+
+
+2803   > 12 ascii values.
+       TTIME 10
+
+
+2804   > 23 ascii values.
+       IRATE 9.2267 ul/min
+
+
+2805   > 8 ascii values.
+       IRUN
+
+
+2806   > 10 ascii values.
+       CITIME
+
+
+2807   > 12 ascii values.
+       TTIME 10
+
+
+2808   > 23 ascii values.
+       IRATE 9.2054 ul/min
+
+
+2809   > 8 ascii values.
+       IRUN
+
+
+2810   > 10 ascii values.
+       CITIME
+
+
+2811   > 12 ascii values.
+       TTIME 10
+
+
+2812   > 23 ascii values.
+       IRATE 9.1838 ul/min
+
+
+2813   > 8 ascii values.
+       IRUN
+
+
+2814   > 10 ascii values.
+       CITIME
+
+
+2815   > 12 ascii values.
+       TTIME 10
+
+
+2816   > 23 ascii values.
+       IRATE 9.1631 ul/min
+
+
+2817   > 8 ascii values.
+       IRUN
+
+
+2818   > 10 ascii values.
+       CITIME
+
+
+2819   > 12 ascii values.
+       TTIME 10
+
+
+2820   > 23 ascii values.
+       IRATE 9.1432 ul/min
+
+
+2821   > 8 ascii values.
+       IRUN
+
+
+2822   > 10 ascii values.
+       CITIME
+
+
+2823   > 12 ascii values.
+       TTIME 10
+
+
+2824   > 23 ascii values.
+       IRATE 9.1233 ul/min
+
+
+2825   > 8 ascii values.
+       IRUN
+
+
+2826   > 10 ascii values.
+       CITIME
+
+
+2827   > 12 ascii values.
+       TTIME 10
+
+
+2828   > 23 ascii values.
+       IRATE 9.1033 ul/min
+
+
+2829   > 8 ascii values.
+       IRUN
+
+
+2830   > 10 ascii values.
+       CITIME
+
+
+2831   > 12 ascii values.
+       TTIME 10
+
+
+2832   > 23 ascii values.
+       IRATE 9.0833 ul/min
+
+
+2833   > 8 ascii values.
+       IRUN
+
+
+2834   > 10 ascii values.
+       CITIME
+
+
+2835   > 12 ascii values.
+       TTIME 10
+
+
+2836   > 23 ascii values.
+       IRATE 9.0632 ul/min
+
+
+2837   > 8 ascii values.
+       IRUN
+
+
+2838   > 10 ascii values.
+       CITIME
+
+
+2839   > 12 ascii values.
+       TTIME 10
+
+
+2840   > 23 ascii values.
+       IRATE 9.0432 ul/min
+
+
+2841   > 8 ascii values.
+       IRUN
+
+
+2842   > 10 ascii values.
+       CITIME
+
+
+2843   > 12 ascii values.
+       TTIME 10
+
+
+2844   > 23 ascii values.
+       IRATE 9.0233 ul/min
+
+
+2845   > 8 ascii values.
+       IRUN
+
+
+2846   > 10 ascii values.
+       CITIME
+
+
+2847   > 12 ascii values.
+       TTIME 10
+
+
+2848   > 23 ascii values.
+       IRATE 9.0033 ul/min
+
+
+2849   > 8 ascii values.
+       IRUN
+
+
+2850   > 10 ascii values.
+       CITIME
+
+
+2851   > 12 ascii values.
+       TTIME 10
+
+
+2852   > 23 ascii values.
+       IRATE 8.9834 ul/min
+
+
+2853   > 8 ascii values.
+       IRUN
+
+
+2854   > 10 ascii values.
+       CITIME
+
+
+2855   > 12 ascii values.
+       TTIME 10
+
+
+2856   > 23 ascii values.
+       IRATE 8.9646 ul/min
+
+
+2857   > 8 ascii values.
+       IRUN
+
+
+2858   > 10 ascii values.
+       CITIME
+
+
+2859   > 12 ascii values.
+       TTIME 10
+
+
+2860   > 22 ascii values.
+       IRATE 8.946 ul/min
+
+
+2861   > 8 ascii values.
+       IRUN
+
+
+2862   > 10 ascii values.
+       CITIME
+
+
+2863   > 12 ascii values.
+       TTIME 10
+
+
+2864   > 23 ascii values.
+       IRATE 8.9272 ul/min
+
+
+2865   > 8 ascii values.
+       IRUN
+
+
+2866   > 10 ascii values.
+       CITIME
+
+
+2867   > 12 ascii values.
+       TTIME 10
+
+
+2868   > 23 ascii values.
+       IRATE 8.9085 ul/min
+
+
+2869   > 8 ascii values.
+       IRUN
+
+
+2870   > 10 ascii values.
+       CITIME
+
+
+2871   > 12 ascii values.
+       TTIME 10
+
+
+2872   > 23 ascii values.
+       IRATE 8.8898 ul/min
+
+
+2873   > 8 ascii values.
+       IRUN
+
+
+2874   > 10 ascii values.
+       CITIME
+
+
+2875   > 12 ascii values.
+       TTIME 10
+
+
+2876   > 23 ascii values.
+       IRATE 8.8711 ul/min
+
+
+2877   > 8 ascii values.
+       IRUN
+
+
+2878   > 10 ascii values.
+       CITIME
+
+
+2879   > 12 ascii values.
+       TTIME 10
+
+
+2880   > 23 ascii values.
+       IRATE 8.8525 ul/min
+
+
+2881   > 8 ascii values.
+       IRUN
+
+
+2882   > 10 ascii values.
+       CITIME
+
+
+2883   > 12 ascii values.
+       TTIME 10
+
+
+2884   > 22 ascii values.
+       IRATE 8.834 ul/min
+
+
+2885   > 8 ascii values.
+       IRUN
+
+
+2886   > 10 ascii values.
+       CITIME
+
+
+2887   > 12 ascii values.
+       TTIME 10
+
+
+2888   > 23 ascii values.
+       IRATE 8.8155 ul/min
+
+
+2889   > 8 ascii values.
+       IRUN
+
+
+2890   > 10 ascii values.
+       CITIME
+
+
+2891   > 12 ascii values.
+       TTIME 10
+
+
+2892   > 23 ascii values.
+       IRATE 8.7969 ul/min
+
+
+2893   > 8 ascii values.
+       IRUN
+
+
+2894   > 10 ascii values.
+       CITIME
+
+
+2895   > 12 ascii values.
+       TTIME 10
+
+
+2896   > 23 ascii values.
+       IRATE 8.7791 ul/min
+
+
+2897   > 8 ascii values.
+       IRUN
+
+
+2898   > 10 ascii values.
+       CITIME
+
+
+2899   > 12 ascii values.
+       TTIME 10
+
+
+2900   > 23 ascii values.
+       IRATE 8.7617 ul/min
+
+
+2901   > 8 ascii values.
+       IRUN
+
+
+2902   > 10 ascii values.
+       CITIME
+
+
+2903   > 12 ascii values.
+       TTIME 10
+
+
+2904   > 23 ascii values.
+       IRATE 8.7443 ul/min
+
+
+2905   > 8 ascii values.
+       IRUN
+
+
+2906   > 10 ascii values.
+       CITIME
+
+
+2907   > 12 ascii values.
+       TTIME 10
+
+
+2908   > 23 ascii values.
+       IRATE 8.7269 ul/min
+
+
+2909   > 8 ascii values.
+       IRUN
+
+
+2910   > 10 ascii values.
+       CITIME
+
+
+2911   > 12 ascii values.
+       TTIME 10
+
+
+2912   > 23 ascii values.
+       IRATE 8.7095 ul/min
+
+
+2913   > 8 ascii values.
+       IRUN
+
+
+2914   > 10 ascii values.
+       CITIME
+
+
+2915   > 12 ascii values.
+       TTIME 10
+
+
+2916   > 23 ascii values.
+       IRATE 8.6921 ul/min
+
+
+2917   > 8 ascii values.
+       IRUN
+
+
+2918   > 10 ascii values.
+       CITIME
+
+
+2919   > 12 ascii values.
+       TTIME 10
+
+
+2920   > 23 ascii values.
+       IRATE 8.6749 ul/min
+
+
+2921   > 8 ascii values.
+       IRUN
+
+
+2922   > 10 ascii values.
+       CITIME
+
+
+2923   > 12 ascii values.
+       TTIME 10
+
+
+2924   > 23 ascii values.
+       IRATE 8.6577 ul/min
+
+
+2925   > 8 ascii values.
+       IRUN
+
+
+2926   > 10 ascii values.
+       CITIME
+
+
+2927   > 12 ascii values.
+       TTIME 10
+
+
+2928   > 23 ascii values.
+       IRATE 8.6406 ul/min
+
+
+2929   > 8 ascii values.
+       IRUN
+
+
+2930   > 10 ascii values.
+       CITIME
+
+
+2931   > 12 ascii values.
+       TTIME 10
+
+
+2932   > 23 ascii values.
+       IRATE 8.6236 ul/min
+
+
+2933   > 8 ascii values.
+       IRUN
+
+
+2934   > 10 ascii values.
+       CITIME
+
+
+2935   > 12 ascii values.
+       TTIME 10
+
+
+2936   > 23 ascii values.
+       IRATE 8.6065 ul/min
+
+
+2937   > 8 ascii values.
+       IRUN
+
+
+2938   > 10 ascii values.
+       CITIME
+
+
+2939   > 12 ascii values.
+       TTIME 10
+
+
+2940   > 23 ascii values.
+       IRATE 8.5897 ul/min
+
+
+2941   > 8 ascii values.
+       IRUN
+
+
+2942   > 10 ascii values.
+       CITIME
+
+
+2943   > 12 ascii values.
+       TTIME 10
+
+
+2944   > 23 ascii values.
+       IRATE 8.5734 ul/min
+
+
+2945   > 8 ascii values.
+       IRUN
+
+
+2946   > 10 ascii values.
+       CITIME
+
+
+2947   > 12 ascii values.
+       TTIME 10
+
+
+2948   > 23 ascii values.
+       IRATE 8.5573 ul/min
+
+
+2949   > 8 ascii values.
+       IRUN
+
+
+2950   > 10 ascii values.
+       CITIME
+
+
+2951   > 12 ascii values.
+       TTIME 10
+
+
+2952   > 23 ascii values.
+       IRATE 8.5412 ul/min
+
+
+2953   > 8 ascii values.
+       IRUN
+
+
+2954   > 10 ascii values.
+       CITIME
+
+
+2955   > 12 ascii values.
+       TTIME 10
+
+
+2956   > 23 ascii values.
+       IRATE 8.5252 ul/min
+
+
+2957   > 8 ascii values.
+       IRUN
+
+
+2958   > 10 ascii values.
+       CITIME
+
+
+2959   > 12 ascii values.
+       TTIME 10
+
+
+2960   > 23 ascii values.
+       IRATE 8.5092 ul/min
+
+
+2961   > 8 ascii values.
+       IRUN
+
+
+2962   > 10 ascii values.
+       CITIME
+
+
+2963   > 12 ascii values.
+       TTIME 10
+
+
+2964   > 23 ascii values.
+       IRATE 8.4933 ul/min
+
+
+2965   > 8 ascii values.
+       IRUN
+
+
+2966   > 10 ascii values.
+       CITIME
+
+
+2967   > 12 ascii values.
+       TTIME 10
+
+
+2968   > 23 ascii values.
+       IRATE 8.4774 ul/min
+
+
+2969   > 8 ascii values.
+       IRUN
+
+
+2970   > 10 ascii values.
+       CITIME
+
+
+2971   > 12 ascii values.
+       TTIME 10
+
+
+2972   > 23 ascii values.
+       IRATE 8.4617 ul/min
+
+
+2973   > 8 ascii values.
+       IRUN
+
+
+2974   > 10 ascii values.
+       CITIME
+
+
+2975   > 12 ascii values.
+       TTIME 10
+
+
+2976   > 22 ascii values.
+       IRATE 8.446 ul/min
+
+
+2977   > 8 ascii values.
+       IRUN
+
+
+2978   > 10 ascii values.
+       CITIME
+
+
+2979   > 12 ascii values.
+       TTIME 10
+
+
+2980   > 23 ascii values.
+       IRATE 8.4305 ul/min
+
+
+2981   > 8 ascii values.
+       IRUN
+
+
+2982   > 10 ascii values.
+       CITIME
+
+
+2983   > 12 ascii values.
+       TTIME 10
+
+
+2984   > 23 ascii values.
+       IRATE 8.4149 ul/min
+
+
+2985   > 8 ascii values.
+       IRUN
+
+
+2986   > 10 ascii values.
+       CITIME
+
+
+2987   > 12 ascii values.
+       TTIME 10
+
+
+2988   > 23 ascii values.
+       IRATE 8.3994 ul/min
+
+
+2989   > 8 ascii values.
+       IRUN
+
+
+2990   > 10 ascii values.
+       CITIME
+
+
+2991   > 12 ascii values.
+       TTIME 10
+
+
+2992   > 22 ascii values.
+       IRATE 8.384 ul/min
+
+
+2993   > 8 ascii values.
+       IRUN
+
+
+2994   > 10 ascii values.
+       CITIME
+
+
+2995   > 12 ascii values.
+       TTIME 10
+
+
+2996   > 23 ascii values.
+       IRATE 8.3692 ul/min
+
+
+2997   > 8 ascii values.
+       IRUN
+
+
+2998   > 10 ascii values.
+       CITIME
+
+
+2999   > 12 ascii values.
+       TTIME 10
+
+
+3000   > 23 ascii values.
+       IRATE 8.3544 ul/min
+
+
+3001   > 8 ascii values.
+       IRUN
+
+
+3002   > 10 ascii values.
+       CITIME
+
+
+3003   > 12 ascii values.
+       TTIME 10
+
+
+3004   > 23 ascii values.
+       IRATE 8.3397 ul/min
+
+
+3005   > 8 ascii values.
+       IRUN
+
+
+3006   > 10 ascii values.
+       CITIME
+
+
+3007   > 12 ascii values.
+       TTIME 10
+
+
+3008   > 22 ascii values.
+       IRATE 8.325 ul/min
+
+
+3009   > 8 ascii values.
+       IRUN
+
+
+3010   > 10 ascii values.
+       CITIME
+
+
+3011   > 12 ascii values.
+       TTIME 10
+
+
+3012   > 23 ascii values.
+       IRATE 8.3105 ul/min
+
+
+3013   > 8 ascii values.
+       IRUN
+
+
+3014   > 10 ascii values.
+       CITIME
+
+
+3015   > 12 ascii values.
+       TTIME 10
+
+
+3016   > 23 ascii values.
+       IRATE 8.2959 ul/min
+
+
+3017   > 8 ascii values.
+       IRUN
+
+
+3018   > 10 ascii values.
+       CITIME
+
+
+3019   > 12 ascii values.
+       TTIME 10
+
+
+3020   > 23 ascii values.
+       IRATE 8.2815 ul/min
+
+
+3021   > 8 ascii values.
+       IRUN
+
+
+3022   > 10 ascii values.
+       CITIME
+
+
+3023   > 12 ascii values.
+       TTIME 10
+
+
+3024   > 23 ascii values.
+       IRATE 8.2672 ul/min
+
+
+3025   > 8 ascii values.
+       IRUN
+
+
+3026   > 10 ascii values.
+       CITIME
+
+
+3027   > 12 ascii values.
+       TTIME 10
+
+
+3028   > 23 ascii values.
+       IRATE 8.2529 ul/min
+
+
+3029   > 8 ascii values.
+       IRUN
+
+
+3030   > 10 ascii values.
+       CITIME
+
+
+3031   > 12 ascii values.
+       TTIME 10
+
+
+3032   > 23 ascii values.
+       IRATE 8.2388 ul/min
+
+
+3033   > 8 ascii values.
+       IRUN
+
+
+3034   > 10 ascii values.
+       CITIME
+
+
+3035   > 12 ascii values.
+       TTIME 10
+
+
+3036   > 23 ascii values.
+       IRATE 8.2247 ul/min
+
+
+3037   > 8 ascii values.
+       IRUN
+
+
+3038   > 10 ascii values.
+       CITIME
+
+
+3039   > 12 ascii values.
+       TTIME 10
+
+
+3040   > 23 ascii values.
+       IRATE 8.2107 ul/min
+
+
+3041   > 8 ascii values.
+       IRUN
+
+
+3042   > 10 ascii values.
+       CITIME
+
+
+3043   > 12 ascii values.
+       TTIME 10
+
+
+3044   > 23 ascii values.
+       IRATE 8.1967 ul/min
+
+
+3045   > 8 ascii values.
+       IRUN
+
+
+3046   > 10 ascii values.
+       CITIME
+
+
+3047   > 12 ascii values.
+       TTIME 10
+
+
+3048   > 23 ascii values.
+       IRATE 8.1828 ul/min
+
+
+3049   > 8 ascii values.
+       IRUN
+
+
+3050   > 10 ascii values.
+       CITIME
+
+
+3051   > 12 ascii values.
+       TTIME 10
+
+
+3052   > 22 ascii values.
+       IRATE 8.169 ul/min
+
+
+3053   > 8 ascii values.
+       IRUN
+
+
+3054   > 10 ascii values.
+       CITIME
+
+
+3055   > 12 ascii values.
+       TTIME 10
+
+
+3056   > 23 ascii values.
+       IRATE 8.1555 ul/min
+
+
+3057   > 8 ascii values.
+       IRUN
+
+
+3058   > 10 ascii values.
+       CITIME
+
+
+3059   > 12 ascii values.
+       TTIME 10
+
+
+3060   > 23 ascii values.
+       IRATE 8.1422 ul/min
+
+
+3061   > 8 ascii values.
+       IRUN
+
+
+3062   > 10 ascii values.
+       CITIME
+
+
+3063   > 12 ascii values.
+       TTIME 10
+
+
+3064   > 23 ascii values.
+       IRATE 8.1289 ul/min
+
+
+3065   > 8 ascii values.
+       IRUN
+
+
+3066   > 10 ascii values.
+       CITIME
+
+
+3067   > 12 ascii values.
+       TTIME 10
+
+
+3068   > 23 ascii values.
+       IRATE 8.1157 ul/min
+
+
+3069   > 8 ascii values.
+       IRUN
+
+
+3070   > 10 ascii values.
+       CITIME
+
+
+3071   > 12 ascii values.
+       TTIME 10
+
+
+3072   > 23 ascii values.
+       IRATE 8.1026 ul/min
+
+
+3073   > 8 ascii values.
+       IRUN
+
+
+3074   > 10 ascii values.
+       CITIME
+
+
+3075   > 12 ascii values.
+       TTIME 10
+
+
+3076   > 23 ascii values.
+       IRATE 8.0895 ul/min
+
+
+3077   > 8 ascii values.
+       IRUN
+
+
+3078   > 10 ascii values.
+       CITIME
+
+
+3079   > 12 ascii values.
+       TTIME 10
+
+
+3080   > 23 ascii values.
+       IRATE 8.0766 ul/min
+
+
+3081   > 8 ascii values.
+       IRUN
+
+
+3082   > 10 ascii values.
+       CITIME
+
+
+3083   > 12 ascii values.
+       TTIME 10
+
+
+3084   > 23 ascii values.
+       IRATE 8.0637 ul/min
+
+
+3085   > 8 ascii values.
+       IRUN
+
+
+3086   > 10 ascii values.
+       CITIME
+
+
+3087   > 12 ascii values.
+       TTIME 10
+
+
+3088   > 23 ascii values.
+       IRATE 8.0509 ul/min
+
+
+3089   > 8 ascii values.
+       IRUN
+
+
+3090   > 10 ascii values.
+       CITIME
+
+
+3091   > 12 ascii values.
+       TTIME 10
+
+
+3092   > 23 ascii values.
+       IRATE 8.0382 ul/min
+
+
+3093   > 8 ascii values.
+       IRUN
+
+
+3094   > 10 ascii values.
+       CITIME
+
+
+3095   > 12 ascii values.
+       TTIME 10
+
+
+3096   > 23 ascii values.
+       IRATE 8.0255 ul/min
+
+
+3097   > 8 ascii values.
+       IRUN
+
+
+3098   > 10 ascii values.
+       CITIME
+
+
+3099   > 12 ascii values.
+       TTIME 10
+
+
+3100   > 23 ascii values.
+       IRATE 8.0129 ul/min
+
+
+3101   > 8 ascii values.
+       IRUN
+
+
+3102   > 10 ascii values.
+       CITIME
+
+
+3103   > 12 ascii values.
+       TTIME 10
+
+
+3104   > 23 ascii values.
+       IRATE 8.0004 ul/min
+
+
+3105   > 8 ascii values.
+       IRUN
+
+
+3106   > 10 ascii values.
+       CITIME
+
+
+3107   > 12 ascii values.
+       TTIME 10
+
+
+3108   > 22 ascii values.
+       IRATE 7.988 ul/min
+
+
+3109   > 8 ascii values.
+       IRUN
+
+
+3110   > 10 ascii values.
+       CITIME
+
+
+3111   > 12 ascii values.
+       TTIME 10
+
+
+3112   > 23 ascii values.
+       IRATE 7.9756 ul/min
+
+
+3113   > 8 ascii values.
+       IRUN
+
+
+3114   > 10 ascii values.
+       CITIME
+
+
+3115   > 12 ascii values.
+       TTIME 10
+
+
+3116   > 23 ascii values.
+       IRATE 7.9634 ul/min
+
+
+3117   > 8 ascii values.
+       IRUN
+
+
+3118   > 10 ascii values.
+       CITIME
+
+
+3119   > 12 ascii values.
+       TTIME 10
+
+
+3120   > 23 ascii values.
+       IRATE 7.9511 ul/min
+
+
+3121   > 8 ascii values.
+       IRUN
+
+
+3122   > 10 ascii values.
+       CITIME
+
+
+3123   > 12 ascii values.
+       TTIME 10
+
+
+3124   > 22 ascii values.
+       IRATE 7.939 ul/min
+
+
+3125   > 8 ascii values.
+       IRUN
+
+
+3126   > 10 ascii values.
+       CITIME
+
+
+3127   > 12 ascii values.
+       TTIME 10
+
+
+3128   > 23 ascii values.
+       IRATE 7.9271 ul/min
+
+
+3129   > 8 ascii values.
+       IRUN
+
+
+3130   > 10 ascii values.
+       CITIME
+
+
+3131   > 12 ascii values.
+       TTIME 10
+
+
+3132   > 23 ascii values.
+       IRATE 7.9154 ul/min
+
+
+3133   > 8 ascii values.
+       IRUN
+
+
+3134   > 10 ascii values.
+       CITIME
+
+
+3135   > 12 ascii values.
+       TTIME 10
+
+
+3136   > 23 ascii values.
+       IRATE 7.9037 ul/min
+
+
+3137   > 8 ascii values.
+       IRUN
+
+
+3138   > 10 ascii values.
+       CITIME
+
+
+3139   > 12 ascii values.
+       TTIME 10
+
+
+3140   > 22 ascii values.
+       IRATE 7.892 ul/min
+
+
+3141   > 8 ascii values.
+       IRUN
+
+
+3142   > 10 ascii values.
+       CITIME
+
+
+3143   > 12 ascii values.
+       TTIME 10
+
+
+3144   > 23 ascii values.
+       IRATE 7.8804 ul/min
+
+
+3145   > 8 ascii values.
+       IRUN
+
+
+3146   > 10 ascii values.
+       CITIME
+
+
+3147   > 12 ascii values.
+       TTIME 10
+
+
+3148   > 23 ascii values.
+       IRATE 7.8689 ul/min
+
+
+3149   > 8 ascii values.
+       IRUN
+
+
+3150   > 10 ascii values.
+       CITIME
+
+
+3151   > 12 ascii values.
+       TTIME 10
+
+
+3152   > 23 ascii values.
+       IRATE 7.8575 ul/min
+
+
+3153   > 8 ascii values.
+       IRUN
+
+
+3154   > 10 ascii values.
+       CITIME
+
+
+3155   > 12 ascii values.
+       TTIME 10
+
+
+3156   > 23 ascii values.
+       IRATE 7.8461 ul/min
+
+
+3157   > 8 ascii values.
+       IRUN
+
+
+3158   > 10 ascii values.
+       CITIME
+
+
+3159   > 12 ascii values.
+       TTIME 10
+
+
+3160   > 23 ascii values.
+       IRATE 7.8349 ul/min
+
+
+3161   > 8 ascii values.
+       IRUN
+
+
+3162   > 10 ascii values.
+       CITIME
+
+
+3163   > 12 ascii values.
+       TTIME 10
+
+
+3164   > 23 ascii values.
+       IRATE 7.8237 ul/min
+
+
+3165   > 8 ascii values.
+       IRUN
+
+
+3166   > 10 ascii values.
+       CITIME
+
+
+3167   > 12 ascii values.
+       TTIME 10
+
+
+3168   > 23 ascii values.
+       IRATE 7.8125 ul/min
+
+
+3169   > 8 ascii values.
+       IRUN
+
+
+3170   > 10 ascii values.
+       CITIME
+
+
+3171   > 12 ascii values.
+       TTIME 10
+
+
+3172   > 23 ascii values.
+       IRATE 7.8015 ul/min
+
+
+3173   > 8 ascii values.
+       IRUN
+
+
+3174   > 10 ascii values.
+       CITIME
+
+
+3175   > 12 ascii values.
+       TTIME 10
+
+
+3176   > 23 ascii values.
+       IRATE 7.7905 ul/min
+
+
+3177   > 8 ascii values.
+       IRUN
+
+
+3178   > 10 ascii values.
+       CITIME
+
+
+3179   > 12 ascii values.
+       TTIME 10
+
+
+3180   > 23 ascii values.
+       IRATE 7.7796 ul/min
+
+
+3181   > 8 ascii values.
+       IRUN
+
+
+3182   > 10 ascii values.
+       CITIME
+
+
+3183   > 12 ascii values.
+       TTIME 10
+
+
+3184   > 23 ascii values.
+       IRATE 7.7687 ul/min
+
+
+3185   > 8 ascii values.
+       IRUN
+
+
+3186   > 10 ascii values.
+       CITIME
+
+
+3187   > 12 ascii values.
+       TTIME 10
+
+
+3188   > 22 ascii values.
+       IRATE 7.758 ul/min
+
+
+3189   > 8 ascii values.
+       IRUN
+
+
+3190   > 10 ascii values.
+       CITIME
+
+
+3191   > 12 ascii values.
+       TTIME 10
+
+
+3192   > 23 ascii values.
+       IRATE 7.7473 ul/min
+
+
+3193   > 8 ascii values.
+       IRUN
+
+
+3194   > 10 ascii values.
+       CITIME
+
+
+3195   > 12 ascii values.
+       TTIME 10
+
+
+3196   > 23 ascii values.
+       IRATE 7.7367 ul/min
+
+
+3197   > 8 ascii values.
+       IRUN
+
+
+3198   > 10 ascii values.
+       CITIME
+
+
+3199   > 12 ascii values.
+       TTIME 10
+
+
+3200   > 23 ascii values.
+       IRATE 7.7261 ul/min
+
+
+3201   > 8 ascii values.
+       IRUN
+
+
+3202   > 10 ascii values.
+       CITIME
+
+
+3203   > 12 ascii values.
+       TTIME 10
+
+
+3204   > 23 ascii values.
+       IRATE 7.7156 ul/min
+
+
+3205   > 8 ascii values.
+       IRUN
+
+
+3206   > 10 ascii values.
+       CITIME
+
+
+3207   > 12 ascii values.
+       TTIME 10
+
+
+3208   > 23 ascii values.
+       IRATE 7.7051 ul/min
+
+
+3209   > 8 ascii values.
+       IRUN
+
+
+3210   > 10 ascii values.
+       CITIME
+
+
+3211   > 12 ascii values.
+       TTIME 10
+
+
+3212   > 23 ascii values.
+       IRATE 7.6948 ul/min
+
+
+3213   > 8 ascii values.
+       IRUN
+
+
+3214   > 10 ascii values.
+       CITIME
+
+
+3215   > 12 ascii values.
+       TTIME 10
+
+
+3216   > 23 ascii values.
+       IRATE 7.6846 ul/min
+
+
+3217   > 8 ascii values.
+       IRUN
+
+
+3218   > 10 ascii values.
+       CITIME
+
+
+3219   > 12 ascii values.
+       TTIME 10
+
+
+3220   > 23 ascii values.
+       IRATE 7.6745 ul/min
+
+
+3221   > 8 ascii values.
+       IRUN
+
+
+3222   > 10 ascii values.
+       CITIME
+
+
+3223   > 12 ascii values.
+       TTIME 10
+
+
+3224   > 23 ascii values.
+       IRATE 7.6644 ul/min
+
+
+3225   > 8 ascii values.
+       IRUN
+
+
+3226   > 10 ascii values.
+       CITIME
+
+
+3227   > 12 ascii values.
+       TTIME 10
+
+
+3228   > 23 ascii values.
+       IRATE 7.6544 ul/min
+
+
+3229   > 8 ascii values.
+       IRUN
+
+
+3230   > 10 ascii values.
+       CITIME
+
+
+3231   > 12 ascii values.
+       TTIME 10
+
+
+3232   > 23 ascii values.
+       IRATE 7.6445 ul/min
+
+
+3233   > 8 ascii values.
+       IRUN
+
+
+3234   > 10 ascii values.
+       CITIME
+
+
+3235   > 12 ascii values.
+       TTIME 10
+
+
+3236   > 23 ascii values.
+       IRATE 7.6346 ul/min
+
+
+3237   > 8 ascii values.
+       IRUN
+
+
+3238   > 10 ascii values.
+       CITIME
+
+
+3239   > 12 ascii values.
+       TTIME 10
+
+
+3240   > 23 ascii values.
+       IRATE 7.6248 ul/min
+
+
+3241   > 8 ascii values.
+       IRUN
+
+
+3242   > 10 ascii values.
+       CITIME
+
+
+3243   > 12 ascii values.
+       TTIME 10
+
+
+3244   > 23 ascii values.
+       IRATE 7.6151 ul/min
+
+
+3245   > 8 ascii values.
+       IRUN
+
+
+3246   > 10 ascii values.
+       CITIME
+
+
+3247   > 12 ascii values.
+       TTIME 10
+
+
+3248   > 23 ascii values.
+       IRATE 7.6054 ul/min
+
+
+3249   > 8 ascii values.
+       IRUN
+
+
+3250   > 10 ascii values.
+       CITIME
+
+
+3251   > 12 ascii values.
+       TTIME 10
+
+
+3252   > 23 ascii values.
+       IRATE 7.5958 ul/min
+
+
+3253   > 8 ascii values.
+       IRUN
+
+
+3254   > 10 ascii values.
+       CITIME
+
+
+3255   > 12 ascii values.
+       TTIME 10
+
+
+3256   > 23 ascii values.
+       IRATE 7.5863 ul/min
+
+
+3257   > 8 ascii values.
+       IRUN
+
+
+3258   > 10 ascii values.
+       CITIME
+
+
+3259   > 12 ascii values.
+       TTIME 10
+
+
+3260   > 23 ascii values.
+       IRATE 7.5768 ul/min
+
+
+3261   > 8 ascii values.
+       IRUN
+
+
+3262   > 10 ascii values.
+       CITIME
+
+
+3263   > 12 ascii values.
+       TTIME 10
+
+
+3264   > 23 ascii values.
+       IRATE 7.5674 ul/min
+
+
+3265   > 8 ascii values.
+       IRUN
+
+
+3266   > 10 ascii values.
+       CITIME
+
+
+3267   > 12 ascii values.
+       TTIME 10
+
+
+3268   > 23 ascii values.
+       IRATE 7.5581 ul/min
+
+
+3269   > 8 ascii values.
+       IRUN
+
+
+3270   > 10 ascii values.
+       CITIME
+
+
+3271   > 12 ascii values.
+       TTIME 10
+
+
+3272   > 23 ascii values.
+       IRATE 7.5488 ul/min
+
+
+3273   > 8 ascii values.
+       IRUN
+
+
+3274   > 10 ascii values.
+       CITIME
+
+
+3275   > 12 ascii values.
+       TTIME 10
+
+
+3276   > 23 ascii values.
+       IRATE 7.5396 ul/min
+
+
+3277   > 8 ascii values.
+       IRUN
+
+
+3278   > 10 ascii values.
+       CITIME
+
+
+3279   > 12 ascii values.
+       TTIME 10
+
+
+3280   > 23 ascii values.
+       IRATE 7.5305 ul/min
+
+
+3281   > 8 ascii values.
+       IRUN
+
+
+3282   > 10 ascii values.
+       CITIME
+
+
+3283   > 12 ascii values.
+       TTIME 10
+
+
+3284   > 23 ascii values.
+       IRATE 7.5214 ul/min
+
+
+3285   > 8 ascii values.
+       IRUN
+
+
+3286   > 10 ascii values.
+       CITIME
+
+
+3287   > 12 ascii values.
+       TTIME 10
+
+
+3288   > 23 ascii values.
+       IRATE 7.5124 ul/min
+
+
+3289   > 8 ascii values.
+       IRUN
+
+
+3290   > 10 ascii values.
+       CITIME
+
+
+3291   > 12 ascii values.
+       TTIME 10
+
+
+3292   > 23 ascii values.
+       IRATE 7.5034 ul/min
+
+
+3293   > 8 ascii values.
+       IRUN
+
+
+3294   > 10 ascii values.
+       CITIME
+
+
+3295   > 12 ascii values.
+       TTIME 10
+
+
+3296   > 23 ascii values.
+       IRATE 7.4945 ul/min
+
+
+3297   > 8 ascii values.
+       IRUN
+
+
+3298   > 10 ascii values.
+       CITIME
+
+
+3299   > 12 ascii values.
+       TTIME 10
+
+
+3300   > 23 ascii values.
+       IRATE 7.4857 ul/min
+
+
+3301   > 8 ascii values.
+       IRUN
+
+
+3302   > 10 ascii values.
+       CITIME
+
+
+3303   > 12 ascii values.
+       TTIME 10
+
+
+3304   > 23 ascii values.
+       IRATE 7.4769 ul/min
+
+
+3305   > 8 ascii values.
+       IRUN
+
+
+3306   > 10 ascii values.
+       CITIME
+
+
+3307   > 12 ascii values.
+       TTIME 10
+
+
+3308   > 23 ascii values.
+       IRATE 7.4682 ul/min
+
+
+3309   > 8 ascii values.
+       IRUN
+
+
+3310   > 10 ascii values.
+       CITIME
+
+
+3311   > 12 ascii values.
+       TTIME 10
+
+
+3312   > 23 ascii values.
+       IRATE 7.4595 ul/min
+
+
+3313   > 8 ascii values.
+       IRUN
+
+
+3314   > 10 ascii values.
+       CITIME
+
+
+3315   > 12 ascii values.
+       TTIME 10
+
+
+3316   > 23 ascii values.
+       IRATE 7.4509 ul/min
+
+
+3317   > 8 ascii values.
+       IRUN
+
+
+3318   > 10 ascii values.
+       CITIME
+
+
+3319   > 12 ascii values.
+       TTIME 10
+
+
+3320   > 23 ascii values.
+       IRATE 7.4423 ul/min
+
+
+3321   > 8 ascii values.
+       IRUN
+
+
+3322   > 10 ascii values.
+       CITIME
+
+
+3323   > 12 ascii values.
+       TTIME 10
+
+
+3324   > 23 ascii values.
+       IRATE 7.4339 ul/min
+
+
+3325   > 8 ascii values.
+       IRUN
+
+
+3326   > 10 ascii values.
+       CITIME
+
+
