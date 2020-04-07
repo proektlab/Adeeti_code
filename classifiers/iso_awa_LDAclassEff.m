@@ -55,6 +55,8 @@ for g = 1:length(allMice)
         %  decimating, and bootstrap avgs/sliding window avgs
         load('dataMatrixFlashes.mat')
         
+        clearvars isoHighExp isoLowExp emergExp awaExp1
+        
         % find high iso
         temp = findMyExpMulti(dataMatrixFlashes, [], 'iso', 1.2, stimIndex, []);
         if isempty(temp)
@@ -190,7 +192,7 @@ for g = 1:length(allMice)
         [L_allIsoAwa, P_allIsoAwa]= projOnLDA_softmax(W, allConfData);
         
         thresh = 0.5;
-        undet_thresh = 0;
+        undet_thresh = .20;
         
         
         classLowIso = find(P_test(:,1)>thresh-undet_thresh);
@@ -222,7 +224,7 @@ for g = 1:length(allMice)
         [L_allIsoCon, P_allIsoCon]= projOnLDA_softmax(W, allConfData);
         
         thresh = 0.5;
-        undet_thresh = 0;
+        undet_thresh = .20;
 
         classLowIso_con = find(P_test(:,1)>thresh-undet_thresh);
         realLowIso_con = find(testTargets ==1);
