@@ -157,11 +157,11 @@ for g = 1:length(allMice)
         
         hitsLowIso = [];
         hitLowIso_rate = [];
-        falseNegLowIso = [];
+        falsePoslowIso = [];
         
         hitsAwake1 = [];
         hitAwake1_rate = [];
-        falseNegAwake1 = [];
+        falsePoAwake = [];
        
         realLowIso_con = [];
         classHighIso_con = [];
@@ -170,11 +170,11 @@ for g = 1:length(allMice)
         
         hitsLowIso_con =[];
         hitLowIso_con_rate =[];
-        falseNegLowIso_con =[];
+        falsePosLowIso_con =[];
         
         hitsHighIso_con = [];
         hitHighIso_con_rate = [];
-        falseNegHighIso_con= [];
+        falsePosHighIso_con= [];
 
         %% Using LDA to distinguish low iso, awake 1
         
@@ -185,7 +185,7 @@ for g = 1:length(allMice)
         
         numTrain = 50;
         
-        [W, L_train, P_train, L_test, P_test, mixMatrix, targets, Y, testMatrix, testTargets]= ...
+        [W, L_train, P_train, L_test, P_test, mixMatrix, targets, Y_1, Y_2, testMatrix, testTargets]= ...
             classifyAnesAwakeLDA(numTrain, useLowIso, useAwake1);
         
         allConfData = [useLowIso;useAwake1];
@@ -202,13 +202,14 @@ for g = 1:length(allMice)
         
         hitsLowIso = ismember(classLowIso, realLowIso);
         hitLowIso_rate =  numel(find(hitsLowIso ==1))/numel(realLowIso);
-        falseNegLowIso = numel(find(hitsLowIso ==0))/numel(realLowIso);
         
         hitsAwake1 = ismember(classAwake1, realAwake1);
         hitAwake1_rate = numel(find(hitsAwake1 ==1))/numel(realAwake1);
-        falseNegAwake1 = numel(find(hitsAwake1 ==0))/numel(realAwake1);
+        
+        falsePoslowIso = numel(find(hitsLowIso ==0))/(numel(find(hitsAwake1 ==1))+ numel(find(hitsLowIso ==0)))
+        falsePoAwake = numel(find(hitsAwake1 ==0))/(numel(find(hitsLowIso ==1))+ numel(find(hitsAwake1 ==0)))
        
-        save('LDA_Iso_Awake.mat', 'hitLowIso_rate', 'falseNegLowIso', 'hitAwake1_rate', 'falseNegAwake1')
+        save('LDA_Iso_Awake.mat', 'hitLowIso_rate', 'falsePoslowIso', 'hitAwake1_rate', 'falsePoAwake')
         %% LDA to distingish high iso from low iso
         if exist('isoHighExp')
         useLowIso = pcLowIso_comp;
@@ -217,7 +218,7 @@ for g = 1:length(allMice)
         
         numTrain = 50;
         
-        [W, L_train, P_train, L_test, P_test, mixMatrix, targets, Y, testMatrix, testTargets]= ...
+        [W, L_train, P_train, L_test, P_test, mixMatrix, targets, Y_1, Y_2, testMatrix, testTargets]= ...
             classifyAnesAwakeLDA(numTrain, useLowIso, usehighIso);
         
         allConfData = [useLowIso;usehighIso];
@@ -233,12 +234,14 @@ for g = 1:length(allMice)
         
         hitsLowIso_con = ismember(classLowIso_con, realLowIso_con);
         hitLowIso_con_rate =  numel(find(hitsLowIso_con ==1))/numel(realLowIso_con);
-        falseNegLowIso_con = numel(find(hitsLowIso_con ==0))/numel(realLowIso_con);
-        
+
         hitsHighIso_con = ismember(classHighIso_con, realHighIso_con);
         hitHighIso_con_rate = numel(find(hitsHighIso_con ==1))/numel(realHighIso_con);
-        falseNegHighIso_con = numel(find(hitsHighIso_con ==0))/numel(realHighIso_con);
-        save('LDA_Iso_Awake.mat', 'hitLowIso_con_rate', 'falseNegLowIso_con', 'hitHighIso_con_rate', 'falseNegHighIso_con', '-append')
+
+        falsePosLowIso_con = numel(find(hitsLowIso_con ==0))/(numel(find(hitsHighIso_con ==1))+ numel(find(hitsLowIso_con ==0)))
+        falsePosHighIso_con = numel(find(hitsHighIso_con ==0))/(numel(find(hitsLowIso_con ==1))+ numel(find(hitsHighIso_con ==0)))
+        
+        save('LDA_Iso_Awake.mat', 'hitLowIso_con_rate', 'falsePosLowIso_con', 'hitHighIso_con_rate', 'falsePosHighIso_con', '-append')
         end
     end
 end

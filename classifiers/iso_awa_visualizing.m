@@ -30,6 +30,9 @@ allAwakeHit = [];
 allLowIsoConHit = [];
 allHighIsoConHit = [];
 
+allAnes_rate = [];
+allAwa_rate_compAllAn = [];
+
 %%
 for g = 1:length(allMice)
     genDirM = [genDir, (allMice{g}), '/'];
@@ -66,6 +69,10 @@ for g = 1:length(allMice)
         allLowIsoConHit = [allLowIsoConHit, hitLowIso_con_rate];
         allHighIsoConHit = [allHighIsoConHit, hitHighIso_con_rate];
         
+        allAnes_rate = [allAnes_rate, hitAnes_rate];
+        allAwa_rate_compAllAn = [allAwa_rate_compAllAn, hitAwa_rate_compAllAn];
+
+        
     end
 end
 
@@ -80,10 +87,21 @@ compIsoAwa(:,2) = allAwakeHit;
 compIsoCon(:,1) = allLowIsoConHit;
 compIsoCon(:,2) = allHighIsoConHit;
 
+compAllAnes2Awa(:,1) = allAnes_rate;
+compAllAnes2Awa(:,2) = allAwa_rate_compAllAn;
+
 figure 
+subplot(1,3,1)
 boxplot(compIsoAwa(:,1:2),'Labels',{'Low Iso', 'Awake'})%, 'notch', 'on') 
 xlabel('Behavioral state')
 
-figure
+subplot(1,3,2)
 boxplot(compIsoCon(:,1:2), 'Labels',{'Low Iso', 'High Iso'})%, 'notch', 'on') 
 xlabel('Anes state')
+
+subplot(1,3,3)
+boxplot(compAllAnes2Awa(:,1:2), 'Labels',{'All Anes', 'Awake'})%, 'notch', 'on') 
+xlabel('Anes state')
+
+
+
