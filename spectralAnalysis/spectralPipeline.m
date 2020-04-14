@@ -69,7 +69,7 @@ dirPic1 = [genPicsDir, 'AverageSpec/'];
 dirWAVE = [dirIn, 'Wavelets/'];
 
 USE_SNIPPITS = 1;
-
+PLOT_AVERAGE_SPEC =1;
 waveletAnalysis
 
 %% Filter Data at gamma 

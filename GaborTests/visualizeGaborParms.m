@@ -224,3 +224,60 @@ for i = 1:5 %length(allData)
     sgtitle(allData(i).name)
     saveas(ff, [dirPic, allData(i).name(1:end-4), '.png'])
 end
+
+%%
+
+% 
+% PLOT_TESTANDFITMOVIES = 1;
+% expID =1;
+% lamID = 1;
+% n = 1;
+% 
+% %cd(dirIn)
+% %allData = dir(identifier);
+% 
+% %load([dirIn, allData(expID).name]);
+% movieToFit = squeeze(interpFiltDataTimes(n,50:350,:,:));
+% 
+% imageToFit = squeeze(movieToFit(1,:,:));
+% [gridX, gridY] = meshgrid(1:size(imageToFit,2), 1:size(imageToFit,1));
+% gridX(isnan(imageToFit)) = nan;
+% gridY(isnan(imageToFit)) = nan;
+% 
+% plotTime =1:301;
+% 
+% clear movieOutput
+% 
+% if PLOT_TESTANDFITMOVIES ==1
+%     %gaborApproximation = makeGaborTestImage(gridX, gridY, fitParameters.centerX,fitParameters.centerY, fitParameters.amplitude, fitParameters.background, fitParameters.sigmaX, fitParameters.sigmaY, fitParameters.wavelength, fitParameters.theta, fitParameters.phi, fitParameters.psi);
+%     f = figure('Position', [789 -32 845 1003], 'color', 'w'); clf;
+%     clear movieOutput
+%     
+%     % for i = 1:size(movieToFit,1)
+%     for i = plotTime
+%         gaborApproximation = makeGaborTestImage(gridX, gridY, allParametersArray(lamID,n,i).centerX, allParametersArray(lamID,i).centerY, allParametersArray(lamID,n,i).amplitude, allParametersArray(lamID,n,i).background, ...
+%             allParametersArray(lamID,n,i).sigmaX, allParametersArray(lamID,n,i).sigmaY, allParametersArray(lamID,n,i).wavelength, allParametersArray(lamID,n,i).theta); %, allParametersArray(lamID,n,i).phi);%,allParametersArray(lamID,n,i).psi);
+%         H(1) = subplot(1,2,1);
+%         imagesc(squeeze(movieToFit(i,:,:)))
+%         title('True Image')
+%         H(2)= subplot(1,2,2);
+%         imagesc(gaborApproximation)
+%         title('Gabor Approx')
+%         %sgtitle(['Corr: ' num2str(corrleation) ' fit: ' num2str(score)]);
+%         suptitle(['Time: ' num2str(i) 'ms, lambda: ', num2str(allLambda(lamID))]);
+%         colormap(parula)
+%         set(H, 'clim', [-15, 15]);
+%         drawnow
+%         pause(0.15);
+%         movieOutput(i) = getframe(gcf);
+%     end
+%     
+%     v = VideoWriter([dirOut, 'test.avi']);
+%     open(v)
+%     if sum(size(movieOutput(1).cdata) == size(movieOutput(2).cdata)) ==3
+%         writeVideo(v,movieOutput(2:end))
+%     else
+%         writeVideo(v,movieOutput)
+%     end
+%     close(v)
+% end

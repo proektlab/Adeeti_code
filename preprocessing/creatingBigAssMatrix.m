@@ -68,13 +68,13 @@ for i = 1:length(allData)
         temp.polarity = info.polarity;
     end
 
-    if isfield(info, 'V1')
-        temp.V1 = info.V1;
-    end
+%     if isfield(info, 'V1')
+%         temp.V1 = info.V1;
+%     end
     
-    if isfield(info, 'lowLat')
-        temp.lowLat = info.lowLat;
-    end
+%     if isfield(info, 'lowLat')
+%         temp.lowLat = info.lowLat;
+%     end
     
     if isfield(info, 'ecogChannels')
         temp.ecogChannels = info.ecogChannels;

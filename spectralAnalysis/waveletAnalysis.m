@@ -23,8 +23,10 @@ end
 
 cd(dirIn)
 mkdir(dirWAVE)
+if PLOT_AVERAGE_SPEC ==1
 mkdir(dirPic1)
 %mkdir(dirPic2)
+end
 
 allData = dir(identifier);
 screensize=get(groot, 'Screensize');
@@ -75,6 +77,7 @@ for experiment = 1:length(allData)
         end
     end
    %% plot averages
+   if PLOT_AVERAGE_SPEC ==1
     for i = 1:size(uniqueSeries, 1)
         strStimInd = uniqueSeries(i,:);
         [stimIndexSeriesString] = stimIndex2string4saving(strStimInd, finalSampR);
@@ -116,6 +119,7 @@ for experiment = 1:length(allData)
         close all
     end  
     clearvars avgWAVE normSpec meanBaseline
+   end
     
     %% saving wavelet
     for i=1:size(WAVE,1)
