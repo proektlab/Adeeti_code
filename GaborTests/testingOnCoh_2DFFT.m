@@ -30,72 +30,47 @@ plotTime =1:301;
 % movieToFit = interpFiltDataTimes;
 % interpBy = 3;
 
-movieToFit = rawFiltDataTimes;
-interpBy = 1;
-
-
 gridSpacing = 500;
 
- 
- i = 104;
+i = 104;
 testImage = squeeze(movieToFit(i,:,:));
-vidHeight = size(testImage,1);
-vidWidth = size(testImage,2);
- 
-NFFTY = 2^nextpow2(vidHeight);
-NFFTX = 2^nextpow2(vidWidth);
-% 'detrend' data to eliminate zero frequency component
-av = sum(testImage(:)) / length(testImage(:));
-testImage = testImage - av;
+
+[spectrum2D, NFFTX, NFFTY] = twoDFFT4gridMovies(testImage);
+shiftSpec2D = abs(fftshift(spectrum2D));
+
 % Find X and Y frequency spaces, assuming sampling rate of 1
 samplingFreq = gridSpacing/interpBy; %5;
-spatialFreqsX = samplingFreq/2*linspace(0,1,NFFTX/2+1);
-spatialFreqsY = samplingFreq/2*linspace(0,1,NFFTY/2+1);
-spectrum2D = fft2(testImage, NFFTY,NFFTX);
+plotUB =10000
+%plotUB = samplingFreq/interpBy*2;
+% plotLB = -plotUB;
 
-test = abs(fftshift(spectrum2D)); %perlin2D(200);
-BW = imregionalmax(test');
-[xs, ys] = ind2sub(size(BW), find(BW==1));
-heights = [];
-for i = 1:length(xs)
-    heights(i) = test(ys(i), xs(i));
-end
+% fullFFTXscale = samplingFreq/2*linspace(-1,1,NFFTX);
+% fullFFTYscale = samplingFreq/2*linspace(-1,1,NFFTY);
 
+fullFFTXscale = 1/samplingFreq*2*linspace(-1,1,NFFTX);
+fullFFTYscale = 1/samplingFreq*2*linspace(-1,1,NFFTY);
 
-plotLB = -samplingFreq/interpBy;
-plotUB = samplingFreq/interpBy;
-plotXscale = spatialFreqsX(find(spatialFreqsX<plotUB));
-plotYscale = spatialFreqsY(find(spatialFreqsY<plotUB));
+halfIndX = find(fullFFTXscale<plotUB & fullFFTXscale>=0);
+halfIndY = find(fullFFTYscale<plotUB & fullFFTYscale>=0);
+
+validIndX = find(fullFFTXscale<plotUB & fullFFTXscale >plotLB);
+validIndY = find(fullFFTYscale<plotUB & fullFFTYscale >plotLB);
+
+[BW, heights, xs, ys] = find2DPeaksImage(shiftSpec2D);
 
 figure
 subplot(1,4,1)
 imagesc(testImage)
 subplot(1,4,2)
-imagesc(spatialFreqsX, flipud(spatialFreqsY), abs(spectrum2D(1:NFFTY/2+1, 1:NFFTX/2+1)))
+pcolor(fullFFTXscale(halfIndX), fullFFTYscale(halfIndY), abs(spectrum2D(1:numel(halfIndY), 1:numel(halfIndX)))); shading 'flat';
 subplot(1,4,3)
-imagesc(samplingFreq/2*linspace(-1,1,NFFTX), samplingFreq/2*linspace(-1,1,NFFTY), abs(fftshift(spectrum2D)))
+imagesc(fullFFTXscale(validIndX), fullFFTYscale(validIndY), shiftSpec2D(validIndY,validIndX))
+% subplot(1,4,4)
+% surf(shiftSpec2D(validIndY,validIndX));
+% hold on;
+% scatter3(xs(validIndX), ys(validIndY), heights(validIndY, validIndX), 'rx');
 
 
-
-subplot(1,4,4)
-surf(test);
-hold on;
-scatter3(xs, ys, heights, 'rx');
-
-
-
-%%
-
- i = 54;
-testImage = squeeze(movieToFit(i,:,:));
-
-
-vidHeight = size(testImage,1);
-vidWidth = size(testImage,2);
-
-
-
- 
 %%
 
 movieToFit = interpFiltDataTimes;

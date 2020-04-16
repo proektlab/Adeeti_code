@@ -85,6 +85,10 @@ for i = 1:length(allData)
         temp.forkChannels = info.forkChannels;
         temp.forkPosition = info.forkPosition;
         temp.forkName= info.forkName;
+    else
+        temp.forkChannels = nan;
+        temp.forkPosition = nan;
+        temp.forkName= nan;
     end
     
     if isfield(info, 'stimIndex')

@@ -28,7 +28,11 @@ for g = 1:length(allMice)
     cd(genDirM)
     allDir = [dir('GL*'); dir('*IP2');dir('*CB3')];
     
-    startD = 1;
+    if g ==1
+        startD = 2;
+    else
+        startD = 1;
+    end
     
     for d = startD:length(allDir)
         cd([genDirM, allDir(d).name])
@@ -65,10 +69,10 @@ for g = 1:length(allMice)
                     disp('Saving IPSC')
                     save([dirIPSC, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
                 end
-                if exist('dirWCOH')
-                    disp('Saving coherence')
-                    save([dirWCOH, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
-                end
+%                 if exist('dirWCOH')
+%                     disp('Saving coherence')
+%                     save([dirWCOH, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
+%                 end
                 
             end
         end
