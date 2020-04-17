@@ -15,9 +15,8 @@ if isempty(temp)
     temp = findMyExpMulti(dataMatrixFlashes, [], 'iso', 1.0, stimIndex, []);
 end
 if ~isempty(temp)
-    
+     isoHighExp = temp(end);
 end
-
 
 %find low iso
 temp = findMyExpMulti(dataMatrixFlashes, [], 'iso', 0.6, stimIndex, []);
