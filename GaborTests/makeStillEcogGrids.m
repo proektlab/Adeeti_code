@@ -31,8 +31,6 @@ if nargin <2
     steps = 900:1400;
 end
 
-
-
 %% to make an average of signal at coherent bands
 load(experiment, ['filtSig', num2str(fr)], 'info', 'indexSeries', 'uniqueSeries')
 [indices] = getStimIndices(stimIndex, indexSeries, uniqueSeries);
