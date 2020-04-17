@@ -40,7 +40,7 @@ interpBy = 100;
 steps = [900:1300];
 
 ISOPROP = 1;
-AWAISOKET = 0;
+AWAISOKET = 1;
 
 
 %%
@@ -97,10 +97,10 @@ if ISOPROP ==1
     for a = 11:length(allData)
         experiment = allData(a).name;
         disp(experiment(1:end-8));
-        %[rawFiltDataTimes, interp100FiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT);
+        [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, BOOTSTRAP, NUM_BOOT);
         [~, interp100FiltDataTimes, ~] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT);
 
-        %save([dirOut, 'gaborCoh', experiment, '.mat'], 'rawFiltDataTimes', 'interpFiltDataTimes', 'info')
+        save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'rawFiltDataTimes', 'interpFiltDataTimes', 'info', 'interp100FiltDataTimes', '-append')
         save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp100FiltDataTimes', '-append')
     end
 end

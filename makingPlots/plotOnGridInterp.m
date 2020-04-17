@@ -1,8 +1,12 @@
 function [plotHandle, interpValuesFine] = plotOnGridInterp(inputData, plotType, gridIndicies, interpBy, noiseBlk)
-%Interpolates between noise channels and makes a pretty plot on grid
-%makes a gray box around noise channels --> you dont have to lie
-% 1 for plot
-% 0 for surf
+%  [plotHandle, interpValuesFine] = plotOnGridInterp(inputData, plotType, gridIndicies, interpBy, noiseBlk)
+% input data = data to interpolates between noise channels and makes a
+% pretty plot on grid
+% Plot type: 1 for plot, 0 for surf
+% gridIndicies = info.gridIndicies
+% interpBy = 100 by default (how fine to interp)
+% noiseBlk = 0 by default (1 if dont want to interpolate over noise
+% channels, 0 if do want to interpolate over them)
 
 if nargin<5 || isempty(noiseBlk)
     noiseBlk = 0;
