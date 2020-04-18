@@ -7,13 +7,13 @@ clc
 %% Making info files
 
 driveLocation = '/home/adeeti/googleDrive/NEURA_codeShare/Adeeti_code/';
-%dropboxLocation = '/data/adeeti/Dropbox/';  %'/data/adeeti/Dropbox/'; %dropbox location for excel file and saving 
+%dropboxLocation = '/data/adeeti/Dropbox/';  %'/data/adeeti/Dropbox/'; %dropbox location for excel file and saving
 
 excelFileName = 'preprocessing/testing_Viv_Neurogrid_ECOG.xlsx';
-CSDWITHGRID = 0; %if one, will add fork indicies and mapping, if 0, will add nans in the fields 
+CSDWITHGRID = 0; %if one, will add fork indicies and mapping, if 0, will add nans in the fields
 excelSheet = 1;
 
-[num, text, raw] = xlsread([driveLocation, excelFileName], excelSheet); %reads excel sheet 
+[num, text, raw] = xlsread([driveLocation, excelFileName], excelSheet); %reads excel sheet
 
 dirIn =  'D:\Brenna\Rats\2019-03-07\matlab\';
 
@@ -51,11 +51,11 @@ for experiment = 1:length(allData)
     
     info.forkName = raw{rowInd, 16};
     if isnan(raw{rowInd, 17})
-    info.forkPosition = nan;
-    info.forkChannels = nan;
+        info.forkPosition = nan;
+        info.forkChannels = nan;
     else
-    info.forkPosition = str2num(raw{rowInd, 17});
-    info.forkChannels = str2num(raw{rowInd, 18});
+        info.forkPosition = str2num(raw{rowInd, 17});
+        info.forkChannels = str2num(raw{rowInd, 18});
     end
     
     
@@ -98,19 +98,19 @@ for experiment = 1:length(allData)
         modCounter = modCounter + 4;
     end
     
-%     info.gridIndicies = [[32 21 10 58 37 48 ];... %bregma is at top right corner
-%         [31 20 9 57 36 47 ];...
-%         [30 19 8 56 35 46 ];...
-%         [29 18 7 55 34 45 ];...
-%         [22 17 6 54 33 38 ];...
-%         [23 11 1 49 59 39 ];...
-%         [24 12 2 50 60 40 ];...
-%         [25 13 3 51 61 41 ];...
-%         [26 14 4 52 62 42 ];...
-%         [27 15 5 53 63 43 ];...
-%         [28 16 0 0 64 44 ]];
+    %     info.gridIndicies = [[32 21 10 58 37 48 ];... %bregma is at top right corner
+    %         [31 20 9 57 36 47 ];...
+    %         [30 19 8 56 35 46 ];...
+    %         [29 18 7 55 34 45 ];...
+    %         [22 17 6 54 33 38 ];...
+    %         [23 11 1 49 59 39 ];...
+    %         [24 12 2 50 60 40 ];...
+    %         [25 13 3 51 61 41 ];...
+    %         [26 14 4 52 62 42 ];...
+    %         [27 15 5 53 63 43 ];...
+    %         [28 16 0 0 64 44 ]];
     
-
+    
     NNShank2 = [9 8 10 7 11 6 12 5 13 4 14 3 15 2 16 1];
     NNShank1 = NNShank2+16;
     NNChannels = [NNShank1;NNShank2];
@@ -196,7 +196,7 @@ for experiment = START_AT:length(allData)
     
 end
 
-%% Removing artifact region in LFP singal and interpolating over signal 
+%% Removing artifact region in LFP singal and interpolating over signal
 
 dirIn =  '/data/adeeti/ecog/testing_Viv_Neurogrid_ECOG/';
 %dirIn = '/Users/adeetiaggarwal/Google Drive/NEURA_codeShare/Adeeti_code/1x2Shank_with_ECoG/'
@@ -232,7 +232,7 @@ electStim = 0; %0 if sensory, 1 if electrical
 
 creatingBigAssMatrix
 
-%% Adding Unique Series and Index Series to plexon data 
+%% Adding Unique Series and Index Series to plexon data
 
 clear
 close all
@@ -248,7 +248,12 @@ uniqueSeries = [0,inf];
 for experiment = 1:length(allData)
     load(allData(experiment).name, 'dataSnippits', 'info')
     data = dataSnippits;
-    indexSeries = ones(size(data,2), 1);
+    uniqueSeries = stimIndex;
+    indexSeries = ones(size(dataSnippits,2), 1);
+    if size(dataSnippits,2)>100
+        indexSeries(1) =2;
+        uniqueSeries(2,:) = [Inf, Inf];
+    end
     save(allData(experiment).name, 'uniqueSeries', 'indexSeries', 'info', '-append')
 end
 
@@ -288,7 +293,7 @@ if isfield(dataMatrixFlashes, 'numberStim')
         matStimIndex = (reshape([dataMatrixFlashes.stimIndex], [numStim, size(dataMatrixFlashes,2)]))';
         matStimIndex = unique(matStimIndex, 'rows');
     end
-else 
+else
     disp('You have recorded that there are no stimuli in this file; will treat as baseline measurement.');
 end
 
@@ -297,7 +302,7 @@ if exist('matStimIndex')
 end
 
 
-%% Clean data, mean subtract make average pictures 
+%% Clean data, mean subtract make average pictures
 
 close all
 %dirPic = '/data/adeeti/ecog/flashes_depth_1x2Shank_ECoG_2018/';
@@ -305,7 +310,7 @@ close all
 
 identifier = '2019*.mat';
 START_AT = 1;
-CSDWITHGRID = 0; %if one, will add fork indicies and mapping, if 0, will add nans in the fields 
+CSDWITHGRID = 0; %if one, will add fork indicies and mapping, if 0, will add nans in the fields
 
 flashOn = [0,0];
 before = 1;
@@ -342,7 +347,7 @@ for experiment = START_AT:length(allData)
         cleanedFullTrace(noiseChannels(n), :) = NaN(1, size(LFPData, 2));
     end
     
-    % to mean subtract ecog data only 
+    % to mean subtract ecog data only
     eCoGMean = nanmean(cleanedData(info.ecogChannels,:, :),1);
     LFPeCoGMean = nanmean(cleanedFullTrace(info.ecogChannels, :),1);
     
@@ -382,11 +387,11 @@ for experiment = START_AT:length(allData)
     
     save([dirIn, dirName], 'cleanedData', 'meanSubFullTrace', 'meanSubData', 'aveTrace', 'standError', 'info',  '-append')
     %save([dirIn, dirName], 'cleanedData', 'meanSubFullTrace' 'meanSubData', 'aveTrace', 'standError', 'info', 'dataSnippits','finalTime', 'finalSampR', 'LFPData', 'eventTimes', 'fullTraceTime','plexInfoStuffs','uniqueSeries', 'indexSeries')
-      
+    
     % Single trial images
     
     %[currentFig] = plotSingleTrials(meanSubData, finalTime, info);
-
+    
     %saveas(currentFig, [dirPic, dirName, 'singletrials.png'])
     %close all;
     

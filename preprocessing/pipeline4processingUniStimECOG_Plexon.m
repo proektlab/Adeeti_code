@@ -1,28 +1,28 @@
-% Preprocessing code on workstation 
+% Preprocessing code on workstation
 % snippits already made from convertPL2intoMat_Plexon or
 % convertPL2intoMat_Plexon_LinuxWS
 
 % clear
 % clc
-% 
+%
 % dirIn = '/synology/adeeti/ecog/iso_awake_VEPs/GL7/';
 % dirPic = '/synology/adeeti/ecog/images/Iso_Awake_VEPs/GL7/preprocessing/';
 % dirOut = dirIn;
-% 
+%
 % driveLocation = '/home/adeeti/Dropbox/';  %'/data/adeeti/Dropbox/'; %'/home/adeeti/googleDrive/'; %dropbox location for excel file and saving
-% 
+%
 % excelFileName = 'ProektLab_code/Adeeti_code/preprocessing/Iso_Awake_VEPs.xlsx';
 % excelSheet = 4;
-% 
+%
 % MAXSTIM = 1;
 % ADD_MAN_NOISE_CHANNELS = 0;
 % ANALYZE_IND = 0;
 % REMOVE_STIM_ARTIFACT = 0;
-% 
+%
 % PicByTrialType = 0;
 % PicByAnesType = 1;
 % PicByAnesAndTrial = 0;
-% 
+%
 % identifier = '2019*.mat';
 % START_AT= 1;
 mkdir(dirOut)
@@ -235,14 +235,19 @@ electStim = 0; %0 if sensory, 1 if electrical
 creatingBigAssMatrix
 
 
-%% Adding Unique Series and Index Series to plexon data 
+%% Adding Unique Series and Index Series to plexon data
 allData = dir(identifier);
 
-uniqueSeries = stimIndex;
+
 
 for experiment = 1:length(allData)
     load(allData(experiment).name, 'dataSnippits', 'info')
+    uniqueSeries = stimIndex;
     indexSeries = ones(size(dataSnippits,2), 1);
+    if size(dataSnippits,2)>100
+        indexSeries(1) =2;
+        uniqueSeries(2,:) = [Inf, Inf];
+    end
     save(allData(experiment).name, 'uniqueSeries', 'indexSeries', 'info', '-append')
 end
 
@@ -280,7 +285,7 @@ if isfield(dataMatrixFlashes, 'numberStim')
         matStimIndex = (reshape([dataMatrixFlashes.stimIndex], [numStim, size(dataMatrixFlashes,2)]))';
         matStimIndex = unique(matStimIndex, 'rows');
     end
-else 
+else
     disp('You have recorded that there are no stimuli in this file; will treat as baseline measurement.');
 end
 
@@ -365,7 +370,7 @@ for experiment = START_AT:length(allData)
         if iscell(allStartTimes) && length(allStartTimes) ==1
             allStartTimes = allStartTimes{1};
         end
-            
+        
         info.startOffSet = round(finalSampR*(allStartTimes(1)-before));
         info.endOffSet = round(finalSampR*(allStartTimes(end)+after));
     end
@@ -380,7 +385,7 @@ for experiment = START_AT:length(allData)
         
         %Single trial images
         [indices] = getStimIndices(uniqueSeries(stimIndexLoop,:), indexSeries, uniqueSeries);
-        useMeanSubData = meanSubData(:,indices,:); 
+        useMeanSubData = meanSubData(:,indices,:);
         
         [currentFig] = plotSingleTrials(useMeanSubData, finalTime, info);
         suptitle(['Single trials, Experiment ', num2str(info.exp), ', ', info.TypeOfTrial, ', Drug: ',  info.AnesType, ', Conc: ', num2str(info.AnesLevel), ', Series ', strrep(stimIndexSeriesString, '_', '\_')]);
@@ -391,10 +396,10 @@ for experiment = START_AT:length(allData)
         elseif PicByAnesAndTrial ==1
             saveas(currentFig, [dirPic, info.expName(1:end-4), '_', info.TypeOfTrial, info.AnesType, StimIndexSeriesString, '_singletrials.png'])
         end
-
+        
         close all;
         
-        % Plot on onset of latency on averages        
+        % Plot on onset of latency on averages
         [currentFig] = plotAverages(squeeze(aveTrace(stimIndexLoop,:,:)), finalTime, info, [], [], [],[], before, after, flashOn, finalSampR);
         suptitle(['Average, Experiment ', num2str(info.exp), ',  Drug: ', info.AnesType, ', Conc: ', num2str(info.AnesLevel), ', Series ', strrep(stimIndexSeriesString, '_', '\_')])
         if PicByTrialType ==1
@@ -404,7 +409,7 @@ for experiment = START_AT:length(allData)
         elseif PicByAnesAndTrial ==1
             saveas(currentFig, [dirPic, info.expName(1:end-4), '_', info.TypeOfTrial, info.AnesType, StimIndexSeriesString, '_ave.png'])
         end
-   
+        
         close all
     end
 end

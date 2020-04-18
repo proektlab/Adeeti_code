@@ -1,15 +1,15 @@
 function [BW, heights, xs, ys] = find2DPeaksImage(spectrum, validIndX, validIndY)
 
-test = abs(fftshift(spectrum)); %perlin2D(200);
+%image = abs(fftshift(spectrum)); %perlin2D(200);
 if ~isempty(validIndX)||~isempty(validIndY)
-cropTest = test(validIndY,validIndX);
+cropImage = image(validIndY,validIndX);
 else
-    cropTest = test;
+    cropImage = image;
 end
 
-BW = imregionalmax(cropTest');
+BW = imregionalmax(cropImage');
 [xs, ys] = ind2sub(size(BW), find(BW==1));
 heights = [];
 for i = 1:length(xs)
-    heights(i) = test(ys(i), xs(i));
+    heights(i) = cropImage(ys(i), xs(i));
 end

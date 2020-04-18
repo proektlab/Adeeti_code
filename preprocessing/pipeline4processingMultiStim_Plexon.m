@@ -235,6 +235,7 @@ electStim = 0; %0 if sensory, 1 if electrical
 
 creatingBigAssMatrix
 
+
 %% Adding unique series id to info files and big ass matrix
 
 cd(dirIn)
@@ -243,6 +244,7 @@ load('dataMatrixFlashes.mat');
 
 for experiment = 1:length(allData)
     load(allData(experiment).name, 'info', 'uniqueSeries', 'indexSeries')
+    
     %y =  mode(indexSeries);
     info.stimIndex = uniqueSeries; %uniqueSeries(y,:);
     dataMatrixFlashes(experiment).stimIndex = info.stimIndex;
