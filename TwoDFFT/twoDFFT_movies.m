@@ -15,7 +15,7 @@ allData = dir('gab*.mat');
 %%
 
 for expInd = 1:length(allData)
-    load(allData(expInd).name)
+    load(allData(expInd).name, 'interp100FiltDataTimes', 'info')
     disp(allData(expInd).name)
     movieToFit = interp100FiltDataTimes;
     interpBy = 100;
@@ -32,7 +32,7 @@ for expInd = 1:length(allData)
 %     f = figure; clf
 %     f.Position = [292 388 1557 595];
     % for i = 1:size(movieToFit,1)
-    allSpec = [];
+    allSpecShift = [];
 %     allBWs = [];
 %     allheights=  {};
 %     allYs =  {};
@@ -65,8 +65,8 @@ for expInd = 1:length(allData)
             validIndX = find(fullFFTXscale<plotUB & fullFFTXscale >plotLB);
             validIndY = find(fullFFTYscale<plotUB & fullFFTYscale >plotLB);
         end
-        allSpec(i,:,:) = shiftSpec2D(validIndY,validIndX);
-        [BW, heights, xs, ys] = find2DPeaksImage(squeeze(allSpec(i,:,:)),validIndX,validIndY);
+        allSpecShift(i,:,:) = shiftSpec2D(validIndY,validIndX);
+        %[BW, heights, xs, ys] = find2DPeaksImage(squeeze(allSpecShift(i,:,:)),validIndX,validIndY);
         
 %         
 %         allXs{i} = xs;
@@ -95,7 +95,7 @@ for expInd = 1:length(allData)
 %         pause(0.15);
 %         movieOutput(i) = getframe(gcf);
     end
-   save(allData(expInd).name, 'allSpec', '-append')
+   save(allData(expInd).name, 'shiftSpec2D', '-append')
 
 %     save(allData(expInd).name, 'allXs', 'allYs', 'allheights', 'allBWs', 'fullFFTXscale', 'fullFFTYscale', 'validIndX', 'validIndY', '-append')
 %     v = VideoWriter([dirPic, info.AnesType(1:3) 'exp', num2str(expInd), 'Interp100.avi']);

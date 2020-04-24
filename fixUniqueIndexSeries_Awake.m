@@ -29,8 +29,10 @@ for g = 1:length(allMice)
     allDir = [dir('GL*'); dir('*IP2');dir('*CB3')];
     
     if g ==1
-        startD = 2;
+        allDir = [dir('*CB3')];
+        startD = 1;
     else
+        allDir = [dir('GL*'); dir('*IP2');dir('*CB3')];
         startD = 1;
     end
     
@@ -53,7 +55,7 @@ for g = 1:length(allMice)
             identifier = ident2;
         end
         
-
+        
         for a = 1:length(allData)
             load(allData(a).name, 'indexSeries', 'uniqueSeries')
             if length(indexSeries)>100
@@ -61,18 +63,26 @@ for g = 1:length(allMice)
                 uniqueSeries(2,:) = [Inf, Inf];
                 disp('Saving timeseries')
                 save([dirIn, allData(a).name], 'indexSeries', 'uniqueSeries', '-append')
-                disp('Saving wavelets')
-                save([dirWAVE, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
+                try
+                    disp('Saving wavelets')
+                    save([dirWAVE, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
+                catch ME
+                    continue
+                end
                 disp('Saving filtered data')
                 save([dirFILT, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
-                if exist('dirIPSC')
-                    disp('Saving IPSC')
-                    save([dirIPSC, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
+                try
+                    if exist('dirIPSC')
+                        disp('Saving IPSC')
+                        save([dirIPSC, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
+                    end
+                catch ME
+                    continue
                 end
-%                 if exist('dirWCOH')
-%                     disp('Saving coherence')
-%                     save([dirWCOH, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
-%                 end
+                %                 if exist('dirWCOH')
+                %                     disp('Saving coherence')
+                %                     save([dirWCOH, allData(a).name(1:end-4), 'wave.mat'], 'indexSeries', 'uniqueSeries', '-append')
+                %                 end
                 
             end
         end

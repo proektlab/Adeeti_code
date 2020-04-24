@@ -56,7 +56,7 @@ halfIndY = find(fullFFTYscale<plotUB & fullFFTYscale>=0);
 validIndX = find(fullFFTXscale<plotUB & fullFFTXscale >plotLB);
 validIndY = find(fullFFTYscale<plotUB & fullFFTYscale >plotLB);
 
-[BW, heights, xs, ys] = find2DPeaksImage(spectrum2D,validIndX,validIndY);
+[BW, heights, xs, ys] = find2DPeaksImage(shiftSpec2D,validIndX,validIndY);
 
 figure
 subplot(1,4,1)

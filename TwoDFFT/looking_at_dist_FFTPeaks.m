@@ -3,7 +3,7 @@
 %plotTime for movies = [50:300]
 
 load('gaborCoh2018-07-07_16-28-49.mat')
-%%
+%% making histograms of all heights 
 
 prestimTimePoints = [1:30];
 
@@ -118,7 +118,8 @@ for t = 1:length(zheights)
 end
 
 
-
+%% what about using FastPeakFind.m
+% seems like we wil need to play with ap
 image = squeeze(allSpec(70,:,:));
 p=FastPeakFind(image);
 figure
@@ -128,14 +129,7 @@ plot(p(1:2:end),p(2:2:end),'r+')
 
 
 
-
-
-
-
-
-
-
-%%
+%% what about smoothing with a 2D gaussian filter 
 sigma =[0.5, 0.75, 1];
 ff= figure;
 ff.Position = [16,54,1902,924];
@@ -196,7 +190,7 @@ close(v)
 cellfun(@(x)numel(x), sig_heights)
 
 
-%%
+%% how does this work with multitaper testing 
 
 taper1=dpss(length(x), 5);                          % define tapers. the second parameter is the degree of smoothing
 Spec=zeros(size(M,1),size(M,2), size(taper1,2)); % M is an image

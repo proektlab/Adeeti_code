@@ -19,7 +19,7 @@ for x = 1:vidWidth
   end
 % show resulting image
 imagesc(generatedOscillation)
-
+%%
 
 % dft 2d
 NFFTY = 2^nextpow2(vidHeight);
@@ -38,7 +38,14 @@ spectrum2D = fft2(generatedOscillation, NFFTY,NFFTX);
 spectrum2D = fftshift(spectrum2D);
 imagesc(abs(spectrum2D))
 
+%%
+tapers = 5
+[Out] = mtImageFFT_AA(generatedOscillation,tapers, [], [], []);
+%[Out] = mtImageFFT_AA(image,tapers, imDim, freqsOfInterest, padding)
 
+figure
+imagesc(abs(Out.spectrum)'); 
+shading flat
 
 %%
 

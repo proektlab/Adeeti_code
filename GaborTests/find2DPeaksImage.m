@@ -1,5 +1,5 @@
-function [BW, heights, xs, ys] = find2DPeaksImage(spectrum, validIndX, validIndY)
-
+function [BW, heights, xs, ys] = find2DPeaksImage(image, validIndX, validIndY)
+%[BW, heights, xs, ys] = find2DPeaksImage(image, validIndX, validIndY)
 %image = abs(fftshift(spectrum)); %perlin2D(200);
 if ~isempty(validIndX)||~isempty(validIndY)
 cropImage = image(validIndY,validIndX);
