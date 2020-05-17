@@ -101,8 +101,8 @@ gainedGabor = gainedGabor / (nanmax(gainedGabor(:)) - nanmin(gainedGabor(:)));
 
 %Crop out fit gaussian from original image
 croppedImage = imageToFit;
-% croppedImage = (croppedImage - nanmin(croppedImage(:)));
-% croppedImage = croppedImage / (nanmax(croppedImage(:)) - nanmin(croppedImage(:)));
+croppedImage = (croppedImage - nanmin(croppedImage(:)));
+croppedImage = croppedImage / (nanmax(croppedImage(:)) - nanmin(croppedImage(:)));
 % croppedImage(gainedGabor < 0.1) = 0;
 
 imageTotal = sqrt(nansum(croppedImage(:)));

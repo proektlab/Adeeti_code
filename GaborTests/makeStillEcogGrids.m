@@ -1,5 +1,5 @@
-function [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT)
-% [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT)
+function [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT, compRaw)
+% [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT, compRaw)
 % make sure in filtered data folder; will load filtered data at part freq,
 % average over trials (with or without bootstrapping) and then interpolate
 % signal and give raw signal 
@@ -11,6 +11,9 @@ function [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(expe
 % BOOTSTRAP = 1 if want to bootstrap trials for average, 0 if not ((default = 0)
 % NUM_BOOT = how many bootstraps you want (default = 1)
 
+if nargin<78
+    compRaw = 1;
+end
 
 if nargin<7
     NUM_BOOT = 1;
@@ -40,30 +43,41 @@ meanTotSig = squeeze(nanmean(sig,3));
 s = std(meanTotSig(1:1000,:),1);
 
 interpFiltDataTimes = nan(NUM_BOOT, length(steps), 11*interpBy, 6*interpBy);
+
+if compRaw ==1
 rawFiltDataTimes = nan(NUM_BOOT, length(steps), 11, 6);
+else 
+    rawFiltDataTimes = [];
+end
+
 
 for n = 1:NUM_BOOT
     if BOOTSTRAP ==1
+        disp(['Bootstrap: ', num2str(n)])
         boot_ind  = randsample(size(sig, 3),size(sig, 3), true);
         data_sig = sig(:,:,boot_ind);
+        data_sig = squeeze(nanmean(data_sig,3));
+    else
+        data_sig = squeeze(nanmean(sig,3));
     end
-    
-    data_sig = squeeze(nanmean(sig,3));
-    
+
     m = mean(data_sig(1:1000,:),1);
     ztransform=(m-data_sig)./s;
     filtSig(n,:,:) = ztransform;
     
     %% setting up grid position matrix with data for gabor fitting
-    for t = 1:length(steps) %time before in ms:size(meanSubData,3)
+    parfor t = 1:length(steps) %time before in ms:size(meanSubData,3)
         [~, interpValuesFine] = plotOnGridInterp(squeeze(filtSig(n, steps(t),:)), 1, info.gridIndicies, interpBy);
         interpFiltDataTimes(n, t,:,:) = interpValuesFine;
     end
     interpFiltDataTimes = squeeze(interpFiltDataTimes);
     
-    for t = 1:length(steps) %time before in ms:size(meanSubData,3)
-        [ ~, ~, gridData] = PlotOnECoG(squeeze(filtSig(n, steps(t),:)), info, 3, 1);
-        rawFiltDataTimes(n, t,:,:) = gridData;
+    if compRaw ==1
+        for t = 1:length(steps) %time before in ms:size(meanSubData,3)
+            [ ~, ~, gridData] = PlotOnECoG(squeeze(filtSig(n, steps(t),:)), info, 3, 1);
+            rawFiltDataTimes(n, t,:,:) = gridData;
+        end
+        rawFiltDataTimes = squeeze(rawFiltDataTimes);
     end
-    rawFiltDataTimes = squeeze(rawFiltDataTimes);
+    
 end

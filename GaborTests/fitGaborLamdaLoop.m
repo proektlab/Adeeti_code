@@ -26,9 +26,9 @@
 %%
 
 if isunix 
-dirIn = '/synology/adeeti/GaborTests/Awake/';
+dirIn = '/synology/adeeti/spatialParamWaves/Awake/';
 elseif ispc
-    dirIn = 'Z:/adeeti/GaborTests/Awake/';
+    dirIn = 'Z:/adeeti/spatialParamWaves/Awake/';
 end
 
 dirOut = [dirIn, 'allParams/Awake/'];
@@ -45,7 +45,7 @@ PLOT_TESTANDFITMOVIES =0;
 
 %%
 
-for expID = 1:length(allData)
+for expID = 1%:length(allData)
     load([dirIn, allData(expID).name]);
     
     allParameters = {};

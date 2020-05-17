@@ -1,9 +1,9 @@
 if isunix
-    dirIn = '/synology/adeeti/GaborTests/Awake/';
-    dirPic = '/synology/adeeti/GaborTests/images/2DFFTMovies/Awake/';
+    dirIn = '/synology/adeeti/spatialParamWaves/Awake/';
+    dirPic = '/synology/adeeti/spatialParamWaves/images/2DFFTMovies/Awake/';
 elseif ispc
-    dirIn = 'Z:/adeeti/GaborTests/Awake/';
-    dirPic = 'Z:\adeeti\GaborTests\images\2DFFTMovies\Awake\';
+    dirIn = 'Z:/adeeti/spatialParamWaves/Awake/';
+    dirPic = 'Z:\adeeti\spatialParamWaves\images\2DFFTMovies\Awake\';
 end
 
 mkdir(dirPic)
@@ -15,7 +15,7 @@ load('dataMatrixFlashes.mat')
 %%
 allMice = [6, 9, 13];
 
-interpBy = 100;
+interpBy = 3;
 gridSpacing = 500;
 samplingFreq = 1;
 plotTime =50:350;
@@ -31,15 +31,15 @@ for mouseID = 1:length(allMice)
     
     %% load each mouse and compute MTSpectrum
     for expInd = 1:length(MFE)
-        clearvars interp100FiltDataTimes xFreq yFreq ompMTSpec allSpecShift ...
+        clearvars interpFiltDataTimes xFreq yFreq ompMTSpec allSpecShift ...
             fullFFTXscale fullFFTYscale validIndX validIndY info
         
-        load(allData(MFE(expInd)).name, 'interp100FiltDataTimes', 'xFreq', ...
+        load(allData(MFE(expInd)).name, 'interpFiltDataTimes', 'xFreq', ...
             'yFreq', 'compMTSpec', 'allSpecShift','fullFFTXscale', 'fullFFTYscale', ...
             'validIndX', 'validIndY', 'info')
         
         disp(allData(MFE(expInd)).name)
-        movieToFit = interp100FiltDataTimes;
+        movieToFit = interpFiltDataTimes;
         compImage(expInd,:,:,:) = movieToFit(plotTime,:,:);
         
         
@@ -88,12 +88,12 @@ for mouseID = 1:length(allMice)
             title(['Multitaper'])
                  
         end
-        sgtitle(['Spatial Freq, GL', num2str(allMice(mouseID)), ' Timepoint: ', num2str(TP2comp-50)])
+        sgtitle(['Spatial Freq Inpter by 3, GL', num2str(allMice(mouseID)), ' Timepoint: ', num2str(TP2comp-50)])
         drawnow
         pause(0.25);
         movieOutput(TP2comp) = getframe(gcf);
     end
-    v = VideoWriter([dirPic, 'compGL' num2str(allMice(mouseID)), '_rawSFDist.avi']);
+    v = VideoWriter([dirPic, 'Int3_compGL' num2str(allMice(mouseID)), '_rawSFDist.avi']);
     
     open(v)
     if sum(size(movieOutput(1).cdata) == size(movieOutput(2).cdata)) ==3
@@ -135,8 +135,8 @@ for mouseID = 1:length(allMice)
             ylabel('Power')
             legend('High Iso', 'Low Iso', 'Awake', 'Ketamine')
             title(['Multitaper post stim'])
-             sgtitle(['Spatial Freq, GL', num2str(allMice(mouseID))])
+             sgtitle(['Spatial Freq Inpter by 3, GL', num2str(allMice(mouseID))])
 
-            saveas(ff, [dirPic, 'Spatial Freq, GL', num2str(allMice(mouseID)), '.png'])
+            saveas(ff, [dirPic, 'Int3_SpatFreq_GL', num2str(allMice(mouseID)), '.png'])
     close all
 end

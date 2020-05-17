@@ -1,10 +1,10 @@
 
 if isunix
-    dirIn = '/synology/adeeti/GaborTests/Awake/';
-    dirPic = '/synology/adeeti/GaborTests/images/2DFFTMovies/Awake/';
+    dirIn = '/synology/adeeti/spatialParamWaves/Awake/';
+    dirPic = '/synology/adeeti/spatialParamWaves/images/2DFFTMovies/Awake/';
 elseif ispc
-    dirIn = 'Z:/adeeti/GaborTests/Awake/';
-    dirPic = 'Z:\adeeti\GaborTests\images\2DFFTMovies\Awake\';
+    dirIn = 'Z:/adeeti/spatialParamWaves/Awake/';
+    dirPic = 'Z:\adeeti\spatialParamWaves\images\2DFFTMovies\Awake\';
 end
 
 mkdir(dirPic)

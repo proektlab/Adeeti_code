@@ -1,10 +1,10 @@
 
 if isunix
-    dirIn = '/synology/adeeti/GaborTests/Awake/';
-    dirPic = '/synology/adeeti/GaborTests/images/2DFFTMovies/Awake/';
+    dirIn = '/synology/adeeti/spatialParamWaves/Awake/';
+    dirPic = '/synology/adeeti/spatialParamWaves/images/2DFFTMovies/Awake/';
 elseif ispc
-    dirIn = 'Z:/adeeti/GaborTests/Awake/';
-    dirPic = 'Z:\adeeti\GaborTests\images\2DFFTMovies\Awake\';
+    dirIn = 'Z:/adeeti/spatialParamWaves/Awake/';
+    dirPic = 'Z:\adeeti\spatialParamWaves\images\2DFFTMovies\Awake\';
 end
 
 mkdir(dirPic)
@@ -23,8 +23,9 @@ plotTime =50:350;
 tapers = 9;
 inDims = [5000, 2750];
 
-for mouseID = 2:length(allMice)
-    [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = findAnesArchatypeExp(dataMatrixFlashes, allMice(mouseID));
+for mouseID = 1:length(allMice)
+    [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = ...
+        findAnesArchatypeExp(dataMatrixFlashes, allMice(mouseID));
     
     MFE = [isoHighExp, isoLowExp, awaLastExp, ketExp];
     titleString = {'High Isoflurane', 'Low Isoflurane', 'Awake', 'Ketamine'};
@@ -32,11 +33,15 @@ for mouseID = 2:length(allMice)
     %% load each mouse and compute MTSpectrum
     for expInd = 1:length(MFE)
         load(allData(MFE(expInd)).name, 'interp100FiltDataTimes', 'info')
+       movieToFit = interp100FiltDataTimes;
+        
+%        load(allData(MFE(expInd)).name, 'interpFiltDataTimes', 'info')
+%         movieToFit = interpFiltDataTimes; %interp100FiltDataTimes;
         disp(allData(MFE(expInd)).name)
-        movieToFit = interp100FiltDataTimes;
+        
         compImage(expInd,:,:,:) = movieToFit(plotTime,:,:);
         
-        for TP2comp = 1:length(plotTime)
+        parfor TP2comp = 1:length(plotTime)
             testImage = squeeze(compImage(expInd,TP2comp,:,:));
             av = nansum(testImage(:)) / length(testImage(:));
             dcRem_testImage = testImage - av;
@@ -48,7 +53,7 @@ for mouseID = 2:length(allMice)
                 yFreq = Out.freq2(find(Out.freq2<0.004));
             end
             allMTSpec = abs(Out.spectrum((find(Out.freq2<0.004)),(find(Out.freq1<0.004))))';
-            compMTSpec(expInd,TP2comp,:,:) =allMTSpec;
+            compMTSpec(TP2comp,:,:) =allMTSpec;
         end
         save(allData(MFE(expInd)).name, 'xFreq', 'yFreq', 'compMTSpec', 'info', '-append')
     end

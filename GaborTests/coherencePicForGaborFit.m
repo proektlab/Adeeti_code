@@ -16,7 +16,7 @@ end
 genDirAwa = [dataLoc, 'adeeti/ecog/iso_awake_VEPs/'];
 dirIsoProp = [dataLoc, 'adeeti/ecog/matIsoPropMultiStimVIS_ONLY_/flashTrials/'];
 outlineLoc = [codeLoc, 'Adeeti_code/'];
-dirGaborTesting = [dataLoc,'adeeti/GaborTests/'];
+dirGaborTesting = [dataLoc,'adeeti/spatialParamWaves/'];
 
 allMiceAwa = [{'goodMice'}; {'maybeMice'}];
 
@@ -27,8 +27,8 @@ stimIndex = [0, Inf];
 
 
 %%
-BOOTSTRAP =0;
-NUM_BOOT = 1;
+BOOTSTRAP =1;
+NUM_BOOT = 50;
 
 stimIndex = [0, Inf];
 
@@ -74,11 +74,13 @@ if AWAISOKET ==1
                 experiment = allData(a).name;
                 disp(experiment(1:end-8));
                 
-                %[rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT);
-                [~, interp100FiltDataTimes, ~] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT);
-
-                %save([dirOut, 'gaborCoh', experiment, '.mat'], 'rawFiltDataTimes', 'interpFiltDataTimes', 'info')
-                save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp100FiltDataTimes', '-append')
+                %[rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, 0, 1);
+                %[~, interp100FiltDataTimes, ~] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, 0, 1);
+                
+                [rawBoot, interp3Boot, ~] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, BOOTSTRAP, NUM_BOOT);
+                [~, interp100Boot, ~] = makeStillEcogGrids(experiment, steps, fr, 100, stimIndex, BOOTSTRAP, NUM_BOOT);
+                
+                save([dirOut, 'gaborCoh', experiment, '.mat'], 'rawBoot', 'interp3Boot', 'interp100Boot', '-append')
             end
         end
     end
@@ -97,11 +99,16 @@ if ISOPROP ==1
     for a = 11:length(allData)
         experiment = allData(a).name;
         disp(experiment(1:end-8));
-        [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, BOOTSTRAP, NUM_BOOT);
-        [~, interp100FiltDataTimes, ~] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT);
-
-        save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'rawFiltDataTimes', 'interpFiltDataTimes', 'info', 'interp100FiltDataTimes', '-append')
-        save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp100FiltDataTimes', '-append')
+        %         [rawBootTimes, interp3FiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, BOOTSTRAP, NUM_BOOT);
+        %         [~, interp100FiltDataTimes, ~] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT);
+        %
+        %         save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'rawFiltDataTimes', 'interpFiltDataTimes', 'info', 'interp100FiltDataTimes', '-append')
+        %         save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp100FiltDataTimes', '-append')
+        
+        [rawBoot, interp3Boot, ~] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, BOOTSTRAP, NUM_BOOT);
+        [~, interp100Boot, ~] = makeStillEcogGrids(experiment, steps, fr, 100, stimIndex, BOOTSTRAP, NUM_BOOT);
+        
+        save([dirOut, 'gaborCoh', experiment, '.mat'], 'rawBoot', 'interp3Boot', 'interp100Boot', '-append')
     end
 end
 

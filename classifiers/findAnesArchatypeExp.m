@@ -14,6 +14,15 @@ awaExp1 = nan;
 awaLastExp = nan;
 ketExp = nan;
 
+
+%find awake
+temp = findMyExpMulti(dataMatrixFlashes, expID, 'awa', 0, stimIndex, []);
+if ~isempty(temp)
+    awaExp1 = temp(1);
+    awaLastExp= temp(end);
+end
+
+
 %find high iso
 temp = findMyExpMulti(dataMatrixFlashes, expID, 'iso', 1.2, stimIndex, []);
 if isempty(temp)
@@ -24,7 +33,7 @@ if ~isempty(temp)
 end
 
 %find low iso
-temp = findMyExpMulti(dataMatrixFlashes, expID, 'iso', 0.6, stimIndex, []);
+temp = findMyExpMulti(dataMatrixFlashes, expID, 'iso', [0.6, 0.5], stimIndex, []);
 if isempty(temp)
     temp = findMyExpMulti(dataMatrixFlashes, expID, 'iso', 0.4, stimIndex, []);
 end
@@ -38,14 +47,6 @@ if ~isempty(temp)
     emergExp = temp(1);
 end
 
-%find awake
-temp = findMyExpMulti(dataMatrixFlashes, expID, 'awa', 0, stimIndex, []);
-if ~isempty(temp)
-    awaExp1 = temp(1);
-    if length(temp)>1
-        awaLastExp= temp(end);
-    end
-end
 
 % find ket
 temp = findMyExpMulti(dataMatrixFlashes, expID, 'ket', 100, stimIndex, []);
