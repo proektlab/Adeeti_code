@@ -1,4 +1,7 @@
-%% Making movie heat plot of ITPC
+%% In how many electrodes does the gamma power exceed a preset threshold done on a single trial level
+% Here, the single trial data is first zscored to the baseline for each
+% trial, then the hilbert is taken to find the amp of gamma for each trial 
+% Threshold is based on the mean of the maxim
 
 %% Make movie of mean signal at 30-40 Hz for all experiments
 clear
@@ -16,11 +19,19 @@ genDirAwa = [dataLoc, 'adeeti/ecog/iso_awake_VEPs/'];
 outlineLoc = [codeLoc, 'Adeeti_code/'];
 dirPicLoc = [dataLoc, 'adeeti/ecog/images/Iso_Awake_VEPs/spatialParams/'];
 
-allMiceAwa = [{'goodMice'}; {'maybeMice'}];
+USE_JUST_GOODMICE = 1;
+
+if USE_JUST_GOODMICE ==1
+    allMiceAwa = [{'goodMice'}]; %; {'maybeMice'}];
+    totMice = 5;
+else
+    allMiceAwa = [{'goodMice'}; {'maybeMice'}];
+    totMice = 11;
+end
 
 ident1Awa = '2019*';
 ident2Awa = '2020*';
-totMice = 11;
+
 stimIndex = [0, Inf];
 fr = 35;
 
@@ -184,7 +195,7 @@ for g = 1:length(allMiceAwa)
         for t = 1:numThr
             testSpread = squeeze(nanmean(allSpread(:,t,:,:),4));  %validExpInd
             testSpread = testSpread';
-            pSpread(mouseCounter,t) = kruskalwallis(testSpread);
+            pSpread(mouseCounter,t) = kruskalwallis(testSpread, [], 'off');
             
             for i = 1:length(MFE)
                 for j = i+1:length(MFE)
@@ -201,7 +212,7 @@ for g = 1:length(allMiceAwa)
             consitSpread = squeeze(nansum(allSpread(:,t,:,:),3));
             allConsistElec(t,:,:) = consitSpread;
             
-            pEct(mouseCounter,t) = kruskalwallis(consitSpread');
+            pEct(mouseCounter,t) = kruskalwallis(consitSpread', [], 'off');
             
         end
         
@@ -273,33 +284,33 @@ for g = 1:length(allMiceAwa)
 %         sgtitle([mouseID, ' activity pattern of electrodes'])
 %           saveas(ff, [dirPicLoc, mouseID, '_ST_whichElec_multThr.png'])
         
-        %% Looking at fraction of trials electrodes were active on 
-        
-                close all
-                ff= figure('Color', 'w', 'Position', screensize);
-                clf
-        
-                counter = 0;
-                edges = 0:5:100;
-                
-                for t= 1:numThr
-                    b(t)= subplot(1,numThr,t);
-                    for a = 1:allExpNum
-                        counter = counter +1;
-                        histogram(allConsistElec(t,a,:), edges, 'FaceColor', colorsPlot{a})
-                        hold on 
-                        legend(useTitleString)
-                        title([' Thr: ', num2str(thr_Multiply(t))])
-%                         if t ==1
-%                             title([useTitleString{a}, ' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
-%                         elseif a ==2 && t~=1
-%                             title([' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
-%                         end
-                    end
-                end
-        
-                sgtitle([mouseID, ' Fraction of trials each electrode is active'])
-                saveas(ff, [dirPicLoc, mouseID, '_ST_fracTrEleActive_multThr.png'])
+%         %% Looking at fraction of trials electrodes were active on 
+%         
+%                 close all
+%                 ff= figure('Color', 'w', 'Position', screensize);
+%                 clf
+%         
+%                 counter = 0;
+%                 edges = 0:5:100;
+%                 
+%                 for t= 1:numThr
+%                     b(t)= subplot(1,numThr,t);
+%                     for a = 1:allExpNum
+%                         counter = counter +1;
+%                         histogram(allConsistElec(t,a,:), edges, 'FaceColor', colorsPlot{a})
+%                         hold on 
+%                         legend(useTitleString)
+%                         title([' Thr: ', num2str(thr_Multiply(t))])
+% %                         if t ==1
+% %                             title([useTitleString{a}, ' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
+% %                         elseif a ==2 && t~=1
+% %                             title([' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
+% %                         end
+%                     end
+%                 end
+%         
+%                 sgtitle([mouseID, ' Fraction of trials each electrode is active'])
+%                 saveas(ff, [dirPicLoc, mouseID, '_ST_fracTrEleActive_multThr.png'])
         
     end
 end

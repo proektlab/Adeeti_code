@@ -22,7 +22,7 @@ cd(dirIn);
 
 allData = dir(expIdentifier);
 
-expID = 1;
+expID =  5;
 
 %% loops through all experiments per condition - do this portion for every experiment in the set
 
@@ -83,11 +83,14 @@ for k=1:size(BSTimepoints,2)
     BSTimepoints(1,k)=floor(BSTimepoints(1,k));
     BSTimepoints(2,k)=ceil(BSTimepoints(2,k));
 end
+
+disp('done')
 %%
 BSTimepoints=BSTimepoints';
 BSTimepoints=sortrows(BSTimepoints,1);
 BSTimepoints=BSTimepoints';
 
+disp('done')
 %%
 BSPeriods = {};
 
@@ -100,5 +103,6 @@ save(experimentName, 'BSTimepoints', 'BSPeriods', '-append')
 expID = expID + 1
 
 
+disp('saved')
 %rejstartend now has starting and ending sample for rejected data with
 %whole sample numbers, in order, in a 2xn matrix of start samples and end samples for highlighted sections from the visualizer.

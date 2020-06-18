@@ -137,8 +137,8 @@ for g = 1:length(allMice)
         falsePosAwa__compAllAn = numel(find(hitsAwa_compAllAn ==0))/(numel(find(hitAnes ==1))+ numel(find(hitsAwa_compAllAn ==0)))
         
         
-        save('LDA_Iso_Awake.mat', 'hitAnes_rate', 'falsePosAnes', 'hitAwa_rate_compAllAn', ...
-            'falsePosAwa__compAllAn', '-append')
+      %  save('LDA_Iso_Awake.mat', 'hitAnes_rate', 'falsePosAnes', 'hitAwa_rate_compAllAn', ...
+      %      'falsePosAwa__compAllAn', '-append')
     end
 end
 

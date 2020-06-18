@@ -1,6 +1,5 @@
-function [rawFiltDataTimes, interpFiltDataTimes, info, singleTrials] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT, compRaw, justTrials)
-% [rawFiltDataTimes, interpFiltDataTimes, info, singleTrials] = makeStillEcogGrids(experiment, steps, ...
-% fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT, compRaw, justTrials)
+ function [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids_oldCopy(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT, compRaw, justTrials)
+% [rawFiltDataTimes, interpFiltDataTimes, info] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, BOOTSTRAP, NUM_BOOT, compRaw)
 % make sure in filtered data folder; will load filtered data at part freq,
 % average over trials (with or without bootstrapping) and then interpolate
 % signal and give raw signal 
@@ -44,7 +43,9 @@ end
 load(experiment, ['filtSig', num2str(fr)], 'info', 'indexSeries', 'uniqueSeries')
 [indices] = getStimIndices(stimIndex, indexSeries, uniqueSeries);
 
-eval(['sigTest =filtSig', num2str(fr),'(:,:,indices);']);
+eval(['sig =filtSig', num2str(fr),'(:,:,indices);']);
+meanTotSig = squeeze(nanmean(sig,3));
+s = std(meanTotSig(1:1000,:),1);
 
 interpFiltDataTimes = nan(NUM_BOOT, length(steps), 11*interpBy, 6*interpBy);
 
@@ -55,11 +56,10 @@ else
 end
 
 if justTrials ==1
-    sig4SingTr = sigTest;
-    singleTrials = nan(size(sigTest,3), length(steps), 11*interpBy, 6*interpBy);
+    sig4SingTr = sig;
+    singleTrials = nan(size(sig,3), length(steps), 11*interpBy, 6*interpBy);
     for m = 1:size(singleTrials,1)
-        disp(['Tr: ', num2str(m)])
-        for t = 1:length(steps)
+        parfor t = 1:length(steps)
          [~, gridTrial] = plotOnGridInterp(squeeze(sig4SingTr(steps(t),:,m)), 1, info.gridIndicies, interpBy);
          singleTrials(m,t,:,:) = gridTrial;
         end
@@ -68,19 +68,17 @@ else
     singleTrials = [];
 end
 
-
 for n = 1:NUM_BOOT
     if BOOTSTRAP ==1
         disp(['Bootstrap: ', num2str(n)])
-        boot_ind  = randsample(size(sigTest, 3),size(sigTest, 3), true);
-        data_sig = sigTest(:,:,boot_ind);
+        boot_ind  = randsample(size(sig, 3),size(sig, 3), true);
+        data_sig = sig(:,:,boot_ind);
         data_sig = squeeze(nanmean(data_sig,3));
     else
-        data_sig = squeeze(nanmean(sigTest,3));
+        data_sig = squeeze(nanmean(sig,3));
     end
 
     m = mean(data_sig(1:1000,:),1);
-    s = std(data_sig(1:1000,:),1);
     ztransform=(m-data_sig)./s;
     filtSig(n,:,:) = ztransform;
     

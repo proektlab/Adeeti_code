@@ -25,7 +25,7 @@ norm2TotPower =0;
 baselineTime = 1:25;
 postStimTime = 50:200;
 
-for mouseID = 1%:length(allMice)
+for mouseID = 1:length(allMice)
     [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = ...
         findAnesArchatypeExp(dataMatrixFlashes, allMice(mouseID));
     
@@ -61,11 +61,13 @@ for mouseID = 1%:length(allMice)
     subplot(2,4,i)
     imagesc(squeeze(baselineImagesSum(i,:,:)))
     colorbar
-    title(['Baseline ', titleString{1}])
+    colormap(jet)
+    title(['Baseline ', titleString{i}])
     
     subplot(2,4,i+4)
     imagesc(squeeze(postStimImagesSum(i,:,:)))
     colorbar
+    colormap(jet)
     title(['VEP ', titleString{i}])
     end
     
@@ -73,39 +75,41 @@ for mouseID = 1%:length(allMice)
     %saveas(ff, [dirPic, 'SpatAct_sum_GL', num2str(allMice(mouseID)), '.png'])
     
     %%
-    
-     figure
-    for i = 1:4
-    subplot(2,4,i)
-    imagesc(squeeze(baselineImagesMean(i,:,:)))
-    colorbar
-    title(['Baseline ', titleString{1}])
-    
-    subplot(2,4,i+4)
-    imagesc(squeeze(postStimImagesMean(i,:,:)))
-    colorbar
-    title(['VEP ', titleString{i}])
-    end
-    
-    sgtitle(['GL',  num2str(allMice(mouseID)), ' Mean of Gamma Power'])
+%     
+%      figure
+%     for i = 1:4
+%     subplot(2,4,i)
+%     imagesc(squeeze(baselineImagesMean(i,:,:)))
+%     colorbar
+%     colormap(jet)
+%     title(['Baseline ', titleString{1}])
+%     
+%     subplot(2,4,i+4)
+%     imagesc(squeeze(postStimImagesMean(i,:,:)))
+%     colormap(jet)
+%     colorbar
+%     title(['VEP ', titleString{i}])
+%     end
+%     
+%     sgtitle(['GL',  num2str(allMice(mouseID)), ' Mean of Gamma Power'])
     %saveas(ff, [dirPic, 'SpatAct_mean_GL', num2str(allMice(mouseID)), '.png'])
     
     %%
     
-      figure
-    for i = 1:4
-    subplot(2,4,i)
-    imagesc(squeeze(z_baselineImages(i,:,:)))
-    colorbar
-    title(['Baseline ', titleString{1}])
-    
-    subplot(2,4,i+4)
-    imagesc(squeeze(z_postStimImages(i,:,:)))
-    colorbar
-    title(['VEP ', titleString{i}])
-    end
-    
-    sgtitle(['GL',  num2str(allMice(mouseID)), ' Z score of Gamma Power'])
+%       figure
+%     for i = 1:4
+%     subplot(2,4,i)
+%     imagesc(squeeze(z_baselineImages(i,:,:)))
+%     colorbar
+%     title(['Baseline ', titleString{1}])
+%     
+%     subplot(2,4,i+4)
+%     imagesc(squeeze(z_postStimImages(i,:,:)))
+%     colorbar
+%     title(['VEP ', titleString{i}])
+%     end
+%     
+%     sgtitle(['GL',  num2str(allMice(mouseID)), ' Z score of Gamma Power'])
     %saveas(ff, [dirPic, 'SpatAct_z_GL', num2str(allMice(mouseID)), '.png'])
 
 

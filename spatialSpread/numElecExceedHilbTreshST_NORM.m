@@ -1,4 +1,10 @@
-%% Making movie heat plot of ITPC
+%% In how many electrodes does the gamma power exceed a preset threshold done on a single trial level
+% Here, the hibert of single trials  are taken to find the gamma amplitude
+% for each trial. Then the single trials are z scored to the average and
+% std of the single trial amplitude 
+% Thresh = mean of prestim data overall trials over all channels - differnt
+% for each channel (but should be almost zero because z score) - then stds
+% taken above that 
 
 %% Make movie of mean signal at 30-40 Hz for all experiments
 clear
@@ -15,57 +21,84 @@ end
 genDirAwa = [dataLoc, 'adeeti/ecog/iso_awake_VEPs/'];
 outlineLoc = [codeLoc, 'Adeeti_code/'];
 dirPicLoc = [dataLoc, 'adeeti/ecog/images/Iso_Awake_VEPs/spatialParams/'];
-
+mkdir(dirPicLoc);
 
 normToMeanOfTrials = 1;
+USE_JUST_GOODMICE = 1;
+USE_EMERG = 1;
+
+preStimTime = 1:350;
+preStimTimeTr = preStimTime;
+epTime = 1000:1350;
+thr_Multiply = [3, 5, 6];
 
 
-allMiceAwa = [{'goodMice'}; {'maybeMice'}];
+%%
+
+if USE_JUST_GOODMICE ==1
+    allMiceAwa = [{'goodMice'}]; %; {'maybeMice'}];
+    totMice = 5;
+else
+    allMiceAwa = [{'goodMice'}; {'maybeMice'}];
+    totMice = 11;
+end
 
 ident1Awa = '2019*';
 ident2Awa = '2020*';
-totMice = 11;
+
 stimIndex = [0, Inf];
 fr = 35;
 
-screensize=get(groot, 'Screensize');
-
-preStimTime = 1:800;
-
-preStimTimeTr = preStimTime;
-epTime = 1000:1350;
-thr_Multiply = [3, 4,5, 6];
 numThr= length(thr_Multiply);
 
 numChan = 64;
-numTrials = 100;
 totTimepts = 3001;
+
+if USE_EMERG ==1
+numTrials = 238;
+colorsPlot = {'k', 'b', 'm', 'r', 'g'};
+titleString = {'H. Iso', 'L. Iso', 'Emerg', 'Awake', 'Ket'};
+else 
+    numTrials = 100;
 colorsPlot = {'k', 'b', 'r', 'g'};
 titleString = {'H. Iso', 'L. Iso', 'Awake', 'Ket'};
+end
 
 allCond= length(titleString);
+allBaseGammaPower= nan(totMice,allCond,numChan);
 
-pSpread = nan(totMice,numThr);
+useTitleString= {};
+
+%%
+allExpH = nan(totMice,allCond,numChan,numTrials,totTimepts);
+allInd =nan(totMice,allCond,numThr,numTrials,numChan);
+allSortPeakTimes = nan(totMice,allCond,numThr,numTrials,numChan);
+allSpread= nan(totMice,allCond,numThr,numTrials,numChan);
+fracGridSpread = nan(totMice,numThr,allCond,numTrials);
+allConsistElec = nan(totMice,numThr,allCond,numChan);
+
+pSpd_frElctAct = nan(totMice,numThr);
 P_RS_Spread= nan(totMice,numThr,allCond,allCond);
 H_RS_Spread= nan(totMice, numThr,allCond,allCond);
-pEct = nan(totMice,numThr);
 
-mkdir(dirPicLoc);
+pEct = nan(totMice,numThr);
+P_RS_ConsitEl= nan(totMice,numThr,allCond,allCond);
+H_RS_ConsitEl= nan(totMice, numThr,allCond,allCond);
+
+numTrials_mouse = nan(totMice,allCond);
+numChannels_mouse = nan(totMice,allCond);
+
+allAmpOnly = nan(totMice,allCond,numTrials);
+
 
 %%
 mouseCounter = 0;
-allMiceIDs = {}
+allMiceIDs = {};
 for g = 1:length(allMiceAwa)
     genDirM = [genDirAwa, (allMiceAwa{g}), '/'];
     cd(genDirM)
     allDir = [dir('GL*'); dir('IP*');dir('CB*')];
-    
-    if g == 1
-        startD = 1;
-    else
-        startD = 1;
-    end
-    
+    startD = 1;
     for d = startD:length(allDir)
         mouseID = allDir(d).name;
         disp(mouseID)
@@ -73,104 +106,90 @@ for g = 1:length(allMiceAwa)
         
         mouseCounter = mouseCounter+1;
         allMiceIDs{mouseCounter} = mouseID;
-        %% finding the correct experiments
+       
         cd(dirIn)
         load('dataMatrixFlashes.mat')
         
-        [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = findAnesArchatypeExp(dataMatrixFlashes);
+        [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = ...
+            findAnesArchatypeExp(dataMatrixFlashes);
+        if USE_EMERG ==1
+            MFE = [isoHighExp, isoLowExp, emergExp, awaLastExp, ketExp];
+        else
+            MFE = [isoHighExp, isoLowExp, awaLastExp, ketExp];
+        end
         
-        MFE = [isoHighExp, isoLowExp, awaLastExp, ketExp];
-
-        
-        %% finding filtered data
+        % finding filtered data
         dirFILT = [dirIn,'FiltData/'];
         cd(dirFILT)
         
         allData = dir(ident1Awa);
-        identifier = ident1Awa;
-        
         if isempty(allData)
             allData = dir(ident2Awa);
-            identifier = ident2Awa;
         end
         
-        useTitleString= {};
-        allExpNum= sum(~isnan(MFE));
-        allCond= length(MFE);
-        
-        
-        allExpH = nan(allCond,numChan,numTrials,totTimepts);
-        
-        allInd =nan(allCond,numThr,numTrials,numChan);
-        allSortPeakTimes = nan(allCond,numThr,numTrials,numChan);
-        allSpread= nan(allCond,numThr,numTrials,numChan);   
-        
-        allConsistElec = nan(numThr,allCond,numChan);
-        
-        %% find power for gamma
+        % find power for gamma
         counterExp = 0;
-        validExpInd = [];
         for a = 1:length(MFE)
             if isnan(MFE(a))
                 continue
             end
-            
-            validExpInd = [validExpInd, a];
             counterExp = counterExp +1;
-            useTitleString{counterExp} = titleString{a};
+            useTitleString{mouseCounter}{counterExp} = titleString{a};
             
             experiment = allData(MFE(a)).name;
             disp(experiment(1:end-8));
             
             load(experiment, ['filtSig', num2str(fr)], 'info', 'indexSeries', 'uniqueSeries')
-            goodChan = info.ecogChannels;
-            goodChan(info.noiseChannels)= [];
-            numGoodChan= numel(goodChan);
-            
             [indices] = getStimIndices(stimIndex, indexSeries, uniqueSeries);
             % randTrials = randsample(indices, 2);
             
             eval(['sig =filtSig', num2str(fr),'(:,:,indices);']);
             
-            if normToMeanOfTrials ==1
-                analytSig = hilbert(sig);
-                ampH_raw = abs(analytSig);
-                phaseH_raw = angle(analytSig);
-                
-                meanAmp = nanmean(ampH_raw,3);
-                s = std(meanAmp(preStimTime,:),[],1);
-                m = mean(meanAmp(preStimTime,:),1);
-                %ztransform=(m-ampH_raw)./s;
-                ztransform=(repmat(m, [size(ampH_raw,1), 1,size(ampH_raw,3)])-ampH_raw)./repmat(s,[size(ampH_raw,1), 1,size(ampH_raw,3)]);
-                ampH = ztransform;
-            else
-                s = std(sig(preStimTime,:,:),[],1);
-                m = mean(sig(preStimTime,:,:),1);
-                ztransform=(repmat(m, [size(sig,1), 1,size(sig,3)])-sig)./repmat(s,[size(sig,1), 1,size(sig,3)]);
-                %ztransform=(m-sig)./s;
-                filtSig= ztransform;
-                
-                analytSig = hilbert(filtSig);
-                ampH = abs(analytSig);
-                phaseH = angle(analytSig);
-            end
+            analytSig = hilbert(sig);
+            ampH_raw = abs(analytSig);
 
-            ampH = permute(ampH, [2,3,1]);
-          %  phaseH = permute(phaseH, [2,3,1]);
+
+%             forNormAmp = permute(ampH_raw(preStimTime,:,:), [2,3,1]);
+%             forNormAmp = reshape(forNormAmp, [numChan, size(forNormAmp,2)*numel(preStimTime)]);
+%             s_con = std(forNormAmp,[],2);
+%             m_con = mean(forNormAmp,2);
+%             s_con = s_con';
+%             m_con = m_con';
+
             
-            if sum(size(squeeze(allExpH(a,:,:,:))) ==size(ampH)) ==3
-                allExpH(a,:,:,:) = ampH;
+%             meanAmp = nanmean(ampH_raw,3);
+%             s = std(meanAmp(preStimTime,:),[],1);
+%             m = mean(meanAmp(preStimTime,:),1);
+%             allBaseGammaPower(mouseCounter, a, :) = m;
+            
+             meanAmp_tr = squeeze(nanmean(ampH_raw(preStimTime,:,:),1));
+            s = std(meanAmp_tr,[],2);
+            m = mean(meanAmp_tr,2);
+            m = m';
+            s = s';
+            allBaseGammaPower(mouseCounter, a, :) = m;
+            
+            ztransform=(ampH_raw- repmat(m, [size(ampH_raw,1), 1,size(ampH_raw,3)]))./repmat(s,[size(ampH_raw,1), 1,size(ampH_raw,3)]);
+            ampH = ztransform;
+            
+            ampH = permute(ampH, [2,3,1]);
+            %  phaseH = permute(phaseH, [2,3,1]);
+            
+            if sum(size(squeeze(allExpH(mouseCounter,a,:,:,:))) ==size(ampH)) ==3
+                allExpH(mouseCounter, a,:,:,:) = ampH;
             else
                 for j = 1:size(ampH,2)
-                    allExpH(a,:,j,:) = ampH(:,j,:);
+                    allExpH(mouseCounter,a,:,j,:) = ampH(:,j,:);
                 end
             end
             
             for t = 1:numThr
+                baseM = nanmean(nanmean(ampH(:,:,preStimTimeTr),3),2);
+                %allBaseGammaPower(mouseCounter, a, :) = baseM;
+                thresh = baseM+thr_Multiply(t);
                 for j = 1:size(ampH,2)
                     %thresh = nanmean(max(squeeze(ampH(:,j,preStimTimeTr)),[],2))*thr_Multiply(t);
-                    baseM = nanmean(ampH(:,j,preStimTimeTr),3);
-                    thresh = baseM+thr_Multiply(t);
+                    %thresh = baseM+thr_Multiply(t);
                     for i = 1:size(ampH,1)
                         useAmp = squeeze(ampH(i, j, epTime));
                         if isnan(useAmp(1))
@@ -188,150 +207,17 @@ for g = 1:length(allMiceAwa)
                             end
                         end
                     end
-                    
                     [sortPeakTimes,Ind] = sort(allPeakTimes);
                     
+                    allInd(mouseCounter,a,t,j,:) = Ind;
+                    allSortPeakTimes(mouseCounter,a,t,j,:) = sortPeakTimes;
+                    allSpread(mouseCounter,a,t,j,:) = tempSpread;
                     
-                    allInd(a,t,j,:) = Ind;
-                    allSortPeakTimes(a,t,j,:) = sortPeakTimes;
-                    allSpread(a,t,j,:) = tempSpread;
+                    allAmpOnly(mouseCounter,a,j) = nansum(nansum(ampH(:,j,epTime)));
                 end
             end
         end
-        
-        %% stats
-        for t = 1:numThr
-            testSpread = squeeze(nanmean(allSpread(:,t,:,:),4));  %validExpInd
-            testSpread = testSpread';
-            pSpread(mouseCounter,t) = kruskalwallis(testSpread);
-            
-            for i = 1:length(MFE)
-                for j = i+1:length(MFE)
-                    if isnan(MFE(i)) || isnan(MFE(j))
-                        continue
-                    end
-                    [pTemp, hTemp, stats]=ranksum(testSpread(:,i), testSpread(:,j));
-                   
-                    P_RS_Spread(mouseCounter,t,i,j) = pTemp;
-                    H_RS_Spread(mouseCounter,t,i,j) = hTemp;
-                end
-            end
-            
-            consitSpread = squeeze(nansum(allSpread(:,t,:,:),3));
-            allConsistElec(t,:,:) = consitSpread;
-            
-            pEct(mouseCounter,t) = kruskalwallis(consitSpread');
-            
-        end
-        
-        %% Looking at number of electrodes activated per each trial - spread 
-        
-                close all
-                plotTime = [970:1200];
-                maxCutPVal = 0.0001;
-                edges = 0:0.05:1;
-                ff= figure;
-                clf
-                ff.Color = 'White';
-                ff.Position = [1 -138 827 954]; %screensize;
-        
-                useChanNum = min(20,numGoodChan);
-                counter = 0;
-                for t= 1:numThr
-                    if pSpread(t) <maxCutPVal
-                        pSpread(t) = maxCutPVal;
-                    end
-                    for a = 1:allExpNum
-                        counter = counter +1;
-                        b(counter)= subplot(numThr,allExpNum,a+(t-1)*allExpNum);
-                        h(counter) = histogram(squeeze(nanmean(allSpread(a,t,:,:),3)),edges);
-                        % set(gca, ylim
-        
-                        if t ==1
-                            title([useTitleString{a}, ' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
-                        elseif a ==2 && t~=1
-                            title([' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
-                        end
-                    end
-                end
-        
-                sgtitle([mouseID, ' Fraction of Active Electrodes'])
-                saveas(ff, [dirPicLoc, mouseID, '_ST_numElec_multThr.png'])
-        
-        
-        %% Looking at how many trials each electrodes was active on  - for ind electrodes
-        close all
-        maxCutPVal = 0.0001;
-        edges = 0:0.05:1;
-        ff= figure;
-        clf
-        ff.Color = 'White';
-        ff.Position = screensize;
-        
-        useChanNum = min(20,numGoodChan);
-        
-        for t= 1:numThr
-            if pEct(t) <maxCutPVal
-                pEct(t) = maxCutPVal;
-            end
-            b(t)= subplot(1,numThr,t);
-            counter = 0;
-            for a = 1:length(MFE)
-                if(isnan(MFE(a)))
-                    continue
-                end
-                counter = counter +1;
-            plot(squeeze(allConsistElec(t,counter,:))', colorsPlot{a}) ;
-            hold on
-            end
-            
-            legend(useTitleString)
-            set(gca, 'ylim', [min(allConsistElec(:)), max(allConsistElec(:))])
-            title([' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pEct(t))])
-        end
-        sgtitle([mouseID, ' activity pattern of electrodes'])
-          saveas(ff, [dirPicLoc, mouseID, '_ST_whichElec_multThr.png'])
-        
-        %% Looking at fraction of trials electrodes were active on 
-        
-                close all
-                ff= figure('Color', 'w', 'Position', screensize);
-                clf
-        
-                counter = 0;
-                edges = 0:5:100;
-                
-                for t= 1:numThr
-                    b(t)= subplot(1,numThr,t);
-                    for a = 1:allExpNum
-                        counter = counter +1;
-                        histogram(allConsistElec(t,a,:), edges, 'FaceColor', colorsPlot{a})
-                        hold on 
-                        legend(useTitleString)
-                        title([' Thr: ', num2str(thr_Multiply(t))])
-%                         if t ==1
-%                             title([useTitleString{a}, ' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
-%                         elseif a ==2 && t~=1
-%                             title([' Thr: ', num2str(thr_Multiply(t)), ' p=', num2str(pSpread(t))])
-%                         end
-                    end
-                end
-        
-                sgtitle([mouseID, ' Fraction of trials each electrode is active'])
-                saveas(ff, [dirPicLoc, mouseID, '_ST_fracTrEleActive_multThr.png'])
-        
     end
 end
 
-%%
 
-%%
-
-close all
-
-titleThresh = [];
-for i = 1:length(thr_Multiply)
-titleThresh{i} = ['Thresh = ', num2str(thr_Multiply(i))];
-end
-[ff, pTable] = deconstPspreadTable(P_RS_Spread, [], [1:3], titleString, titleThresh,allMiceIDs);
-%% 

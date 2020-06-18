@@ -1,4 +1,4 @@
-function [ff, pTable] = deconstPspreadTable(P_RS_Spread, comp, thresh, compTitle, titleThresh, xTitles)
+function [ff, pTable, compTitle] = deconstPspreadTable(P_RS_Spread, comp, thresh, compTitle, titleThresh, xTitles)
 %[ff, pTable] = deconstPspreadTable(P_RS_Spread, titleString, comp)
 
 if nargin<2 || isempty(comp)

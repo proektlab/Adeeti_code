@@ -144,8 +144,8 @@ plotAllIsoEmgAwa(length(useIso)+1:length(useIso)+length(useEmerg)) = 1;
 plotAllIsoEmgAwa(length(useIso)+length(useEmerg)+1:end) = 2;
 
 
-figure
-subplot(2,1,1)
+figure('Color', 'w')
+subplot(3,1,[1,2])
 plot(filterData(P_isoEmgAwa(:,1),10))
 hold on
 plot(filterData(P_isoEmgAwa(:,1),3))
@@ -153,7 +153,7 @@ plot(P_isoEmgAwa(:,1))
 legend('smooth = 10', 'smooth = 3', 'smooth = 0')
 xlabel('Trial number')
 ylabel('Prob of anes by LDA')
-subplot(2,1,2)
+subplot(3,1,3)
 plot(plotAllIsoEmgAwa)
 xlabel('Trial number')
 ylabel('0 = iso, 1 = emerg, 2 = awake')

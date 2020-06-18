@@ -73,7 +73,6 @@ if plotType ==1
                 end
             end
         end
-        
         imagesc('CData', blackChans, 'AlphaData', transChans)
     end  
     if noiseBlk == 0
