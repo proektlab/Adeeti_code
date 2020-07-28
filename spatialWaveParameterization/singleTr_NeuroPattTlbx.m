@@ -34,10 +34,10 @@ params = setNeuroPattParams(params, 'opAlpha', 0.5, fs);
 params = setNeuroPattParams(params, 'opBeta', 10, fs);
 
 params = setNeuroPattParams(params, 'planeWaveThreshold', 0.8, fs);
-params = setNeuroPattParams(params, 'planeWaveThreshold', 0.8, fs);
+params = setNeuroPattParams(params, 'synchronyThreshold', 0.8, fs);
 params = setNeuroPattParams(params, 'maxDisplacement', 0.5, fs);
-params = setNeuroPattParams(params, 'minCritRadius', 1, fs);
-params = setNeuroPattParams(params, 'minEdgeDistance', 1, fs);
+params = setNeuroPattParams(params, 'minCritRadius', 2, fs);
+params = setNeuroPattParams(params, 'minEdgeDistance', 2, fs);
 
 
 %%
@@ -128,4 +128,12 @@ squeeze(spModes)
 
 %%
 
-figs_compAnes_firstSVD_thenNeuroPatt
+%%
+supTitleMouse = 'Patterns detected from single trials (interp by 3) gamma, then neuropatt';
+saveTitleMouse= 'st_int3_NeuroPatt';
+aInd= 1;
+bInd = 1;
+numIndModes = 1;
+useAlphaBetaInd = 0;
+
+figs_compAnes_firstSVD_thenNeuroPatt(spModes, numIndModes, useAlphaBetaInd, supTitleMouse, saveTitleMouse, testAlphas, testBetas, aInd, bInd)

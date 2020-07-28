@@ -124,12 +124,16 @@ inputData(allChan) = U2(:,4);
 
 mode = sin(X/10*2*pi);
 
-vectoizedMode = mode(:);
+figure
+subplot(2,2,1)
+imagesc(mode)
 
+vectoizedMode = mode(:);
 time = 1:200;
 amplitude = sin(time/100*4*2*pi);
-
 timeSeries = vectoizedMode * amplitude;
+subplot(2,2,1)
+imagesc(timeSeries)
 
 [U2, S2, V2] = svd(timeSeries);
 

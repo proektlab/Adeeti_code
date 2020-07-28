@@ -10,12 +10,12 @@ elseif ispc
     dirCode = 'Z:\code\Adeeti_code\';
 end
 
-geDirIn = 'ecog\forDrew_02_2019\iso_longBaseline\';
-mice = {'2018-12-14\', '2019-01-18b\'};
+geDirIn = [dirData, 'JenniferHelen/'];
+mice = {['2019-01-18b\']}; %{'2018-12-14\', '2019-01-18b\'};
 %%
 for m = 1:length(mice)
     dirIn = [dirData, geDirIn, mice{m}];
-    identifier = '201*00.mat';
+    identifier = '2019-01-18_17*.mat';
     finalSampR = 1000; %in Hz
     mkdir(dirIn);
     cd(dirIn)
@@ -45,7 +45,13 @@ for m = 1:length(mice)
             
             upperBound = max(data(:));
             lowerBound = min(data(:));
-            [ noiseChannelsManual ] = examChannelBaseline(dataSnippits, fullTraceTime);
+            if ndims(dataSnippits,2)==2
+                [ noiseChannelsManual ] = examChannelBaseline(dataSnippits, fullTraceTime);
+            elseif ndims(dataSnippits) == 3
+                noiseChannelsManual = examChannelSnippits(data, finalTime, numbOfSamp, upperBound, lowerBound);
+                
+            end
+            
             noiseChannels = unique([info.noiseChannels, noiseChannelsManual']);
             prompt = ['NoiseChannels =', mat2str(noiseChannels), ' Enter other bad channels, if there are none, put []'];
             exNoise = input(prompt);
@@ -53,7 +59,7 @@ for m = 1:length(mice)
             
             info.noiseChannels = noiseChannels;
             
-            save(dirName, 'info', '-append')
+            save(dirName, 'info', 'dataSnippits', '-append')
             
             date = info.date;
             clearvars LFPData dataSnippits fullTraceTime
@@ -77,18 +83,72 @@ for m = 1:length(mice)
         
         noiseChannels = info.noiseChannels;
         cleanedData = dataSnippits;
-        fullTrace = dataSnippits;
+        cleanedFullTrace = LFPData;
+        meanSubData = nan(size(dataSnippits));
+        meanSubFullTrace = nan(size(LFPData));
         
         for n = 1:length(noiseChannels)
             if isempty(noiseChannels)
                 continue
             end
-            cleanedData(noiseChannels(n),:) = NaN(1, size(dataSnippits,2));
+            cleanedFullTrace(noiseChannels(n), :) = NaN(1, size(LFPData, 2));
+            
+            if ndims(dataSnippits) ==3
+                 cleanedData(noiseChannels(n), :, :) = NaN(size(dataSnippits,2), size(dataSnippits, 3));
+            end
         end
-        meanSubFullTrace= cleanedData - repmat(nanmean(cleanedData,1), [size(cleanedData,1), 1]);
+
+    % to mean subtract ecog data only
+    if ~isnan(info.ecogChannels)
+        if ndims(dataSnippits) ==3
+            eCoGMean = nanmean(cleanedData(info.ecogChannels,:, :),1);
+            meanSubData(info.ecogChannels,:,:) = cleanedData(info.ecogChannels,:,:) - repmat(eCoGMean, [size(info.ecogChannels,2), 1, 1]);
+        end
         
-        save([dirIn, allData(experiment).name], 'meanSubFullTrace', 'cleanedData', 'fullTrace', '-append')
+        LFPeCoGMean = nanmean(cleanedFullTrace(info.ecogChannels, :),1);
+        meanSubFullTrace(info.ecogChannels,:) = cleanedFullTrace(info.ecogChannels,:) - repmat(LFPeCoGMean, [size(info.ecogChannels,2), 1]);
+    end
+    
+    % to mean subtract shanks data only
+    if ~isnan(info.forkChannels)
+        for f = 1:size(info.forkChannels,1)
+            if ndims(dataSnippits) ==3
+                forkMean = nanmean(cleanedData(info.forkChannels(f,:),:, :),1);
+                meanSubData(info.forkChannels(f,:),:,:) = cleanedData(info.forkChannels(f,:),:,:) - repmat(forkMean, [size(info.forkChannels(f,:),2), 1, 1]);
+            end
+            
+            LFPforkMean = nanmean(cleanedFullTrace(info.forkChannels(f,:), :),1);
+            meanSubFullTrace(info.forkChannels(f,:),:) = cleanedFullTrace(info.forkChannels(f,:),:) - repmat(LFPforkMean, [size(info.forkChannels(f,:),2), 1]);
+        end
+    end
+    
+    if ndims(dataSnippits) ==3
+        aveTrace = nan(size(uniqueSeries, 1), size(meanSubData,1), size(meanSubData,3));
+        standError = nan(size(uniqueSeries, 1), size(meanSubData,1), size(meanSubData,3));
         
+        for i = 1:size(uniqueSeries, 1)
+            [indices] = getStimIndices(uniqueSeries(i,:), indexSeries, uniqueSeries);
+            useMeanSubData = meanSubData(:,indices,:);
+            parfor ch = 1:size(useMeanSubData,1)
+                aveTrace(i, ch, :) = squeeze(nanmean(useMeanSubData(ch,:,:), 2));
+                standError(i, ch,:) = squeeze(nanstd(useMeanSubData(ch,:,:), 1, 2)/sqrt(size(useMeanSubData(ch,:,:), 2)));
+            end
+        end
+        
+        if exist('allStartTimes') && ~empty(allStartTimes)
+            if iscell(allStartTimes) && length(allStartTimes) ==1
+                allStartTimes = allStartTimes{1};
+            end
+            info.startOffSet = round(finalSampR*(allStartTimes(1)-before));
+            info.endOffSet = round(finalSampR*(allStartTimes(end)+after));
+        end
+    end 
+    
+    if ndims(dataSnippits) ==3
+        save([dirIn, dirName],'meanSubFullTrace', 'meanSubData', 'aveTrace', 'standError', 'info', '-append')
+    else
+        save([dirIn, dirName],'meanSubFullTrace', 'info', '-append')
+    end
         waitbar(experiment/totalExp)
     end
     

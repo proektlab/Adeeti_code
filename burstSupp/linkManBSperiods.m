@@ -5,7 +5,7 @@
 %% Variables
 
 %sections that need to linked together
-BStime2Link = [2, 3; 6,7; 10, 12; 14, 18; 20 23];
+BStime2Link = [15, 16];
 
 %file location
 dirInExp = 'Iso_flashes\'; %folder name
@@ -30,17 +30,12 @@ load(experimentName, 'meanSubFullTrace')
 %left after column deletion
 BStime2Link = sort(BStime2Link);
 BStime2Link = flip(BStime2Link);  
-           
-
-test = BSTimepoints;
 
 %loops through BStime2Link and links those column together
 for i = 1:size(BStime2Link,1)
-    test(2,BStime2Link(i, 1)) = test(2,BStime2Link(i, 2));
-    test(:,BStime2Link(i, 1)+1:BStime2Link(i, 2)) = [];
+    BSTimepoints;(2,BStime2Link(i, 1)) = BSTimepoints;(2,BStime2Link(i, 2));
+    BSTimepoints;(:,BStime2Link(i, 1)+1:BStime2Link(i, 2)) = [];
 end
-
-BSTimepointsTest = test;
 
 %% rerun BS periods 
 BSPeriods = {};

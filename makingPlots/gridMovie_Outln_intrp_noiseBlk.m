@@ -1,8 +1,9 @@
-function [movieOutput] = gridMovie_Outln_intrp_noiseBlk(data, start, endTime, bregmaOffsetX, bregmaOffsetY, gridIndicies, plotTitles, superTitle, colorTitle, colorScale, darknessOutline, dropboxLocation, interpBy, noiseBlack, electrode1, electrode2)
-% [movieOutput] = gridMovie_Outln_intrp_noiseBlk(data, start, endTime,
-% bregmaOffsetX, bregmaOffsetY, gridIndicies, plotTitles, superTitle,
-% colorTitle, colorScale, darknessOutline, dropboxLocation, interpBy,
-% noiseBlack, electrode1, electrode2)
+function [movieOutput] = gridMovie_Outln_intrp_noiseBlk(data, info, start, endTime, ...
+      plotTitles, superTitle, colorTitle, colorScale, darknessOutline, dropboxLocation, ...
+      interpBy, noiseBlack, electrode1, electrode2)
+% [movieOutput] = gridMovie_Outln_intrp_noiseBlk(data, info, start, endTime, ...
+%      plotTitles, superTitle, colorTitle, colorScale, darknessOutline, dropboxLocation, ...
+%      interpBy, noiseBlack, electrode1, electrode2)
 % compares movies with interpolation to movies without interpolation
 % creates movie output from data, start, endTime, and adds on the outlines
 % data has to be full data for the plot, (numPlots, time, channel)
@@ -19,49 +20,45 @@ function [movieOutput] = gridMovie_Outln_intrp_noiseBlk(data, start, endTime, br
 
 %% Presets
 
-if nargin < 16
+if nargin < 14
     electrode2 = [];
 end
 
-if nargin <15
+if nargin <13
     electrode1 = [];
 end
 
-if nargin < 14
+if nargin < 12
     noiseBlack = [0,1];
 end
 
-if nargin <13
+if nargin <11
     interpBy = [100,1];
 end
 
-if nargin <12
+if nargin <10
     if isunix && ~ismac
-        dropboxLocation = '/home/adeeti/Dropbox/ProektLab_code/Adeeti_code/';
+        dropboxLocation = '/synology/code/Adeeti_code/';
     elseif ispc
         dropboxLocation = 'C:\Users\adeeti\Dropbox\ProektLab_code\Adeeti_code\';
     end
 end
 
-if nargin <11
+if nargin <9
     darknessOutline = 80; %0 = no outline, 255 is max for black outlines, 80 is good middle ground
 end
-if nargin <10
+if nargin <8
     colorScale = []; %[] is auto for all the scale
 end
 
-if nargin <9
+if nargin <7
     colorTitle = [];
 end
-if nargin <8
+if nargin <6
     superTitle = [];
 end
-if nargin <7
-    plotTitles = [];
-end
 if nargin <5
-    bregmaOffsetX = 0.5;
-    bregmaOffsetY = 0.5;
+    plotTitles = [];
 end
 if nargin <3
     endTime = 1300;
@@ -70,10 +67,29 @@ end
 
 screensize=get(groot, 'Screensize');
 %% setting up outline
+
 outline = imread([dropboxLocation, 'MouseBrainAreas.png']);
 
-mmInGridX = 2.75;
-mmInGridY = 5;
+if isfield(info, 'mmInGrid')
+    mmInGridX = info.mmInGrid(1);
+    mmInGridY = info.mmInGrid(2);
+else
+    mmInGridX = 2.75;
+    mmInGridY = 5;
+end
+
+if isfield(info, 'bregmaOffsetX')
+    bregmaOffsetX = info.bregmaOffsetX;
+else
+    bregmaOffsetX = 0.5;
+end
+
+if isfield(info, 'bregmaOffsetY')
+    bregmaOffsetY = info.bregmaOffsetY;
+else
+    bregmaOffsetY = 0.5;
+end
+
 
 PIXEL_TO_MM = (2254 - 503)/2;
 
@@ -90,7 +106,9 @@ outline = imgaussfilt(outline, 4);
 alpha = outline(:,:,1) / max(max(outline(:,:,1))) * darknessOutline;
 
 %% making movieOutput
-
+gridIndicies = info.gridIndicies;
+gridRows= size(gridIndicies,1);
+gridCols= size(gridIndicies,2);
 
 counter = 1;
 clear movieOutput
@@ -101,14 +119,14 @@ else
     f = figure('Position', screensize, 'color', 'w'); clf;
 end
 
-xGridAxis = fliplr(linspace(0, 2.75, 5+1));
-yGridAxis = linspace(0, 5, 10+1);
+xGridAxis = fliplr(linspace(0, mmInGridX, gridCols));
+yGridAxis = linspace(0, mmInGridY, gridRows);
 lowerCax = min(data(:));
 upperCax = max(data(:));
 
 for t = start:endTime %time before in ms:size(meanSubData,3)
     for d = 1:size(data, 1)
-        %% plot interpolated data j = 1, and non interpolated data j =2 
+        %% plot interpolated data j = 1, and non interpolated data j =2
         for j = 1:2
             if j == 1
                 g(2*d-1)=subplot(1,size(data, 1)*2,2*d-1);
@@ -125,8 +143,8 @@ for t = start:endTime %time before in ms:size(meanSubData,3)
             
             g(d).XTickMode = 'Manual';
             g(d).YTickMode = 'Manual';
-            g(d).YTick = linspace(1,1100, 10+1);
-            g(d).XTick = linspace(1,600, 5+1);
+            g(d).YTick = linspace(1,gridRows*interpBy(1), gridRows);
+            g(d).XTick = linspace(1,gridCols*interpBy(1), gridCols);
             g(d).XTickLabel = xGridAxis;
             g(d).YTickLabel = yGridAxis;
             set(gca, 'FontSize',22)
@@ -138,8 +156,8 @@ for t = start:endTime %time before in ms:size(meanSubData,3)
             end
             
             if ~isempty(plotTitles)
-                if j ==1 
-                  title([plotTitles{d}, 'interp by ', num2str(interpBy(j))], 'FontSize', 22)  
+                if j ==1
+                    title([plotTitles{d}, 'interp by ', num2str(interpBy(j))], 'FontSize', 22)
                 elseif j ==2
                     title([plotTitles{d}], 'FontSize', 22)
                 end

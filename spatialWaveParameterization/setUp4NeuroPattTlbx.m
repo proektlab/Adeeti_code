@@ -92,8 +92,10 @@ if AWAISOKET ==1
                 end
                 experiment = allData(MFE(a)).name;
                 disp(experiment(1:end-8));
-                
+                tic
                 clearvars interp3STs_EP interp1STs_EP 
+                
+                %% averages with interp on grid
 %                 [rawCoh35, interp1Coh35, info,~] = makeStillEcogGrids(experiment, steps, fr, interpBy, ...
 %                     stimIndex, BOOTSTRAP, NUM_BOOT, compRaw);
 %                  save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'rawCoh35', 'interp1Coh35', 'info')
@@ -104,19 +106,23 @@ if AWAISOKET ==1
 %                 [~, interp3Coh35, ~,~] = makeStillEcogGrids(experiment, steps, fr, interpBy, stimIndex, 0, 1, 0);
 %                 save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp3Coh35', '-append')
 %                      
-                makeSTs = 1;
-                tic
-                 %[~, ~, ~,interp1STs] = makeStillEcogGrids(experiment, steps, fr, 1, stimIndex, 0, 1, 0, makeSTs);
-                % [~, ~, ~,interp3STs] = makeStillEcogGrids(experiment, steps, fr, 3, stimIndex, 0, 1, 0, makeSTs);
+                 %% Single trials in grid with interp
+              %   [interp1STs_long, info] = makeStillEcogGrids_singleTr(experiment, 500:1500, fr, 1, stimIndex);
+              %   save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp1STs_long', '-append')
                  
-                 [interp1STs_EP, info] = makeStillEcogGrids_singleTr(experiment, 1000:1350, fr, 1, stimIndex);
-                 save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp1STs_EP', '-append')
-                 
-                 clearvars interp3STs_EP interp1STs_EP 
-                 [interp3STs_EP, info] = makeStillEcogGrids_singleTr(experiment, 1000:1350, fr, 3, stimIndex);
-                                 
-                 save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp3STs_EP', '-append')
-                 toc
+               %  clearvars interp3STs_EP interp1STs_EP 
+               %  [interp3STs_EP, info] = makeStillEcogGrids_singleTr(experiment, 1000:1350, fr, 3, stimIndex);                  
+              % save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'interp3STs_EP', '-append')
+               
+              
+              %% save filtSig in params folder
+               load(experiment, 'filtSig35', 'info', 'indexSeries', 'uniqueSeries')
+               [indices] = getStimIndices(stimIndex, indexSeries, uniqueSeries);
+               
+               filtSig35 =filtSig35(:,:,indices);
+               save([dirOut, 'gaborCoh', experiment(1:end-8), '.mat'], 'filtSig35', '-append')
+               
+               toc
 
             end
         end

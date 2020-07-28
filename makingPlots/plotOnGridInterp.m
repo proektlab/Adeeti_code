@@ -20,13 +20,17 @@ if ~exist('plotType') || isempty(plotType)
     plotType = 1;
 end
 %%
+gridRows = size(gridIndicies,1);
+gridCols = size(gridIndicies,2);
 
-gridPosition = NaN(66,2);
+gridPosition = NaN(numel(gridIndicies),2);
 
-gridData=NaN(66,1);
-girdDataPosition = NaN(11,6);
+gridData=NaN(numel(gridIndicies),1);
+girdDataPosition = NaN(gridRows,gridCols);
 
 counter=1;
+
+
 
 for i=1:size(gridIndicies,1)
     for j=1:size(gridIndicies,2)
@@ -43,10 +47,10 @@ gridPosition(isnan(gridData),:) = [];
 gridDataNoNan = gridData;
 gridDataNoNan(isnan(gridData)) = [];
 
-xInterp = linspace(1,6, 6*interpBy);
-yInterp = linspace(1,11, 11*interpBy);
+xInterp = linspace(1,gridCols, gridCols*interpBy);
+yInterp = linspace(1,gridRows, gridRows*interpBy);
 
-[yGridInt,xGridInt] = meshgrid(0:7, 0:12);
+[yGridInt,xGridInt] = meshgrid(0:gridCols+1, 0:gridRows+1);
 
 interpFunction=scatteredInterpolant(gridPosition, gridDataNoNan, 'linear', 'nearest');
 interpValues = interpFunction(xGridInt,yGridInt);
@@ -85,7 +89,7 @@ if plotType ==1
                                 x = i + dx;
                                 y = j + dy;
                                 
-                                if x >= 1 && y >= 1 && x <= 11 && y <= 6 && ~isnan(girdDataPosition(x,y))
+                                if x >= 1 && y >= 1 && x <= gridRows && y <= gridCols && ~isnan(girdDataPosition(x,y))
                                     if dx == 1
                                         xValues = [i i];
                                         yValues = [j-1 j];

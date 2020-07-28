@@ -1,4 +1,4 @@
-function [dataSnippits, finalTime] = extractSnippetsPlexon(gridData, onTime, before, l, finalSampR, startBaseline)
+function [dataSnippits, finalTime] = extractSnippetsPlexon(gridData, onTime, before, l, finalSampR, startBaseline, useArduino)
 % ontime = event times, put the time of the first event if you want to
 % extract baseline
 % before = before the stim in seconds (put time to the first event if want
@@ -8,7 +8,14 @@ function [dataSnippits, finalTime] = extractSnippetsPlexon(gridData, onTime, bef
 % finalSampR = final sampling rate that you want
 % startBaseline = parameter (1 if want to extract baseline, 0 if want to
 % extract trials)
+% useArduino = 1 if using arduino to get flashes and starting the recording 
+% before starting the arduino - arduino will send out one extra pulse in the 
+% when it first starts 
 % 09/03/18 AA
+
+if nargin <7
+    useArduino = 1;
+end
 
 if nargin <6
     startBaseline = 0;
@@ -65,6 +72,11 @@ for j=1:size(gridData,1)                     % loop over file names
 end
 
 finalTime = linspace(-before, l-before, l*finalSampR+1);
+
+if useArduino ==1
+    dataSnippits = dataSnippits(:,2:end,:);
+end
+
 
 end
 

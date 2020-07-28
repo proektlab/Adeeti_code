@@ -1,11 +1,12 @@
-%% breaking up the Neuropatt outputs by parameter
+function figs_compAnes_firstSVD_thenNeuroPatt(spModes, numIndModes, useAlphaBetaInd, supTitleMouse, saveTitleMouse, testAlphas, testBetas, aInd, bInd)
+% breaking up the Neuropatt outputs by parameter
 
 if isunix
     dirIn = '/synology/adeeti/spatialParamWaves/Awake/';
-    dirPic = '/synology/adeeti/spatialParamWaves/images/NeuroPatt/Awake/';
+    dirPic = '/synology/adeeti/spatialParamWaves/images/NeuroPatt/Awake/stringNodesParams/';
 elseif ispc
     dirIn = 'Z:/adeeti/spatialParamWaves/Awake/';
-    dirPic = 'Z:\adeeti\spatialParamWaves\images\NeuroPatt\Awake\';
+    dirPic = 'Z:\adeeti\spatialParamWaves\images\NeuroPatt\Awake\stringNodesParams\';
 end
 
 mkdir(dirPic)
@@ -14,18 +15,18 @@ screensize = get(groot, 'Screensize');
 allMice = [6, 9, 13];
 anesString = {'High Isoflurane', 'Low Isoflurane', 'Awake', 'Ketamine'};
 shortAnesString = {'HIso', 'LIso', 'Awa', 'Ket'};
-useAlphaBetaInd = 0;
-
-testAlphas = [0.1, 0.5, 1];
-testBetas = [1, 5, 10, 15];
-aInd = 2;
-bInd = 3;
-
-numIndModes = 1;
+% useAlphaBetaInd = 0;
+% 
+% testAlphas = [0.1, 0.5, 1];
+% testBetas = [1, 5, 10, 15];
+% aInd = 2;
+% bInd = 3;
+% 
+% numIndModes = 1;
 
 %% breaking up parameters
-for mouseID = 1:3
-    for experiment = 1:4
+for mouseID = 1:length(allMice)
+    for experiment = 1:length(anesString)
         for m = 1:numIndModes
             if numIndModes>1
                 if useAlphaBetaInd ==1
@@ -95,7 +96,12 @@ for mouseID = 1:length(allMice)
             
             % pattern number
             subplot(4, length(anesString), experiment+4)
-            edges = [1:max([numPatterns{mouseID,experiment,m}])];
+            maxPattNumb = max([numPatterns{mouseID,experiment,m}]);
+            if maxPattNumb>0
+            edges = [1:maxPattNumb];
+            else 
+                edges = 1;
+            end
             if numIndModes>1
                  histData = cell2mat(numPatterns(mouseID,experiment,m));
                 histogram(histData, edges);
@@ -138,10 +144,10 @@ for mouseID = 1:length(allMice)
             
         end
     end
-    sgtitle(['GL', num2str(allMice(mouseID)), ', ', 'Patterns detected from single trials (interp by 3) gamma, then neuropatt: alpha = ', ...
+    sgtitle(['GL', num2str(allMice(mouseID)), ', ', supTitleMouse,': alpha = ', ...
         num2str(testAlphas(aInd)), ', beta = ', num2str(testBetas(bInd))])
     
-    saveas(ff, [dirPic, 'GL', num2str(allMice(mouseID)),'_', 'sT_int3_NeuroPatt', '.png'])
+    saveas(ff, [dirPic, 'GL', num2str(allMice(mouseID)),'_', saveTitleMouse, '.png'])
     close all
 end
 

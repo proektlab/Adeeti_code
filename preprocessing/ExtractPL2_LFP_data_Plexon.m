@@ -1,4 +1,4 @@
-function [gridData, lfpSampRate, eventTimes, fullTraceTime, plexInfoStuffs] = ExtractPL2_LFP_data(myExperiment,eventsChan, numChannels, startChan)
+function [gridData, lfpSampRate, eventTimes, fullTraceTime, plexInfoStuffs] = ExtractPL2_LFP_data_Plexon(myExperiment,eventsChan, numChannels, startChan)
 % [gridData, finalSampR, eventTimes, plexInfoStuffs] = ExtractPL2data(myExperiment,eventsChan, numChannels, startChan)
 % Converts .pl2 files into mad
 % myExperiment = string with the name of the experiment that you would like

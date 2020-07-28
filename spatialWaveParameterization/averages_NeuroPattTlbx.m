@@ -34,10 +34,10 @@ params = setNeuroPattParams(params, 'opAlpha', 0.5, fs);
 params = setNeuroPattParams(params, 'opBeta', 10, fs);
 
 params = setNeuroPattParams(params, 'planeWaveThreshold', 0.8, fs);
-params = setNeuroPattParams(params, 'planeWaveThreshold', 0.8, fs);
-params = setNeuroPattParams(params, 'maxDisplacement', 1, fs);
-params = setNeuroPattParams(params, 'minCritRadius', 1, fs);
-params = setNeuroPattParams(params, 'minEdgeDistance', 1, fs);
+params = setNeuroPattParams(params, 'synchronyThreshold', 0.8, fs);
+params = setNeuroPattParams(params, 'maxDisplacement', 0.5, fs);
+params = setNeuroPattParams(params, 'minCritRadius', 2, fs);
+params = setNeuroPattParams(params, 'minEdgeDistance', 2, fs);
 
 
 %%
@@ -68,7 +68,7 @@ for mouseID = 1:length(allMice) %1=GL6, 2=GL9, 3=GL13
         end
         
         load(allData(MFE(experiment)).name)
-        useData = interp3Coh35;
+        useData = interp1Coh35;
         
 %         interpBy = 3;
 %         [concatChanTimeData, interpGridInd, interpNoiseInd, interpNoiseGrid] = ...
@@ -86,11 +86,11 @@ for mouseID = 1:length(allMice) %1=GL6, 2=GL9, 3=GL13
         onlyPatterns = false;
         suppressFigures = false;
         
-        testAlphas = [0.1, 0.5, 1];
-        testBetas = [1, 5, 10, 15];
+    %    testAlphas = [0.1, 0.5, 1];
+      %  testBetas = [1, 5, 10, 15];
         
-     %   testAlphas = [0.5];
-      %  testBetas = [10];
+        testAlphas = [0.5];
+        testBetas = [10];
         
         cprintf(-[1 0 1],  ['mouseID = ', num2str(mouseID), '; experiment =  ', ...
             num2str(experiment)])
@@ -131,5 +131,12 @@ end
 squeeze(spModes)
 
 %%
+supTitleMouse = 'Patterns detected from averages (interp by 1) gamma, then neuropatt';
+saveTitleMouse= 'avg_int1_NeuroPatt';
+aInd= 1;
+bInd = 1;
+numIndModes = 1;
+useAlphaBetaInd = 0;
 
+figs_compAnes_firstSVD_thenNeuroPatt(spModes, numIndModes, useAlphaBetaInd, supTitleMouse, saveTitleMouse, testAlphas, testBetas, aInd, bInd)
 

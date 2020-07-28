@@ -91,6 +91,34 @@ imagesc(C)
 [U, S, V] = svd(C);
 S(1:4,1:4)
 
+%%
+
+C  = zeros(11,6,200);
+
+C(3,:,:) = 1;
+for t = 2:200
+    C(3,:,t) = 2*C(3,:,t-1);
+end
+
+figure
+for t=1:200
+imagesc(squeeze(C(:,:,t)))
+title(['t = ', num2str(t)])
+colorbar
+pause(0.1)
+end
+
+interpBy = 1;
+useData = permute(C, [3,1,2]);
+
+[concatChanTimeData, interpGridInd, interpNoiseInd, interpNoiseGrid] = ...
+    makeInterpGridInd(useData, interpBy, info);
+
+
+
+
+
+
 
 
 

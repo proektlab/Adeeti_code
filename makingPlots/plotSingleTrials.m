@@ -3,8 +3,10 @@ function [currentFig] = plotSingleTrials(plotData, finalTime, info)
 screensize=get(groot, 'Screensize');
 
 gridIndicies = info.gridIndicies;
+gridRows = size(gridIndicies,1);
+gridCols = size(gridIndicies,2);
             
-for i = 1:64
+for i = 1:size(plotData, 1)
     [electrodeX(i), electrodeY(i)] = ind2sub(size(gridIndicies), find(gridIndicies == i));
 end
 
@@ -16,9 +18,9 @@ clf
 
 for ch = 1:size(plotData, 1)
     trueChannel = ch;%info.goodChannels(ch);
-    channelIndex = sub2ind([6 11], electrodeY(trueChannel), electrodeX(trueChannel));
+    channelIndex = sub2ind([gridCols gridRows], electrodeY(trueChannel), electrodeX(trueChannel));
     
-    subplot(11,6,channelIndex);
+    subplot(gridRows,gridCols,channelIndex);
         imagesc(finalTime,1:size(plotData,2),squeeze(plotData(ch,:,:)))
         vectData = plotData(:);
         randSamp = randsample(vectData, 10000);

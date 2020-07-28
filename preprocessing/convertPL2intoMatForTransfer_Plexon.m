@@ -7,8 +7,8 @@
 clear
 clc
 
-genDirIn = 'D:\AdeetiData\';
-identifierSubjects = '2019*';
+genDirIn = 'Y:\adeeti\plexonData_adeeti\2020-07-02\';
+identifierSubjects = '2020*';
 identifierFile = '*.pl2';
 START_AT= 1;
 eventsChan{1} = 'EVT01';
@@ -23,7 +23,7 @@ finalSampR = 1000;
 
 makeSnippits = 1; %1 if want to make snippits from events, 0 if want to extract LFP data only
 extractLFPFromWB = 0; %1 if recorded WB data and want to use filtered to filter out LFP, 0 if only recoded FP
-useMultipleSubject =1; %0 if using only one subject, 1 if wanting to convert multiple subjects in the same mother directory
+useMultipleSubject =0; %0 if using only one subject, 1 if wanting to convert multiple subjects in the same mother directory
 
 %%
 if extractLFPFromWB ==0
@@ -46,7 +46,7 @@ for subject = START_AT:length(allSubjects)
         mkdir(dirOut)
     elseif useMultipleSubject ==0
         dirIn = genDirIn;
-        dirOut = [dirIn, 'matlab\'];s
+        dirOut = [dirIn, 'matlab\'];
         mkdir(dirOut)
     end
     
@@ -79,7 +79,7 @@ for subject = START_AT:length(allSubjects)
         if makeSnippits ==1
             if cellfun(@isempty,allStartTimes)
                 dataSnippits= LFPData;
-                save([dirOut, expDate, '_', allData(experiment).name(1:end-4), '.mat'], 'dataSnippits', 'finalSampR', 'LFPData', 'fullTraceTime','plexInfoStuffs','-v7.3's)
+                save([dirOut, expDate, '_', allData(experiment).name(1:end-4), '.mat'], 'dataSnippits', 'finalSampR', 'LFPData', 'fullTraceTime','plexInfoStuffs','-v7.3')
                 % Brenna added '-v7.3' at the end of this function because
                 % LFPData was not saving for files larger than 2 GB
             else

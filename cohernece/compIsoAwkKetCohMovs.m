@@ -60,39 +60,19 @@ for d = 1:length(allDir)
     load('dataMatrixFlashes.mat')
     compExp=[];
     
-    % find iso
-    temp = findMyExpMulti(dataMatrixFlashes, [], 'iso', 0.6, stimIndex, []);
-    if isempty(temp)
-        temp = findMyExpMulti(dataMatrixFlashes, [], 'iso', 0.4, stimIndex, []);
-        if isempty(temp)
-            temp = findMyExpMulti(dataMatrixFlashes, [], 'iso', stimIndex, []);
-        end
-    end
-    if ~isempty(temp)
-        isoExp = temp(1);
-        compExp= [compExp, isoExp];
+    if contains(mouseID, 'GL')
+        expIDNum = str2num(mouseID(3:end))
+    elseif contains(mouseID, 'CB')
+        expIDNum = str2num(mouseID(3:end))
+        expIDNum = -expIDNum;
+    elseif contains(mouseID, 'IP')
+        expIDNum = 0;
     end
     
-    % find emergence
-    temp = findMyExpMulti(dataMatrixFlashes, [], 'emerg', 2000, stimIndex, []);
-    if ~isempty(temp)
-        emergExp = temp(1);
-        compExp= [compExp, emergExp];
-    end
-    
-    % find awake
-    temp = findMyExpMulti(dataMatrixFlashes, [], 'awa', 0, stimIndex, []);
-    if ~isempty(temp)
-        awaExp = temp(end);
-        compExp= [compExp, awaExp];
-    end
-    
-    % find ket
-    temp = findMyExpMulti(dataMatrixFlashes, [], 'ket', 100, stimIndex, []);
-    if ~isempty(temp)
-        ketExp = temp(1);
-        compExp= [compExp, ketExp];
-    end
+    [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = ...
+        findAnesArchatypeExp(dataMatrixFlashes, expIDNum);
+
+    MFE = [isoHighExp, isoLowExp, awaLastExp, ketExp];
     
     %% setting up directories
     cd(dirFILT)
