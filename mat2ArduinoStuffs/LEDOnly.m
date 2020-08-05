@@ -2,14 +2,14 @@
 
 %% User input of stimulation parameters
 
-LEDPIN = 9;  % static rig
-% LEDPIN = 10;  %sensory rig
+%LEDPIN = 9;  % static rig
+LEDPIN = 10;  %sensory rig
 LED2EEG = 8;
 ledOn = 10; %in ms
 
 allDelays =0 ;
-timeBetweenTrial = [9 10]; %in s
-numTrialsPerSet = 100000;
+timeBetweenTrial = [3 5]; %in s
+numTrialsPerSet =10000;
 
 %% randomizing time between trials
 numSets = size(allDelays,1);
