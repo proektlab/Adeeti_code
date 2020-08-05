@@ -1,0 +1,11 @@
+
+
+
+Multiple Location Flash Stimulus
+Time and Date
+17-Feb-2020 13:58:38
+
+Locations: 0 - whole screen; 1 - top left; 2 - top right; 
+3 - bottom left; 4 - bottom right; 5 - center
+
+trial      start time                location        contrast   stimulus type

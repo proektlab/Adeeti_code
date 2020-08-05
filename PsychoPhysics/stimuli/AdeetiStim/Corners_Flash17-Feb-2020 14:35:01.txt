@@ -1,0 +1,29 @@
+
+
+
+Multiple Location Flash Stimulus
+Time and Date
+17-Feb-2020 14:35:01
+
+Locations: 0 - whole screen; 1 - top left; 2 - top right; 
+3 - bottom left; 4 - bottom right; 5 - center
+
+trial      start time                location        contrast   stimulus type
+1          17-Feb-2020 14:35:01      2               1          q wf      
+2          17-Feb-2020 14:35:06      2               1          q wf      
+3          17-Feb-2020 14:35:10      128, 921.6      1          q wf      
+4          17-Feb-2020 14:35:14      128, 921.6      1          q wf      
+5          17-Feb-2020 14:35:17      1152, 921.6     1          q wf      
+6          17-Feb-2020 14:35:22      128, 921.6      1          q wf      
+7          17-Feb-2020 14:35:25      128, 921.6      1          q wf      
+8          17-Feb-2020 14:35:30      1               1          q wf      
+9          17-Feb-2020 14:35:35      128, 921.6      1          q wf      
+10         17-Feb-2020 14:35:39      1152, 921.6     1          q wf      
+11         17-Feb-2020 14:35:43      1               1          q wf      
+12         17-Feb-2020 14:35:48      1152, 921.6     1          q wf      
+13         17-Feb-2020 14:35:53      1               1          q wf      
+14         17-Feb-2020 14:35:57      1152, 921.6     1          q wf      
+15         17-Feb-2020 14:36:01      1               1          q wf      
+16         17-Feb-2020 14:36:06      1               1          q wf      
+17         17-Feb-2020 14:36:11      2               1          q wf      
+18         17-Feb-2020 14:36:15      1               1          q wf      

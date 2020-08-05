@@ -1,0 +1,24 @@
+
+
+
+Full Screen Flash Stimulus
+Time and Date
+17-Feb-2020 14:42:02
+
+Locations: 0 - whole screen; 1 - top left; 2 - top right; 
+3 - bottom left; 4 - bottom right; 5 - center
+
+trial      start time                location   contrast   stimulus type
+1          17-Feb-2020 14:42:02      0          0.5        fs wf     
+2          17-Feb-2020 14:42:08      0          0.25       fs wf     
+3          17-Feb-2020 14:42:12      0          0.25       fs wf     
+4          17-Feb-2020 14:42:16      0          0.25       fs wf     
+5          17-Feb-2020 14:42:21      0          0.006      fs wf     
+6          17-Feb-2020 14:42:25      0          0.5        fs wf     
+7          17-Feb-2020 14:42:30      0          0.006      fs wf     
+8          17-Feb-2020 14:42:34      0          0.009      fs wf     
+9          17-Feb-2020 14:42:39      0          0.5        fs wf     
+10         17-Feb-2020 14:42:43      0          0.5        fs wf     
+11         17-Feb-2020 14:42:48      0          0.006      fs wf     
+12         17-Feb-2020 14:42:52      0          0.5        fs wf     
+Trial aborted

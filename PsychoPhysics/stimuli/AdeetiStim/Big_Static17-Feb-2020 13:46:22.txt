@@ -1,0 +1,21 @@
+
+
+
+Full Screen Static Grating Stimulus
+Time and Date
+17-Feb-2020 13:46:22
+
+Locations: 0 - whole screen; 1 - top left; 2 - top right; 
+3 - bottom left; 4 - bottom right; 5 - center
+
+trial      start time                location   stimulus type
+1          17-Feb-2020 13:46:22      0          fs sg     
+2          17-Feb-2020 13:46:26      0          fs sg     
+3          17-Feb-2020 13:46:31      0          fs sg     
+4          17-Feb-2020 13:46:36      0          fs sg     
+5          17-Feb-2020 13:46:41      0          fs sg     
+6          17-Feb-2020 13:46:46      0          fs sg     
+7          17-Feb-2020 13:46:51      0          fs sg     
+8          17-Feb-2020 13:46:56      0          fs sg     
+9          17-Feb-2020 13:47:01      0          fs sg     
+Trial aborted
