@@ -55,14 +55,14 @@ loadingWindow = waitbar(0, 'Converting data...');
 for subject = START_AT:length(allSubjects)
     if useMultipleSubject ==1
         dirIn = [genDirIn, allSubjects(subject).name, '/'];
-        dirOut = [genDirOut, 'matlab/'];
+        dirOut = genDirOut;
         mkdir(dirOut)
         date = allSubjects(subject).name;
     elseif useMultipleSubject ==0
         dirIn = genDirIn;
         dirOut = genDirOut;
         mkdir(dirOut)
-        date = dirIn(end-10:end-1);
+        date = expDate{1};
     end
     
     cd(dirIn)
@@ -70,10 +70,12 @@ for subject = START_AT:length(allSubjects)
 
     for experiment = 1:length(allData)
         
-        if ~strcmpi(date, allData(experiment).name(1:8))
-            expName = [date, '_', allData(experiment).name(1:8)];
+        if ~contains(allData(experiment).name,date)
+            strName = strsplit(allData(experiment).name, '.pl2');
+            expName = [date, '_', strName{1}];
         else
-            expName = allData(experiment).name(1:end-4);
+            strName = strsplit(allData(experiment).name, '.pl2');
+            expName = strName;
         end
         
         %[LFPData, lfpSampRate, allStartTimes, fullTraceTime, plexInfoStuffs] = ExtractPL2ECOG_LFP_data(allData(experiment).name,eventsChan, 64, 1);
@@ -97,7 +99,7 @@ for subject = START_AT:length(allSubjects)
                 dataSnippits= LFPData;
                 save([dirOut, expName, '.mat'], 'dataSnippits', 'finalSampR', 'LFPData', 'fullTraceTime','plexInfoStuffs', 'eveTimes')
             else
-                [dataSnippits, finalTime] = extractSnippets_Plexon(LFPData, allStartTimes, before, l, finalSampR, startBaseline);
+                [dataSnippits, finalTime] = extractSnippets_Plexon(LFPData, allStartTimes, before, l, finalSampR, startBaseline, useArduino);
                 save([dirOut, expName, '.mat'], 'dataSnippits', 'finalTime', 'finalSampR', 'LFPData', 'fullTraceTime','plexInfoStuffs', 'eveTimes', 'allStartTimes', 'uniqueSeries', 'indexSeries')
             end
         elseif makeSnippits ==0

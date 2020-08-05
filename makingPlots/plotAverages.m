@@ -35,8 +35,10 @@ markTime = -before:.1:after;
 screensize=get(groot, 'Screensize');
  
 gridIndicies = info.gridIndicies; 
+gridRows = size(gridIndicies,1);
+gridCols = size(gridIndicies,2);
  
-for i = 1:64
+for i = 1:size(plotData, 1)
     [electrodeX(i), electrodeY(i)] = ind2sub(size(gridIndicies), find(gridIndicies == i));
 end
  
@@ -48,9 +50,9 @@ clf
  
 for ch = 1:size(plotData, 1)
     trueChannel = ch;%info.goodChannels(ch);
-    channelIndex = sub2ind([6 11], electrodeY(trueChannel), electrodeX(trueChannel));
+    channelIndex = sub2ind([gridCols, gridRows], electrodeY(trueChannel), electrodeX(trueChannel));
      
-    subplot(11,6,channelIndex);
+    subplot(gridRows,gridCols,channelIndex);
     plot(finalTime(startPlot:endPlot), plotData(ch, startPlot:endPlot))
     title(num2str(trueChannel));
     set(gca, 'ylim', yAxis)

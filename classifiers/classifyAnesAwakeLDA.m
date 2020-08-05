@@ -1,23 +1,26 @@
-function [W, L_train, P_train, L_test, P_test, mixMatrix, targets, Y, allTest, testTargets]= classifyAnesAwakeLDA(num2train, useData1, useData2, useData3, useData4)
+function [W, L_train, P_train, L_test, P_test, mixMatrix, targets, Y_1, Y_2, allTest, testTargets]= classifyAnesAwakeLDA(num2train, useData1, useData2, useData3, useData4)
 % [W, L_train, P_train, mixMatrix, targets, Y]= classifyAnesAwakeLDA(useData1, useData2, num2train)
 
-Y= randsample(size(useData1,1), num2train);
+Y_1= randsample(size(useData1,1), num2train);
+Y_2= randsample(size(useData2,1), num2train);
 
-trainData1 = useData1(Y,:);
-trainData2 =  useData2(Y,:);
+trainData1 = useData1(Y_1,:);
+trainData2 =  useData2(Y_2,:);
 
 mixMatrix =[trainData1; trainData2];
 targets = [ones(size(trainData1,1),1); [ones(size(trainData2,1),1)+1]];
 
 if exist('useData3')
-    trainData3 =  useData3(Y,:);
+    Y_3= randsample(size(useData3,1), num2train);
+    trainData3 =  useData3(Y_3,:);
     mixMatrix = [mixMatrix; trainData3];
     targets = [targets;[ones(size(trainData3,1),1)+2]];
 end
 
 
 if exist('useData4')
-    trainData4 =  useData4(Y,:);
+    Y_4= randsample(size(useData4,1), num2train);
+    trainData4 =  useData4(Y_4,:);
     mixMatrix = [mixMatrix; trainData4];
     targets = [targets; [ones(size(trainData4,1),1)+3]];
 end
@@ -36,23 +39,30 @@ end
 
 %% giving back the test data (what was not trained on)
 
-testTr = [1:size(useData1,1)];
-testTr(Y) = [];
+testTr_1 = [1:size(useData1,1)];
+testTr_1(Y_1) = [];
 
-testData1 = useData1(testTr,:);
-testData2 =  useData2(testTr,:);
+testTr_2 = [1:size(useData2,1)];
+testTr_2(Y_2) = [];
+
+testData1 = useData1(testTr_1,:);
+testData2 =  useData2(testTr_2,:);
 allTest = [testData1; testData2];
 testTargets = [ones(size(testData1,1),1); [ones(size(testData2,1),1)+1]];
 
 
 if exist('useData3')
-    testData3 =  useData3(testTr,:);
+    testTr_3 = [1:size(useData3,1)];
+    testTr_3(Y_3) = [];
+    testData3 =  useData3(testTr_3,:);
     allTest = [allTest; testData3];
     targets = [targets;[ones(size(testData3,1),1)+2]];
 end
 
 if exist('useData4')
-    testData4 =  useData4(testTr,:);
+    testTr_4 = [1:size(useData4,1)];
+    testTr_4(Y_4) = [];
+    testData4 =  useData4(testTr_4,:);
     allTest = [allTest; testData4];
     targets = [targets;[ones(size(testData4,1),1)+3]];
 end

@@ -69,4 +69,5 @@ end
 
 %[allV1, onsetMat] = V1forEachMouse([0, Inf, Inf, Inf], 'lowLat', 30, 1);
 [allV1, onsetMat] = V1forEachMouse(1, 0, stimIndex, 1, 'lowLat', allV1Lat, 1);
+%[allV1, onsetMat] = V1forEachMouse(useStimIndex, useNumStim, stimIndex, numStim, variableName, thresh, saveV1)
 

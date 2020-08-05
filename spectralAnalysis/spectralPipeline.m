@@ -5,15 +5,23 @@
 clear
 clc
 
-expDate = [{'2020-02-18'}, {'2020-02-19'}];
-mouseID = [{'CB2'}, {'CB3'}];
+if isunix
+    dirDat = '/synology/adeeti/';
+    dirCode = '/synology/code/Adeeti_code/';
+elseif ispc
+    dirDat = 'Z:\adeeti\';
+    dirCode = 'Z:\code\Adeeti_code\';
+end
+
+expDate = [{'2020-07-04'}]; %, {'2020-02-19'}];
+mouseID = [{'CB6'}]; %, {'CB3'}];
 identifierSubjects = '2020*';
-mouseECoGFolder = '/synology/adeeti/ecog/iso_awake_VEPs/';
-infoSheets = [9, 10];
+mouseECoGFolder = [dirDat, 'ecog/iso_awake_VEPs/'];
+infoSheets = [11]; %];
 
 for i = 1:length(expDate)
-genPicsDir =  ['/synology/adeeti/ecog/images/Iso_Awake_VEPs/', mouseID{i}, '/'];
-genDirIn = ['/synology/adeeti/plexonData_adeeti/', expDate{i}, '/'];
+genPicsDir =  [dirDat, 'ecog/images/Iso_Awake_VEPs/', mouseID{i}, '/'];
+genDirIn = [dirDat, 'plexonData_adeeti/', expDate{i}, '/'];
 genDirOut =  [mouseECoGFolder, mouseID{i}, '/'];
 
 identifierFile = '*.pl2';
@@ -24,15 +32,15 @@ eventsChan{1} = 'EVT01';
 
 convertPL2intoMat_Plexon_LinuxWS
 
-clearvars -except genDirOut genPicsDir mouseID expDate identifierSubjects mouseECoGFolder infoSheets
+clearvars -except genDirOut genPicsDir mouseID expDate identifierSubjects mouseECoGFolder infoSheets dirDat dirCode
 end
 
 %% preprocessing 
 % clear
 % clc
 %
-for dateInd = 2:length(mouseID)
-genPicsDir =  ['/synology/adeeti/ecog/images/Iso_Awake_VEPs/', mouseID{dateInd}, '/'];
+for dateInd = 1:length(mouseID)
+genPicsDir =  [dirDat, 'ecog/images/Iso_Awake_VEPs/', mouseID{dateInd}, '/'];
 dirIn = [mouseECoGFolder, mouseID{dateInd}, '/'];
 dirPic = [genPicsDir, 'preprocessing/'];
  dirOut = dirIn;
@@ -40,9 +48,9 @@ dirPic = [genPicsDir, 'preprocessing/'];
  identifier = '2020*.mat';
  START_AT = 1;
 
-driveLocation = '/home/adeeti/Dropbox/';  %'/data/adeeti/Dropbox/'; %'/home/adeeti/googleDrive/'; %dropbox location for excel file and saving
+driveLocation = dirCode;  %'/data/adeeti/Dropbox/'; %'/home/adeeti/googleDrive/'; %dropbox location for excel file and saving
 
-excelFileName = 'ProektLab_code/Adeeti_code/preprocessing/Iso_Awake_VEPs.xlsx';
+excelFileName = 'preprocessing/Iso_Awake_VEPs.xlsx';
 excelSheet = infoSheets(dateInd);
 
 MAXSTIM = 1;
@@ -54,27 +62,27 @@ PicByTrialType = 0;
 PicByAnesType = 1;
 PicByAnesAndTrial = 0;
 
-run /home/adeeti/Dropbox/ProektLab_code/Adeeti_code/preprocessing/pipeline4processingUniStimECOG_Plexon.m
+run pipeline4processingUniStimECOG_Plexon.m
 
 %% finding latency 
-clearvars -except dirIn identifier START_AT stimIndex genPicsDir mouseID dateInd infoSheets mouseECoGFolder
+clearvars -except dirIn identifier START_AT stimIndex genPicsDir mouseID dateInd infoSheets mouseECoGFolder dirDat dirCode
 
 findLatency
 
 %% Wavelets and making average spec pictures 
-clearvars -except dirIn identifier START_AT stimIndex genPicsDir mouseID dateInd infoSheets mouseECoGFolder
+clearvars -except dirIn identifier START_AT stimIndex genPicsDir mouseID dateInd infoSheets mouseECoGFolder dirDat dirCode
 close all
 dirPic1 = [genPicsDir, 'AverageSpec/'];
 
 dirWAVE = [dirIn, 'Wavelets/'];
 
 USE_SNIPPITS = 1;
-
+PLOT_AVERAGE_SPEC =1;
 waveletAnalysis
 
 %% Filter Data at gamma 
 
-clearvars -except dirIn identifier START_AT stimIndex dirWAVE genPicsDir mouseID dateInd infoSheets mouseECoGFolder
+clearvars -except dirIn identifier START_AT stimIndex dirWAVE genPicsDir mouseID dateInd infoSheets mouseECoGFolder dirDat dirCode
 close all
 dirWAVE =  [dirIn, 'Wavelets/'];
 
@@ -86,8 +94,7 @@ highBound = 80;
 filterDataandHilbertSavingAll
 
 %% ITPC 
-
-clearvars -except dirIn identifier START_AT stimIndex dirWAVE dirFILT genPicsDir mouseID dateInd infoSheets mouseECoGFolder
+clearvars -except dirIn identifier START_AT stimIndex dirWAVE dirFILT genPicsDir mouseID dateInd infoSheets mouseECoGFolder dirDat dirCode
 close all
 
 dirPicITPC = [genPicsDir, 'localITPC/'];
@@ -116,7 +123,7 @@ ITPC_for_all_exp
 %%
 
 clc
-clearvars -except dirIn identifier START_AT stimIndex dirWAVE dirFILT genPicsDir mouseID dateInd infoSheets mouseECoGFolder
+clearvars -except dirIn identifier START_AT stimIndex dirWAVE dirFILT genPicsDir mouseID dateInd infoSheets mouseECoGFolder dirDat dirCode
 close all
 
 fr = 35;

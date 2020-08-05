@@ -20,7 +20,7 @@ after = before;
 
 data = fullTrace(:,startOffSet:endOffSet);
 
-fakeFlashes = randsample([before:size(data,2)-after], numTrials, false);
+fakeFlashes = randsample([before+1:size(data,2)-after], numTrials, false);
 
 %% Making smallSnippits around fakeFlahses
 

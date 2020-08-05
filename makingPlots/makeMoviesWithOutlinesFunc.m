@@ -1,4 +1,6 @@
-function [movieOutput] = makeMoviesWithOutlinesFunc(data, start, endTime, bregmaOffsetX, bregmaOffsetY, gridIndicies, plotTitles, superTitle, colorTitle, colorScale, darknessOutline, dropboxLocation, interpBy, noiseBlack, electrode1, electrode2)
+function [movieOutput] = makeMoviesWithOutlinesFunc(data, start, endTime, bregmaOffsetX, bregmaOffsetY, ...
+    gridIndicies, plotTitles, superTitle, colorTitle, colorScale, darknessOutline, ...
+    dropboxLocation, interpBy, noiseBlack, electrode1, electrode2)
 % [movieOutput] = makeMoviesWithOutlinesFunc(data, start, endTime,
 % bregmaOffsetX, bregmaOffsetY, darknessOutline, dropboxLocation, interpBy, noiseBlack, electrode1, electrode2)
 % creates movie output from data, start, endTime, and adds on the outlines

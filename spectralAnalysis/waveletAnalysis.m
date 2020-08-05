@@ -23,8 +23,10 @@ end
 
 cd(dirIn)
 mkdir(dirWAVE)
+if PLOT_AVERAGE_SPEC ==1
 mkdir(dirPic1)
 %mkdir(dirPic2)
+end
 
 allData = dir(identifier);
 screensize=get(groot, 'Screensize');
@@ -75,6 +77,7 @@ for experiment = 1:length(allData)
         end
     end
    %% plot averages
+   if PLOT_AVERAGE_SPEC ==1
     for i = 1:size(uniqueSeries, 1)
         strStimInd = uniqueSeries(i,:);
         [stimIndexSeriesString] = stimIndex2string4saving(strStimInd, finalSampR);
@@ -91,14 +94,14 @@ for experiment = 1:length(allData)
         currentFig = figure('Position', screensize); clf
         
         gridIndicies = info.gridIndicies;
-        for i = 1:64
+        for i = 1:size(smallSnippits, 1)
             [electrodeX(i), electrodeY(i)] = ind2sub(size(gridIndicies), find(gridIndicies == i));
         end
         
         for ch = 1:size(smallSnippits, 1)
             trueChannel = ch;%info.goodChannels(ch);
-            channelIndex = sub2ind([6 11], electrodeY(trueChannel), electrodeX(trueChannel));
-            h(ch) = subplot(11,6,channelIndex);
+            channelIndex = sub2ind([size(gridIndicies,2), size(gridIndicies,1)], electrodeY(trueChannel), electrodeX(trueChannel));
+            h(ch) = subplot(size(gridIndicies,1),size(gridIndicies,2), channelIndex);
             pcolor(1:size(WAVE,2), Freq, normSpec(:,:, ch)); shading flat;
             %pcolor(1:size(WAVE,2), Freq, avgWAVE(:,:, ch)); shading flat;
             set(gca, 'Yscale', 'Log')
@@ -116,6 +119,7 @@ for experiment = 1:length(allData)
         close all
     end  
     clearvars avgWAVE normSpec meanBaseline
+   end
     
     %% saving wavelet
     for i=1:size(WAVE,1)

@@ -64,7 +64,6 @@ dotProdST2Spont = {};
 eucSpontOnly = {}; %nan(length(allExp), length(allExp{a}), size(useMeanSubData,2), 1);%, length(info.ecogChannels));
 eucST2Spont = {};
 
-
 color = {};
 anes = {};
 expID = [];
@@ -80,26 +79,25 @@ allDistanceMeas{7} = 'Cosine Single Trial to Spontaneous Activity';
 allDistanceMeas{8} = 'Euclidean Single Trial to Spontaneous Activity';
 
 
-dist_HighIso = {}; %1 - cos ST and avg, 2= euc ST and Avg, 3- cos ST, 4 - euc ST, 5 - cos Spont, 6- euc Spont, 7 - cos spont and ST, 8- euc spont and ST
-for i = 1:8
-    dist_HighIso{i}= [];
+dist_cos_HighIso = {}; 
+dist_euc_HighIso = {}; 
+dist_cos_LowIso = {};
+dist_euc_LowIso = {};
+dist_cos_Ket = {};
+dist_euc_Ket = {};
+dist_cos_Awake = {};
+dist_euc_Awake = {};%1 - cos ST and avg, 2= euc ST and Avg, 3- cos ST, 4 - euc ST, 5 - cos Spont, 6- euc Spont, 7 - cos spont and ST, 8- euc spont and ST
+for i = 1:4
+    dist_cos_HighIso{i} = [];
+    dist_euc_HighIso{i} = [];
+    dist_cos_LowIso{i} = [];
+    dist_euc_LowIso{i} = [];
+    dist_cos_Ket{i} = [];
+    dist_euc_Ket{i} = [];
+    dist_cos_Awake{i} = [];
+    dist_euc_Awake{i} = [];
 end
 
-dist_LowIso = {};
-for i = 1:8
-    dist_LowIso{i}= [];
-end
-
-
-dist_Ket = {};
-for i = 1:8
-    dist_Ket{i}= [];
-end
-
-dist_Awake = {};
-for i = 1:8
-    dist_Awake{i}= [];
-end
 
 singleTrial = {};
 spontAct = {};
@@ -290,7 +288,7 @@ subplot(2,2,3)
 imagesc(cos_Spont_Spont)
 title(allDistanceMeas{5})
 subplot(2,2,4)
-imagesc(cos_ST_avg)
+imagesc(cos_ST_Spont)
 title(allDistanceMeas{7})
 
 

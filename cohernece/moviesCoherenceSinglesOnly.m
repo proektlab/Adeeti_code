@@ -63,11 +63,7 @@ for experiment = START_AT:length(allData) %START_AT:length(allData)
     plotIndex = 1;
     
     load(allData(experiment).name, ['filtSig', num2str(fr)], 'info', 'uniqueSeries', 'indexSeries')
-    
-    bregmaOffsetX = info.bregmaOffsetX;
-    bregmaOffsetY = info.bregmaOffsetY;
-    gridIndicies = info.gridIndicies;
-    
+
     % Making sure to only grab  indexes that you are looking
     % for in the mix of trials
     [indices] = getStimIndices(stimIndex, indexSeries, uniqueSeries);
@@ -92,7 +88,7 @@ for experiment = START_AT:length(allData) %START_AT:length(allData)
     colorTitle = ['z threshold voltages from baseline'];
     
    % [movieOutput] = makeMoviesWithOutlinesFunc(filtSig, start, endTime, bregmaOffsetX, bregmaOffsetY, gridIndicies, plotTitles, superTitle, colorTitle, [], darknessOutline, dropboxLocation, interpBy, noiseBlack);
-    [movieOutput] = gridMovie_Outln_intrp_noiseBlk(filtSig, start, endTime, bregmaOffsetX, bregmaOffsetY, gridIndicies, plotTitles, superTitle, colorTitle, [], darknessOutline, dropboxLocation, interpBy, noiseBlack);
+    [movieOutput] = gridMovie_Outln_intrp_noiseBlk(filtSig, info, start, endTime, plotTitles, superTitle, colorTitle, [], darknessOutline, dropboxLocation);
     
     v = VideoWriter([dirMovies,info.AnesType(1:3),info.expName(1:end-4) '.avi']);
     open(v)

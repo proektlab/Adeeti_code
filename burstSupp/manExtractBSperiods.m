@@ -14,7 +14,7 @@ dirInGen = 'Z:\adeeti\JenniferHelen\'; %this folder is yours - it will have
 
 expIdentifier = '20*.mat'; %all the experiemnts are done in the during 2017-2020 and have the .mat ending
 
-dirInExp = 'Iso_flashes\'; % this comes from the list of experiments that we have
+dirInExp = 'Prop_whisk\'; % this comes from the list of experiments that we have
 
 dirIn = [dirInGen, dirInExp]; %this created the full path
 
@@ -22,7 +22,7 @@ cd(dirIn);
 
 allData = dir(expIdentifier);
 
-expID = 1;
+expID =  4;
 
 %% loops through all experiments per condition - do this portion for every experiment in the set
 
@@ -63,6 +63,10 @@ eeglab % this will open EEGLAB
 % Experiment_1_rej --> Ok
 % 9) now you are ready to finish the rest of the loop
 
+%% if full experiment is BS, uncomment the following function 
+
+%[BSTimepoints, BSPeriods] = makeBSper4fullBSuppexp(experimentName, meanSubFullTrace, expID);
+
 
 %%
 FILE = ALLEEG(2).event; %FILE should be the ALLEEG.event structure after labelling sections of interest in the visualizer/GUI of EEGlab and hitting REJECT button
@@ -83,11 +87,14 @@ for k=1:size(BSTimepoints,2)
     BSTimepoints(1,k)=floor(BSTimepoints(1,k));
     BSTimepoints(2,k)=ceil(BSTimepoints(2,k));
 end
+
+disp('done')
 %%
 BSTimepoints=BSTimepoints';
 BSTimepoints=sortrows(BSTimepoints,1);
 BSTimepoints=BSTimepoints';
 
+disp('done')
 %%
 BSPeriods = {};
 
@@ -100,5 +107,6 @@ save(experimentName, 'BSTimepoints', 'BSPeriods', '-append')
 expID = expID + 1
 
 
+disp('saved')
 %rejstartend now has starting and ending sample for rejected data with
 %whole sample numbers, in order, in a 2xn matrix of start samples and end samples for highlighted sections from the visualizer.
