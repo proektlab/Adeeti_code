@@ -22,7 +22,14 @@ load('dataMatrixFlashes.mat')
 
 useTime = [950:1150];
 
-[expIDNum] = findExpIDNum(mouseID)
+if contains(mouseID, 'GL')
+    expIDNum = str2num(mouseID(3:end))
+    expIDNum = -expIDNum;
+elseif contains(mouseID, 'CB')
+    expIDNum = str2num(mouseID(3:end))
+elseif contains(mouseID, 'IP')
+    expIDNum = 0;
+end
 
 [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = ...
     findAnesArchatypeExp(dataMatrixFlashes, expIDNum);
@@ -74,21 +81,27 @@ for i = 1:length(MFE)
 end
 
 %%
-numTr = 10;
+% 
+% avgAwake35 = squeeze(mean(awake35,3));
+% 
+% figure
+% imagesc(avgAwake35);
 
 useData = awake35;
 size(useData)
 
-trainTr = randsample(size(useData,3), numTr, 'false');
+trainTr = randsample(size(useData,3), 30, 'false');
 testTr = 1:size(useData,3);
 testTr(trainTr) = [];
-testTr = randsample(testTr, numTr, 'false');
+testTr = randsample(testTr, 30, 'false');
 
 trainData = useData(:,:,trainTr);
 testData = useData(:,:,testTr);
 
 disp('Done')
 
+
+%%
 analytic35 = nan(size(useData));
 for chan = 1:size(useData,1)
     for tr = 1:size(useData,3)
@@ -117,29 +130,17 @@ disp('Finished breaking up Phase and Amp')
 % figure
 % imagesc(squeeze(mean(uwphase35,3)))
 
-% 
-% figure 
-% plot(squeeze(saveData.BestStateMap(:,1)))
+
+figure 
+plot(squeeze(saveData.BestStateMap(:,1)))
 
 %%
 
+params.PreprocessData.DelayCount = 7;
 
-saveData = [];
-params = [];
 
-params.PreprocessData.DelayCount = [5];  %, 3, 5, 10];
-params.PreprocessData.DelayTime = [10]; %, 5, 10, 15, 20, 30];
-params.PreprocessData.ZScore = 1; %or 0
-params.PreprocessData.Smoothing = 0; %or 0 - this is in sigma
-params.UseLocalDimensions =1; %will want this as 1
-params.PutativeLoopCounts = [5,4,3,2,1];
-params.UseTerminalState = 1;
-params.TotalStates = 40;
+LOOPER(trainAmp35, true, [], [], [], params);
 
-LOOPER(saveData, true, trainData, [], [], params);
 
-saveData.BestStateMap(:,1);
-numLoops = saveData.BestLoopCount
-reconR2 = saveData.Ouputs.RSquared
 
 

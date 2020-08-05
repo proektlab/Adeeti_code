@@ -1,7 +1,7 @@
 %this is a function that finds the starting and ending indices of bursts
 %7/2/2020 JL, some chunks copied from Jared's code
 
-function [burstIndex, burstLen, supLen, weirdos] = findBurstIndex(prb)
+function [burstIndex, burstLen, supLen, weirdos] = findBurstIndexCopy(prb)
 %% Find Burst Indices
 
 %finds outliers
