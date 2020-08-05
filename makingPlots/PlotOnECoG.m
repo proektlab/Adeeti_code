@@ -9,8 +9,11 @@ function [ currentFig, colorMatrix, gridData] = PlotOnECoG(inputData, info, colo
 if nargin < 4
     dontMakeFigure = 0;
 end
+
+gridRows = size(gridIndicies,1);
+gridCols = size(gridIndicies,2);
     
-gridData=NaN(11,6);
+gridData=NaN(gridRows,gridCols);
 
 currentFig =[];
 
@@ -24,7 +27,7 @@ for i=1:size(gridData,1)
     end
 end
 
-colorMatrix=zeros(11,6,3);
+colorMatrix=zeros(gridRows,gridCols,3);
 
 
 if colorPref == 1
