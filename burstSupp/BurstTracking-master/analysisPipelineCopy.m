@@ -12,7 +12,7 @@
 %directory navigation
 loadDir = 'Z:\adeeti\JenniferHelen\rats_BS_grid_iso';
 saveDir = loadDir;
-dataset = 'meanSub_2019-09-10_12-04-00.mat';
+dataset = 'meanSub_2019-09-10_12-04-00_1.mat';
 
 %go to directory
 cd(loadDir);
@@ -74,7 +74,7 @@ periodLengths =cell(size(BSPeriods));
 for i = 1:numel(BSPeriods) %for each burst period
     tidx = 1:length(BSPeriods{i});
     stepSize = 1; %ms
-    windowSize = 600; %ms
+    windowSize = 200; %ms
     chidxT = chidx;
 
     if test == 1 %if test is 1, limit computing to first 10 seconds

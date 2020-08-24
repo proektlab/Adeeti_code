@@ -1,7 +1,16 @@
 %% playing with LOOPER
 
+if ispc
+    dirComp = 'Z:/adeeti/';
+elseif isunix
+    dirComp = '/synology/adeeti/';
+end
 
-dirIn = 'Z:\adeeti\ecog\iso_awake_VEPs\goodMice\';
+dirIn = [dirComp, 'ecog/iso_awake_VEPs/goodMice/'];
+dirOut = [dirComp, 'ConnorCollab/LooperAn/'];
+
+mkdir(dirOut)
+
 cd(dirIn);
 allMice = {'CB3', 'GL11', 'GL13', 'GL6', 'GL9'};
 
@@ -13,14 +22,7 @@ load('dataMatrixFlashes.mat')
 
 useTime = [950:1150];
 
-if contains(mouseID, 'GL')
-    expIDNum = str2num(mouseID(3:end))
-    expIDNum = -expIDNum;
-elseif contains(mouseID, 'CB')
-    expIDNum = str2num(mouseID(3:end))
-elseif contains(mouseID, 'IP')
-    expIDNum = 0;
-end
+[expIDNum] = findExpIDNum(mouseID)
 
 [isoHighExp, isoLowExp, emergExp, awaExp1, awaLastExp, ketExp] = ...
     findAnesArchatypeExp(dataMatrixFlashes, expIDNum);
@@ -50,7 +52,7 @@ for i = 1:length(MFE)
         ketVEPs = ketVEPs(goodChan,useTime,:);
     end
     
-    cd([dirIn, mouseID, '\FiltData\']);
+    cd([dirIn, mouseID, '/FiltData/']);
      load([dataMatrixFlashes(MFE(i)).expName(1:end-4), 'wave.mat'], 'filtSig35', 'info')
      goodChan = [1:64];
      goodChan(info.noiseChannels) = [];
@@ -72,80 +74,72 @@ for i = 1:length(MFE)
 end
 
 %%
-% 
-% avgAwake35 = squeeze(mean(awake35,3));
-% 
-% figure
-% imagesc(avgAwake35);
+numTr = 10;
 
-useData = ket35;
+useData = awake35;
 size(useData)
 
-choseTr = randsample(size(useData,3), 30, 'false');
+trainTr = randsample(size(useData,3), numTr, 'false');
 testTr = 1:size(useData,3);
-testTr(choseTr) = [];
+testTr(trainTr) = [];
+testTr = randsample(testTr, numTr, 'false');
 
-testTr = randsample(length(testTr), 30, 'false');
-
-smallData = useData(:,:,choseTr);
-size(smallData)
-
+trainData = useData(:,:,trainTr);
 testData = useData(:,:,testTr);
 
-%smallData = smallData(useChan,:,:);
+disp('Done')
 
-%smallData(:,:, 15) = [];
-
-
-%%
 analytic35 = nan(size(useData));
 for chan = 1:size(useData,1)
     for tr = 1:size(useData,3)
         analytic35(chan,:,tr) = hilbert(squeeze(useData(chan,:,tr)));
     end
 end
-
 amp35 = abs(analytic35);
 phase35 = angle(analytic35);
 img35 = imag(analytic35);
+real35 = real(analytic35);
 
+hilb35 = [real35;img35];
+
+trainAnalytic35 = analytic35(:,:,trainTr);
+trainAmp35 = amp35(:,:,trainTr);
+trainHilb35 = hilb35(:,:,trainTr);
+
+testAnalytic35 = analytic35(:,:,testTr);
 testAmp35 = amp35(:,:,testTr);
-trainAmp35 = amp35(:,:,choseTr);
+testHilb35 = hilb35(:,:,testTr);
 
-
-
-
-
-
-figure
-plot(squeeze(useData(1,:,1)))
-hold on 
-plot(squeeze(amp35(1,:,1)))
-
-figure
-imagesc(squeeze(mean(amp35, 2)))
-
-figure
-plot(squeeze(mean(mean(amp35, 2),3)))
-
-
+disp('Finished breaking up Phase and Amp')
 
 %%
-hib35 = [amp35; phase35];
+% uwphase35 = unwrap(phase35, [], 2);
+% figure
+% imagesc(squeeze(mean(uwphase35,3)))
 
-uwphase35 = unwrap(phase35, [], 2);
-figure
-imagesc(squeeze(mean(uwphase35,3)))
+% 
+% figure 
+% plot(squeeze(saveData.BestStateMap(:,1)))
 
-
-figure
-imagesc(squeeze(mean(hib35, 3)));
-
-
+%%
 
 
+saveData = [];
+params = [];
 
+params.PreprocessData.DelayCount = [5];  %, 3, 5, 10];
+params.PreprocessData.DelayTime = [10]; %, 5, 10, 15, 20, 30];
+params.PreprocessData.ZScore = 1; %or 0
+params.PreprocessData.Smoothing = 0; %or 0 - this is in sigma
+params.UseLocalDimensions =1; %will want this as 1
+params.PutativeLoopCounts = [5,4,3,2,1];
+params.UseTerminalState = 1;
+params.TotalStates = 40;
 
+LOOPER(saveData, true, trainData, [], [], params);
 
+saveData.BestStateMap(:,1);
+numLoops = saveData.BestLoopCount
+reconR2 = saveData.Ouputs.RSquared
 
 

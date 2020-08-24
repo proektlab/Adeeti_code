@@ -16,7 +16,7 @@ dirInGen = 'Z:\adeeti\JenniferHelen\'; %this folder is yours - it will have
 
 expIdentifier = '20*.mat'; %all the experiemnts are done in the during 2017-2020 and have the .mat ending
 
-dirInExp = 'iso_longBaseline\'; % this comes from the list of experiments that we have
+dirInExp = 'prop_longBaseline\'; % this comes from the list of experiments that we have
 
 dirIn = [dirInGen, dirInExp]; %this created the full path
 
@@ -24,7 +24,7 @@ cd(dirIn);
 
 allData = dir(expIdentifier);
 
-expID =  7;
+expID =  3;
 
 %% loops through all experiments per condition - do this portion for every experiment in the set
 
