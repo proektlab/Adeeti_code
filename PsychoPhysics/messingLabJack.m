@@ -1,7 +1,7 @@
 
 
 
-flipTTL = 19;
+flipTTL = 16;
 missTTL= 2;
 
 
