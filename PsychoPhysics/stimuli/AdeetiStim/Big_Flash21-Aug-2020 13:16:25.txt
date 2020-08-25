@@ -1,0 +1,23 @@
+
+
+
+Full Screen Flash Stimulus
+Time and Date
+21-Aug-2020 13:16:25
+
+Locations: 0 - whole screen; 1 - top left; 2 - top right; 
+3 - bottom left; 4 - bottom right; 5 - center
+
+trial      start time                location   contrast   stimulus type
+1          21-Aug-2020 13:16:25      0          0.25       fs wf     
+2          21-Aug-2020 13:16:31      0          1          fs wf     
+3          21-Aug-2020 13:16:35      0          0.5        fs wf     
+4          21-Aug-2020 13:16:38      0          0.5        fs wf     
+5          21-Aug-2020 13:16:42      0          0.75       fs wf     
+6          21-Aug-2020 13:16:47      0          1          fs wf     
+7          21-Aug-2020 13:16:50      0          0.75       fs wf     
+8          21-Aug-2020 13:16:54      0          0.75       fs wf     
+9          21-Aug-2020 13:16:59      0          0.5        fs wf     
+10         21-Aug-2020 13:17:02      0          0.25       fs wf     
+11         21-Aug-2020 13:17:07      0          0.5        fs wf     
+12         21-Aug-2020 13:17:10      0          0.5        fs wf     
